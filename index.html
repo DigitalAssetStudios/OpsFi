@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylesheet/index-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <title>OpsFi</title>
+    </head>
+
+    <body>
+
+        <div class="main-body-content">
+            <!-- partciles section -->
+            <div id="particles-js"></div>
+
+
+
+            <!-- landing-seection -->
+            <div class="landing-section">
+                <h1 class="company-title">OPSFI</h1>
+                <h2 class="company-tagline">Your Digital Asset Finance Solutions</h2>
+            </div>
+
+
+
+            <!-- our mission section -->
+            <div class="our-mission-section">
+                <canvas id="sphereCanvas"></canvas>
+                <div class="oms-title-section">
+                    <h2 class="oms-title">Shaping a Sustainable Web3 Future</h2>
+                    <h3 class="oms-tagline">Helping founders & teams build profitably & sustainably in web3</h3>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Script for interactive background -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
+
+    // particles script:
+            particlesJS.load('particles-js', './particlesjs-config.json', function() {
+                console.log('callback - particles-js config loaded');
+            });
+
+
+
+    // simple sphere script:
+            // Get the canvas element and its context
+            const canvas = document.getElementById('sphereCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Set the canvas width and height
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            // Function to draw a sphere-like circle
+            function drawSphere() {
+                const radius = 400;
+                const centerX = canvas.width / 2;
+                const centerY = canvas.height / 2;
+
+                // Create radial gradient for the sphere
+                const gradient = ctx.createRadialGradient(centerX, centerY, radius * 0.3, centerX, centerY, radius);
+                gradient.addColorStop(0, '#0e2c73');      // Bright center
+                gradient.addColorStop(1, '#0e2c73');    // Darker blue edges
+
+                // Draw the circle (sphere)
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+                ctx.fillStyle = gradient;
+                ctx.fill();
+                ctx.closePath();
+            }
+
+            // Draw the sphere when the window loads
+            window.onload = () => {
+                drawSphere();
+            };
+
+            // Redraw the sphere if the window is resized
+            window.onresize = () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                drawSphere();
+            };
+        </script>
+    </body>
+</html>
