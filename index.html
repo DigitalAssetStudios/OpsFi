@@ -29,10 +29,20 @@
 
             <!-- our mission section -->
             <div class="our-mission-section">
-                <canvas id="sphereCanvas"></canvas>
+                <canvas id="sphereCanvas" class="background-sphere"></canvas>
                 <div class="oms-title-section">
                     <h2 class="oms-title">Shaping a Sustainable Web3 Future</h2>
                     <h3 class="oms-tagline">Helping founders & teams build profitably & sustainably in web3</h3>
+                </div>
+                <div class="mission-vision-container">
+                    <div class="mission-text">
+                        <h3 class="mission-title">Our Mission</h3>
+                        <p class="mission-par">To empower Web3 founders to build profitable & sustainable ventures through robust financial guidance and operational clarity</p>
+                    </div>
+                    <div class="vision-text">
+                        <h3 class="vision-title">Our Vision</h3>
+                        <p class="vision-par">Be an impactful enabler of mass adoption of Web3 products and platforms that empower the globe by providing financial conviction and clarity</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,8 +77,8 @@
 
                 // Create radial gradient for the sphere
                 const gradient = ctx.createRadialGradient(centerX, centerY, radius * 0.3, centerX, centerY, radius);
-                gradient.addColorStop(0, '#0e2c73');      // Bright center
-                gradient.addColorStop(1, '#0e2c73');    // Darker blue edges
+                gradient.addColorStop(0.97, '#0e2c73');      // Bright center
+                gradient.addColorStop(1, '#040e25');    // Darker blue edges
 
                 // Draw the circle (sphere)
                 ctx.beginPath();

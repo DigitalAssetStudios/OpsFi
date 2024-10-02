@@ -1,9 +1,11 @@
 /* Importans and Variables */
 :root {
     --dark-blue: rgba(4, 14, 37, 1);
+    --trans-dark-blue: rgba(4, 14, 37, 0.25);
     --main-blue: rgba(14, 44, 115, 1);
     --accent-blue: rgba(1, 92, 255, 1);
     --main-white: rgba(244, 249, 255, 1);
+    --trans-main-white: rgba(244, 249, 255, 0.25);
     --main-font: "Mokoto", "sans-serif";
     --def-font: "Lato", sans-serif;
     --sup-font: "Share Tech Mono", "monospace";
@@ -79,18 +81,62 @@ body {
     width: 100%;
     pointer-events: none;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.background-sphere {
+    position: absolute;
 }
 .oms-title-section {
     display: flex;
     flex-direction: column;
     text-align: center;
+    z-index: 1;
 }
 .oms-title {
-    font-family: var(--main-font);
-    font-size: 2vw;
-    margin: 0;
+    font-family: var(--sup-font);
+    font-size: 3vw;
+    margin: 0 0 10px 0;
 }
 .oms-tagline {
-    font-size: 1vw;
+    font-size: 1.5vw;
+    margin: 0 0 100px 0;
+}
+.mission-vision-container {
+    display: flex;
+    justify-content: center;
+    gap: 20vw;
+}
+.mission-text {
+    background-image: linear-gradient(to top, var(--trans-main-white), var(--trans-dark-blue));
+    border: 1px solid var(--main-white);
+    border-radius: 50px;
+    padding: 50px;
+    width: 10vw;
+    z-index: 1;
+    text-align: center;
+}
+.mission-title {
+    font-size: 1.5vw;
+    margin: 0 0 10px 0;
+}
+.mission-par {
+    margin: 0;
+}
+.vision-text {
+    background-image: linear-gradient(to top, var(--trans-main-white), var(--trans-dark-blue));
+    border: 1px solid var(--main-white);
+    border-radius: 50px;
+    padding: 50px;
+    width: 10vw;
+    z-index: 1;
+    text-align: center;
+}
+.vision-title {
+    font-size: 1.5vw;
+    margin: 0 0 10px 0;
+}
+.vision-par {
     margin: 0;
 }
