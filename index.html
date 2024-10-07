@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div class="nav-contact-container">
-                <button class="nav-contact-bt">Let's Chat</button>
+                <a href="mailto:projects@operations.finance" class="nav-contact-bt">Let's Chat</a>
             </div>
         </nav>
 
@@ -49,7 +49,6 @@
 
             <!-- our mission section -->
             <div class="our-mission-section">
-                <canvas id="sphereCanvas" class="background-sphere"></canvas>
                 <div class="oms-title-section">
                     <h2 class="oms-title">Shaping a Sustainable Web3 Future</h2>
                     <h3 class="oms-tagline">Helping founders & teams build profitably & sustainably in web3</h3>
@@ -64,6 +63,28 @@
                         <p class="vision-par">Be an impactful enabler of mass adoption of Web3 products and platforms that empower the globe by providing financial conviction and clarity</p>
                     </div>
                 </div>
+                <div class="sphere-scene">
+                    <div class="axis-container">
+                        <!-- X Axis -->
+                        <div class="circle border"></div>
+                        <div class="circle border"></div>
+                        <div class="circle border"></div>
+                        <div class="circle border"></div>
+                        <div class="circle border"></div>
+                                <!-- Y Axis -->
+                        <div class="circle border"></div>
+                        <div class="circle border"></div>
+                        <div class="circle border"></div>
+                        <div class="circle border"></div>
+                        <div class="circle border"></div>
+                        <!-- Z Axis -->
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
             </div>
 
 
@@ -75,10 +96,18 @@
                     <h3 class="oss-tagline"></h3>
                 </div>
                 <div class="oss-card-container">
-                    <div class="suit-card">
+                    <a href="#" class="suit-card sc1">
                         <h3 class="suit-card-title">OpsFi Insight</h3>
                         <p class="suit-card-par">Accounting & CFO Reporting</p>
-                    </div>
+                    </a>
+                    <a href="#" class="suit-card sc2">
+                        <h3 class="suit-card-title">OpsFi Advisory</h3>
+                        <p class="suit-card-par">Financial, Commercial & Token Advisory</p>
+                    </a>
+                    <a href="#" class="suit-card sc3">
+                        <h3 class="suit-card-title">Digital Asset Studios</h3>
+                        <p class="suit-card-par">Collaborative Web3 Incubator & Coworking Space</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -93,48 +122,6 @@
             particlesJS.load('particles-js', './particlesjs-config.json', function() {
                 console.log('callback - particles-js config loaded');
             });
-
-
-
-    // simple sphere script:
-            // Get the canvas element and its context
-            const canvas = document.getElementById('sphereCanvas');
-            const ctx = canvas.getContext('2d');
-            
-            // Set the canvas width and height
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-
-            // Function to draw a sphere-like circle
-            function drawSphere() {
-                const radius = 400;
-                const centerX = canvas.width / 2;
-                const centerY = canvas.height / 2;
-
-                // Create radial gradient for the sphere
-                const gradient = ctx.createRadialGradient(centerX, centerY, radius * 0.3, centerX, centerY, radius);
-                gradient.addColorStop(0.97, '#0e2c73');      // Bright center
-                gradient.addColorStop(1, '#040e25');    // Darker blue edges
-
-                // Draw the circle (sphere)
-                ctx.beginPath();
-                ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-                ctx.fillStyle = gradient;
-                ctx.fill();
-                ctx.closePath();
-            }
-
-            // Draw the sphere when the window loads
-            window.onload = () => {
-                drawSphere();
-            };
-
-            // Redraw the sphere if the window is resized
-            window.onresize = () => {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-                drawSphere();
-            };
         </script>
     </body>
 </html>
