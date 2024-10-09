@@ -269,7 +269,7 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-
+    pointer-events: none;
 }
 .oss-title-container {
     display: flex;
@@ -292,6 +292,7 @@ body {
     grid-template-rows: repeat(7, 1fr);
     gap: 10px;
     margin: 0 20vw;
+    pointer-events: visible;
 }
 .suit-card {
     display: flex;
@@ -328,7 +329,7 @@ body {
 
 /* Opsfi Ecosystem style */
 .opsfi-ecosystem-section {
-    height: 200vh;
+    height: 120vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -386,11 +387,11 @@ body {
         transform: rotate(360deg) translateZ(0px);
     }
 }
-.rotating-item1 {
+.rotating-item1, .rotating-item2, .rotating-item3 {
     position: absolute;
-    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
+    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.5));
     backdrop-filter: blur(8px);
-    border: 2px solid var(--main-blue);
+    border: 4px solid var(--main-blue);
     height: 130px;
     width: 130px;
     border-radius: 50%;
@@ -440,18 +441,6 @@ body {
     width: 130px;
     height: 130px;
 }
-.rotating-item2 {
-    position: absolute;
-    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
-    backdrop-filter: blur(8px);
-    border: 2px solid var(--main-blue);
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .rotating-item2 img {
     width: 100px;
     animation: counterRotate 55s infinite linear;
@@ -494,18 +483,6 @@ body {
     animation: moveCircle 75s infinite linear;
     width: 130px;
     height: 130px;
-}
-.rotating-item3 {
-    position: absolute;
-    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
-    backdrop-filter: blur(8px);
-    border: 2px solid var(--main-blue);
-    height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .rotating-item3 img {
     width: 100px;
