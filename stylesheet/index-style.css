@@ -268,6 +268,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative;
+
 }
 .oss-title-container {
     display: flex;
@@ -320,4 +322,243 @@ body {
 .sc3:hover {
     background-image: linear-gradient(to top, rgba(1, 195, 141, 1), rgba(1, 195, 141, 0.3));
     box-shadow: 0px -10px 30px rgba(244, 249, 255, 0.25) inset;
+}
+
+
+
+/* Opsfi Ecosystem style */
+.opsfi-ecosystem-section {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.oes-text-container {
+    text-align: center;
+    z-index: 2;
+}
+.oes-title {
+    font-family: var(--sup-font);
+    font-size: 3vw;
+}
+.oes-tagline {
+    font-size: 1.5vw;
+}
+.oes-bt-about {
+    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
+    box-shadow: 0px -5px 20px var(--trans-main-white) inset;
+    padding: 10px 20px;
+    border: 1px solid rgba(1, 92, 255, 1);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    color: var(--main-white);
+    font-size: 18px;
+    font-family: var(--sup-font);
+    cursor: pointer;
+    text-decoration: none;
+}
+.oes-bt-about:hover {
+    background: radial-gradient(rgba(1, 92, 255, 0.18), rgba(1, 92, 255, 0.55));
+}
+.spiral-container {
+    position: absolute;
+    z-index: 1;
+}
+.spiral-section1, .spiral-section2, .spiral-section3 {
+    position: absolute;
+    top: 0;
+    left: -65px;
+}
+/* spiral 1 */
+.spiral-section1 {
+    animation: moveCircle 35s infinite linear;
+    width: 130px;
+    height: 130px;
+}
+@keyframes moveCircle {
+    0% {
+        transform: rotate(0deg) translateZ(0px);
+    }
+    100% {
+        transform: rotate(360deg) translateZ(0px);
+    }
+}
+.rotating-item1 {
+    position: absolute;
+    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
+    backdrop-filter: blur(8px);
+    border: 2px solid var(--main-blue);
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img1 {
+    transform: translate(400px);
+}
+.logo-img2 {
+    transform: rotate(40deg) translate(400px) rotate(-40deg);
+}
+.logo-img3 {
+    transform: rotate(80deg) translate(400px) rotate(-80deg);
+}
+.logo-img4 {
+    transform: rotate(120deg) translate(400px) rotate(-120deg);
+}
+.logo-img5 {
+    transform: rotate(160deg) translate(400px) rotate(-160deg);
+}
+.logo-img6 {
+    transform: rotate(200deg) translate(400px) rotate(-200deg);
+}
+.logo-img7 {
+    transform: rotate(240deg) translate(400px) rotate(-240deg);
+}
+.logo-img8 {
+    transform: rotate(280deg) translate(400px) rotate(-280deg);
+}
+.logo-img9 {
+    transform: rotate(320deg) translate(400px) rotate(-320deg);
+}
+.rotating-item1 img {
+    width: 100px;
+    animation: counterRotate 35s infinite linear;
+}
+@keyframes counterRotate {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+/* spiral 2 */
+.spiral-section2 {
+    animation: moveCircle 55s infinite linear;
+    width: 130px;
+    height: 130px;
+}
+.rotating-item2 {
+    position: absolute;
+    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
+    backdrop-filter: blur(8px);
+    border: 2px solid var(--main-blue);
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rotating-item2 img {
+    width: 100px;
+    animation: counterRotate 55s infinite linear;
+}
+.logo-img10 {
+    transform: translate(550px);
+}
+.logo-img11 {
+    transform: rotate(32deg) translate(550px) rotate(-32deg);
+}
+.logo-img12 {
+    transform: rotate(64deg) translate(550px) rotate(-64deg);
+}
+.logo-img13 {
+    transform: rotate(96deg) translate(550px) rotate(-96deg);
+}
+.logo-img14 {
+    transform: rotate(128deg) translate(550px) rotate(-128deg);
+}
+.logo-img15 {
+    transform: rotate(160deg) translate(550px) rotate(-160deg);
+}
+.logo-img16 {
+    transform: rotate(192deg) translate(550px) rotate(-192deg);
+}
+.logo-img17 {
+    transform: rotate(224deg) translate(550px) rotate(-224deg);
+}
+.logo-img18 {
+    transform: rotate(256deg) translate(550px) rotate(-256deg);
+}
+.logo-img19 {
+    transform: rotate(288deg) translate(550px) rotate(-288deg);
+}
+.logo-img20 {
+    transform: rotate(320deg) translate(550px) rotate(-320deg);
+}
+/* spiral 3 */
+.spiral-section3 {
+    animation: moveCircle 75s infinite linear;
+    width: 130px;
+    height: 130px;
+}
+.rotating-item3 {
+    position: absolute;
+    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
+    backdrop-filter: blur(8px);
+    border: 2px solid var(--main-blue);
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rotating-item3 img {
+    width: 100px;
+    animation: counterRotate 75s infinite linear;
+}
+.logo-img21 {
+    transform: translate(700px);
+}
+.logo-img22 {
+    transform: rotate(21deg) translate(700px) rotate(-21deg);
+}
+.logo-img23 {
+    transform: rotate(42deg) translate(700px) rotate(-42deg);
+}
+.logo-img24 {
+    transform: rotate(63deg) translate(700px) rotate(-63deg);
+}
+.logo-img25 {
+    transform: rotate(84deg) translate(700px) rotate(-84deg);
+}
+.logo-img26 {
+    transform: rotate(105deg) translate(700px) rotate(-105deg);
+}
+.logo-img27 {
+    transform: rotate(126deg) translate(700px) rotate(-126deg);
+}
+.logo-img28 {
+    transform: rotate(147deg) translate(700px) rotate(-147deg);
+}
+.logo-img29 {
+    transform: rotate(168deg) translate(700px) rotate(-168deg);
+}
+.logo-img30 {
+    transform: rotate(189deg) translate(700px) rotate(-189deg);
+}
+.logo-img31 {
+    transform: rotate(210deg) translate(700px) rotate(-210deg);
+}
+.logo-img32 {
+    transform: rotate(231deg) translate(700px) rotate(-231deg);
+}
+.logo-img33 {
+    transform: rotate(252deg) translate(700px) rotate(-252deg);
+}
+.logo-img34 {
+    transform: rotate(273deg) translate(700px) rotate(-273deg);
+}
+.logo-img35 {
+    transform: rotate(294deg) translate(700px) rotate(-294deg);
+}
+.logo-img36 {
+    transform: rotate(315deg) translate(700px) rotate(-315deg);
+}
+.logo-img37 {
+    transform: rotate(336deg) translate(700px) rotate(-336deg);
 }
