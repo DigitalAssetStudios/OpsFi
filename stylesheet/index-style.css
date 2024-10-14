@@ -261,7 +261,7 @@ body {
 
 /* Opsfy offering section */
 .opsfi-suit-section {
-    height: 150vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -327,9 +327,79 @@ body {
 
 
 
+/* Our Client Niches style */
+.client-niches-section {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, var(--trans-main-white), var(--trans-dark-blue)), linear-gradient(180deg, rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
+}
+.cns-text-container {
+    text-align: center;
+}
+.cns-title {
+    font-family: var(--sup-font);
+    font-size: 3vw;
+    margin: 0;
+}
+.cns-tagline {
+    font-size: 1.5vw;
+}
+.niche-carousal-section {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px;
+    position: relative;
+}
+.niche-carousal-section::before,
+.niche-carousal-section::after {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    content: "";
+    z-index: 2;
+    pointer-events: none;
+}
+.niche-carousal-section:hover .carousel-container {
+    animation-play-state: paused;
+}
+.carousel-container {
+    display: flex;
+    gap: 5px;
+    animation: infi-scroll 20s infinite linear;
+}
+.carousel-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 5px;
+    padding: 0 30px;
+    border: 1px solid var(--main-white);
+    border-radius:15px;
+    background: radial-gradient(rgba(244, 249, 255, 0.6), var(--main-white));
+    color: var(--dark-blue);
+}
+.niche-img {
+    width: 30px;
+}
+@keyframes infi-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
 /* Opsfi Ecosystem style */
 .opsfi-ecosystem-section {
-    height: 120vh;
+    height: 160vh;
     width: 100%;
     display: flex;
     flex-direction: column;
