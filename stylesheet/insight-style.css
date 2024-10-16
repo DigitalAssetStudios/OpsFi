@@ -21,6 +21,7 @@
 
 /* Main Body Styling */
 body {
+    width: 100vw;
     margin: 0;
     padding: 0;
     background-color: var(--dark-blue);
@@ -86,15 +87,29 @@ body {
 
 
 
+/* particles */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1;
+}
+
+
+
 /* landing style */
 .landing-section {
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     pointer-events: none;
-    z-index: 1;
 }
 .page-title {
     font-size: 10vw;
@@ -111,3 +126,101 @@ body {
     font-family: var(--sup-font);
     margin: 0;
 }
+
+
+
+/* our focus style */
+.our-focus-section {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-blue);
+}
+.ofs-text-container {
+    text-align: center;
+    width: 80vw;
+}
+.ofs-title {
+    font-family: var(--sup-font);
+    font-size: 3vw;
+    margin: 0 0 10px 0;
+}
+.ofs-par {
+    font-size: 1.5vw;
+    margin: 0 0 100px 0;
+}
+.ofs-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 60vw;
+}
+.info-card1, .info-card3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.info-card2 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.info-card1, .info-card2, .info-card3 {
+    padding: 20px;
+    border: 0.5px solid var(--main-white);
+    border-radius: 15px;
+}
+.info-card-title {
+    font-size: 2vw;
+    margin: 0;
+}
+.info-card-par {
+    width: 60%;
+    margin: 0 0 250px 0;
+}
+
+.card-bg-animated {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+    background: linear-gradient(135deg, rgba(1, 92, 255, 1), rgba(4, 14, 37, 1));
+    background-size: 200% 200%;
+    animation: gradientWave 5s ease-in-out infinite;
+}
+.card-bg-animated::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(1, 92, 255, 0.5), rgba(4, 14, 37, 0.5));
+    mix-blend-mode: overlay;
+    animation: pulseGradient 3s infinite ease-in-out;
+}
+/* @keyframes gradientWave {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes pulseGradient {
+    0% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.3;
+    }
+  } */
