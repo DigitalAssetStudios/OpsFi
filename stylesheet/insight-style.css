@@ -201,7 +201,7 @@ body {
     mix-blend-mode: overlay;
     animation: pulseGradient 3s infinite ease-in-out;
 }
-/* @keyframes gradientWave {
+@keyframes gradientWave {
     0% {
       background-position: 0% 50%;
     }
@@ -223,4 +223,29 @@ body {
     100% {
       opacity: 0.3;
     }
-  } */
+  }
+
+
+
+  /* suite service style */
+  .suite-service-section {
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .sss-text-container {
+    text-align: center;
+    width: 80vw;
+  }
+  .sss-title {
+    font-family: var(--sup-font);
+    font-size: 3vw;
+    margin: 0 0 10px 0;
+  }
+.sss-par {
+    font-size: 1.5vw;
+    margin: 0 0 100px 0;
+}
