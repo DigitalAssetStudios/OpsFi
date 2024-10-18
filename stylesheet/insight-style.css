@@ -249,3 +249,34 @@ body {
     font-size: 1.5vw;
     margin: 0 0 100px 0;
 }
+.sss-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    gap: 20px;
+}
+.sss-info-card {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 200px;
+    width: 500px;
+    height: 300px;
+    border-left: 1px solid var(--main-white);
+    border-right: 1px solid var(--main-white);
+    text-align: center;
+}
+.sss-card-title {
+    font-family: var(--sup-font);
+    font-size: 3vw;
+    grid-column: span 3;
+    margin: 5px 0;
+}
+.sss-card-par {
+    padding: 0 5px;
+}
+.middle-point {
+    border-left: 1px solid var(--main-white);
+    border-right: 1px solid var(--main-white);
+}
