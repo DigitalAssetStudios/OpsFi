@@ -133,7 +133,102 @@ body {
 .our-focus-section {
     height: 100vh;
     width: 100%;
+    position: relative;
 }
-/* .ofs-content-container {
-    width: ;
-} */
+.ofs-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+.ofs-title {
+    font-size: 3vw;
+    font-family: var(--sup-font);
+    color: var(--main-white);
+    margin: 0;
+}
+.ofs-par {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: lightgray;
+    margin: 0 0 50px 0;
+    max-width: 900px;
+}
+.ofs-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+.ofs-card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    transition: scale 1s ease;
+    text-align: center;
+}
+.ofs-card:hover {
+    scale: 1.1;
+}
+.ofs-card:hover .ofs-card-img {
+    transform: translateY(-20px);
+}
+.ofs-card:hover .ofs-card-title {
+    transform: translateY(-50px);
+}
+.ofs-card:hover .ofs-card-content {
+    transform: translateY(0);
+}
+.ofs-card-img {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.ofs-card-bg1 {
+    background-image: url(../assets/symbol1-img.jpeg);
+}
+.ofs-card-bg2 {
+    background-image: url(../assets/symbol2-img.jpeg);
+}
+.ofs-card-bg3 {
+    background-image: url(../assets/symbol3-img.jpeg);
+}
+.ofs-card-title {
+    position: absolute;
+    bottom: 60px; /* Adjust to position above the content */
+    color: #fff;
+    background: var(--dark-blue);
+    padding: 5px;
+    font-size: 1.5em;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+.ofs-card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--dark-blue);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+.ofs-card-par {
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.ofs-card:hover .ofs-card-par {
+    opacity: 1;
+}

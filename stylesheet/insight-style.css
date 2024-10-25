@@ -61,7 +61,7 @@ body {
     color: var(--main-white);
     padding: 10px;
 }
-.active, .nav-item:hover {
+.highlight, .nav-item:hover {
     color: var(--accent-blue);
 }
 .nav-contact-container {
@@ -136,58 +136,88 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 40px 0;
 }
 .ofs-content-container {
-    width: 80%;
-    height: 100%;
+    width: 90%;
+    height: 90vh;
     background: var(--dark-blue);
     border-radius: 12px;
+    padding: 60px 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
 }
 .ofs-text-container {
     text-align: center;
-    width: 80%;
+}
+.ofs-title {
+    font-size: 3vw;
+    font-family: var(--sup-font);
+    color: var(--main-white);
+}
+.ofs-par {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: lightgray;
+    margin: 0 auto;
+    max-width: 700px;
+}
+.ofs-card-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+.slide-show-img {
+    width: auto;
+    height: 420px;
+    display: none;
+    margin: 0 0 50px 15vw;
+    border-radius: 25px;
+}
+.ofs-text-container {
+    text-align: center;
 }
 .ofs-title {
     font-size: 3vw;
     font-family: var(--sup-font);
     margin: 0;
 }
-/* .ofs-par {
-    
-} */
-/* .ofs-card-container {
-    display: grid;
-    grid-template-areas: "img text";
-} */
 .ofs-text-area {
-    width: 300px;
     margin: 0 auto;
 }
 .text-item {
     margin-bottom: 20px;
+    cursor: pointer;
+    color: rgb(183, 183, 183);
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+.text-item.active {
+    color: var(--main-white);
 }
 .ofs-section-title {
     font-size: 1.5rem;
-    margin: 0;
-    cursor: pointer;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 80%;
 }
 .ofs-section-par {
     max-height: 0;
+    width: 80%;
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease;
     opacity: 0;
     padding: 0;
+    margin: 0 0 80px 0;
+    color: var(--main-white);
 }
-.text-item:hover .ofs-section-par {
+.text-item.active .ofs-section-par {
     max-height: 100px;
     opacity: 1;
-    padding-top: 10px;
 }
 
 

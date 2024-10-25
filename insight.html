@@ -16,7 +16,7 @@
             <div class="nav-menu-content">
                 <ul class="menu-list" id="nav-bar">
                     <li><a href="./index.html" class="nav-item">Home</a></li>
-                    <li><a href="#beginning" class="nav-item active">Insight</a></li>
+                    <li><a href="#beginning" class="nav-item highlight">Insight</a></li>
                     <li><a href="./advisory.html" class="nav-item">Advisory</a></li>
                     <li><a href="#" class="nav-item">About</a></li>
                 </ul>
@@ -50,11 +50,14 @@
                     </div>
                     <div class="ofs-card-container">
                         <div class="ofs-images-area">
-
+                            <img src="./assets/financial-empowerment-img.webp" alt="" class="slide-show-img">
+                            <img src="./assets/building-partnership-img.jpeg" alt="" class="slide-show-img">
+                            <img src="./assets/grown-stages-img.jpeg" alt="" class="slide-show-img">
                         </div>
                         <div class="ofs-text-area">
                             <div class="text-item">
                                 <h3 class="ofs-section-title">Financial and Operational Empowerment</h3>
+                                <div class="ofs-title-underline"></div>
                                 <p class="ofs-section-par">Empowering web3 teams with in-depth financial and operational visibility, robust KPI analysis and insights to extend cash runway for sustainable growth</p>
                             </div>
                             <div class="text-item">
@@ -110,6 +113,53 @@
             particlesJS.load('particles-js', './particlesjs-config.json', function() {
                 console.log('callback - particles-js config loaded');
             });
+
+
+    // Simple toggle script for clicked and automatic slide for text and images
+            document.addEventListener("DOMContentLoaded", function () {
+            // Get all the text-item elements and images
+            const textItems = document.querySelectorAll(".text-item");
+            const images = document.querySelectorAll(".slide-show-img");
+            let myIndex = 0;
+            let autoSlide = true; // This will control the automatic slideshow
+
+            // Function to show image based on index
+            function showImage(index) {
+                images.forEach(img => img.style.display = "none"); // Hide all images
+                images[index].style.display = "block"; // Show the current image
+            }
+
+            // Function to reset active text
+            function resetTextItems() {
+                textItems.forEach(item => item.classList.remove("active"));
+            }
+
+            // Add click event listener to each text-item
+            textItems.forEach((item, index) => {
+                item.addEventListener("click", function () {
+                    resetTextItems(); // Collapse other sections
+                    this.classList.toggle("active"); // Expand the clicked section
+                    showImage(index); // Show the corresponding image
+                    autoSlide = false; // Stop automatic slideshow when clicked
+                });
+            });
+
+            // Automatic slideshow function
+            function carousel() {
+                if (autoSlide) { // Only proceed if autoSlide is true
+                    resetTextItems(); // Remove active class from text items
+                    textItems[myIndex].classList.add("active"); // Set active for current text
+                    showImage(myIndex); // Show corresponding image
+                    myIndex++; // Move to the next image/text
+                    if (myIndex >= images.length) { myIndex = 0; } // Reset index if it exceeds the number of images
+                }
+                setTimeout(carousel, 7000); // Change every 7 seconds
+            }
+
+            carousel(); // Start the carousel
+        });
+
+
         </script>
 </body>
 </html>
