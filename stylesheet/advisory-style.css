@@ -27,6 +27,7 @@ body {
     background-color: var(--dark-blue);
     font-family: var(--def-font);
     color: var(--main-white);
+    overflow-y: scroll;
 }
 
 
@@ -206,7 +207,7 @@ body {
 }
 .ofs-card-title {
     position: absolute;
-    bottom: 60px; /* Adjust to position above the content */
+    bottom: 45px;
     color: #fff;
     background: var(--dark-blue);
     padding: 5px;
@@ -231,4 +232,44 @@ body {
 }
 .ofs-card:hover .ofs-card-par {
     opacity: 1;
+}
+
+
+
+/* Suite Service Style */
+.suite-services-section {
+    height: 400vh;
+    position: relative;
+}
+.sss-card-container {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 400vw;
+    overflow: hidden;
+}
+.side-card {
+    flex: 0 0 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.sss-card-title {
+    font-size: 2.5vw;
+    font-family: var(--main-font);
+    margin: 0;
+}
+.sss-card-text {
+    width: 40%;
+}
+.sss-point-title {
+    font-size: 1.2vw;
+}
+.sss-card-img {
+    width: 400px;
 }

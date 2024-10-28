@@ -71,6 +71,61 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- Suite Services section -->
+        <div class="suite-services-section">
+            <div class="sss-card-container">
+                <div class="side-card">
+                    <div class="sss-card-text">
+                        <h3 class="sss-card-title">Business Modelling</h3>
+                        <div class="sss-card-points">
+                            <h4 class="sss-point-title">Monetization Strategies</h4>
+                            <p class="sss-card-par">Pre-revenue organisations survive on funding. Monetising effectively at the right time to ensure self-sustainability, reducing friction and time burn of constant fundraising cycles</p>
+                            <h4 class="sss-point-title">Financial Modelling</h4>
+                            <p class="sss-card-par">Intuitive and logical financial modelling with well constructed assumptions is an extremely underrated advantage for any project or business</p>
+                            <h4 class="sss-point-title">Valuations</h4>
+                            <p class="sss-card-par">Valuations are subjective, especially for early-stage or niche industry segments. We use our experience and knowledge to customize and create reliable valuations</p>
+                        </div>
+                    </div>
+                    <img src="./assets/business-model-img.jpeg" alt="" class="sss-card-img">
+                </div>
+                <div class="side-card">
+                    <div class="sss-card-text">
+                        <h3 class="sss-card-title">Tokenomics</h3>
+                        <div class="sss-card-points">
+                            <h4 class="sss-point-title">Token Architecture & Design</h4>
+                            <p class="sss-card-par">We design dynamic value accrual token economics that are tightly aligned with the project’s core value propositions. This reduces the unsustainable speculation and “ponzinomics” inherent in many tokens</p>
+                            <h4 class="sss-point-title">Token Readiness & Launches</h4>
+                            <p class="sss-card-par">Launching a project can be daunting, with significant stakes on the line. Our established partnerships and extensive experience transform high-risk into high-impact success</p>
+                            <h4 class="sss-point-title">Tokenomics Modelling & Audits</h4>
+                            <p class="sss-card-par">We conduct a deep dive analysis of your tokenomics structure, providing a clear report with actionable recommendations</p>
+                        </div>
+                    </div>
+                    <img src="./assets/token-img.jpeg" alt="" class="sss-card-img">
+                </div>
+                <div class="side-card">
+                    <div class="sss-card-text">
+                        <h3 class="sss-card-title">Business Modelling</h3>
+                        <div class="sss-card-points">
+                            <h4 class="sss-point-title">Monetization Strategies</h4>
+                            <p class="sss-card-par">Pre-revenue organisations survive on funding. Monetising effectively at the right time to ensure self-sustainability, reducing friction and time burn of constant fundraising cycles</p>
+                        </div>
+                    </div>
+                    <img src="./assets/project-ready-img.jpeg" alt="" class="sss-card-img">
+                </div>
+                <div class="side-card">
+                    <div class="sss-card-text">
+                        <h3 class="sss-card-title">Business Modelling</h3>
+                        <div class="sss-card-points">
+                            <h4 class="sss-point-title">Monetization Strategies</h4>
+                            <p class="sss-card-par">Pre-revenue organisations survive on funding. Monetising effectively at the right time to ensure self-sustainability, reducing friction and time burn of constant fundraising cycles</p>
+                        </div>
+                    </div>
+                    <img src="./assets/business-model-img.jpeg" alt="" class="sss-card-img">
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -83,6 +138,41 @@
         particlesJS.load('particles-js', './particlesjs-config.json', function() {
             console.log('callback - particles-js config loaded');
         });
+
+
+
+// Horizontal scroll scritp for suite services:
+        // Select the suite services section and container
+        const suiteServicesSection = document.querySelector('.suite-services-section');
+        const sssCardContainer = document.querySelector('.sss-card-container');
+
+        // Get the section’s start position and height
+        const startScroll = suiteServicesSection.offsetTop;
+        const sectionHeight = suiteServicesSection.offsetHeight;
+
+        // Calculate the maximum horizontal scroll within the container
+        const maxHorizontalScroll = sssCardContainer.scrollWidth - window.innerWidth;
+
+        window.addEventListener('scroll', () => {
+            // Calculate current vertical scroll position
+            const scrollPosition = window.scrollY;
+
+            // Check if the user is within the suite services section
+            if (scrollPosition >= startScroll && scrollPosition <= (startScroll + sectionHeight - window.innerHeight)) {
+                // Calculate horizontal scroll based on vertical scroll within section
+                const horizontalScroll = ((scrollPosition - startScroll) / (sectionHeight - window.innerHeight)) * maxHorizontalScroll;
+
+                // Apply the horizontal scroll effect
+                sssCardContainer.style.transform = `translateX(-${horizontalScroll}px)`;
+            } else if (scrollPosition < startScroll) {
+                // Reset position if above the section
+                sssCardContainer.style.transform = `translateX(0)`;
+            } else if (scrollPosition > startScroll + sectionHeight - window.innerHeight) {
+                // Fix position if scrolled past the section
+                sssCardContainer.style.transform = `translateX(-${maxHorizontalScroll}px)`;
+            }
+        });
+
     </script>
 
 </body>
