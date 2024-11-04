@@ -43,7 +43,7 @@ body {
     font-family: var(--sup-font);
 }
 .nav-logo-content img{
-    max-width: 80px;
+    max-width: 120px;
     padding-left: 50px;
 }
 .menu-list {
@@ -57,26 +57,27 @@ body {
 }
 .nav-item {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     color: var(--main-white);
     padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
 .active, .nav-item:hover {
     color: var(--accent-blue);
+    font-size: 23px;
 }
 .nav-contact-container {
     text-align: right;
     padding-right: 50px;
 }
 .nav-contact-bt {
-    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
+    background: radial-gradient(rgba(1, 92, 255, 0.5), rgba(1, 92, 255, 0.8));
     box-shadow: 0px -5px 20px var(--trans-main-white) inset;
     padding: 10px 20px;
     border: 1px solid rgba(1, 92, 255, 1);
     border-radius: 8px;
-    backdrop-filter: blur(4px);
     color: var(--main-white);
-    font-size: 18px;
+    font-size: 24px;
     font-family: var(--sup-font);
     cursor: pointer;
     text-decoration: none;
@@ -135,49 +136,7 @@ body {
 
 
 
-/* Our Mission Style */
-.our-mission-section {
-    height: 100vh;
-    width: 100%;
-    pointer-events: none;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    background-color: var(--dark-blue);
-    box-shadow: 0px 20px 60px black inset, 0px -20px 60px black inset;
-}
-.oms-content-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-.oms-text-section {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.oms-niches-section {
-    width: 30%;
-}
-.oms-title-section {
-    text-align: center;
-}
-.oms-title {
-    font-family: var(--sup-font);
-    font-size: 3vw;
-    margin: 0 0 10px 0;
-}
-.oms-points-text {
-    width: 60%;
-}
-
-
-
-/* Opsfy offering section */
+/* Opsfi suite style */
 .opsfi-suit-section {
     height: 120vh;
     width: 100%;
@@ -229,8 +188,11 @@ body {
     transition: scale 1s ease;
 }
 .suit-card-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0;
+}
+.suit-card-par {
+    font-size: 1.2rem;
 }
 .sc1 {
     grid-column-start: 2;
@@ -252,73 +214,50 @@ body {
 
 
 
-/* Our Client Niches style */
-/* .client-niches-section {
-    height: 80vh;
+/* Our Mission Style */
+.our-mission-section {
+    height: 100vh;
     width: 100%;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(to top, var(--trans-main-white), var(--trans-dark-blue)), linear-gradient(180deg, rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
-}
-.cns-text-container {
-    text-align: center;
-}
-.cns-title {
-    font-family: var(--sup-font);
-    font-size: 3vw;
-    margin: 0;
-}
-.cns-tagline {
-    font-size: 1.5vw;
-}
-.niche-carousal-section {
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 20px;
     position: relative;
+    background-color: var(--dark-blue);
+    box-shadow: 0px 20px 60px black inset, 0px -20px 60px black inset;
 }
-.niche-carousal-section::before,
-.niche-carousal-section::after {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100%;
-    content: "";
-    z-index: 2;
-    pointer-events: none;
+.oms-content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    justify-content: center;
+    align-items: center;
 }
-.niche-carousal-section:hover .carousel-container {
-    animation-play-state: paused;
+.left-vert-carousel {
+    position: relative;
+    overflow: hidden;
 }
-.carousel-container {
+.up-to-down-carousel {
     display: flex;
-    gap: 5px;
-    animation: infi-scroll 20s infinite linear;
+    flex-direction: column;
+    animation: scroll-logos 10s linear infinite;
 }
 .carousel-item {
+    width: 100%;
     display: flex;
-    align-items: center;
-    margin: 0;
-    gap: 5px;
-    padding: 0 30px;
-    border: 1px solid var(--main-white);
-    border-radius:15px;
-    background: radial-gradient(rgba(244, 249, 255, 0.6), var(--main-white));
-    color: var(--dark-blue);
+    justify-content: center;
+    padding: 10px 0;
 }
 .niche-img {
-    width: 30px;
+    width: 70px;
 }
-@keyframes infi-scroll {
-    from {
-        transform: translateX(0);
+@keyframes scroll-logos {
+    0% {
+        transform: translateY(0);
     }
-    to {
-        transform: translateX(-50%);
+    100% {
+        transform: translateY(-50%);
     }
-} */
+}
 
 
 
@@ -344,12 +283,10 @@ body {
     font-size: 1.5vw;
 }
 .oes-bt-about {
-    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
-    box-shadow: 0px -5px 20px var(--trans-main-white) inset;
+    background: radial-gradient(rgba(1, 92, 255, 0.7), rgba(1, 92, 255, 0.9));
     padding: 10px 20px;
     border: 1px solid rgba(1, 92, 255, 1);
     border-radius: 8px;
-    backdrop-filter: blur(4px);
     color: var(--main-white);
     font-size: 18px;
     font-family: var(--sup-font);
@@ -370,7 +307,7 @@ body {
 }
 /* spiral 1 */
 .spiral-section1 {
-    animation: moveCircle 35s infinite linear;
+    animation: moveCircle 55s infinite linear;
     width: 130px;
     height: 130px;
 }
@@ -423,7 +360,7 @@ body {
 }
 .rotating-item1 img {
     width: 100px;
-    animation: counterRotate 35s infinite linear;
+    animation: counterRotate 55s infinite linear;
 }
 @keyframes counterRotate {
     0% {
@@ -432,13 +369,13 @@ body {
 }
 /* spiral 2 */
 .spiral-section2 {
-    animation: moveCircle 55s infinite linear;
+    animation: moveCircle 75s infinite linear;
     width: 130px;
     height: 130px;
 }
 .rotating-item2 img {
     width: 100px;
-    animation: counterRotate 55s infinite linear;
+    animation: counterRotate 75s infinite linear;
 }
 .logo-img10 {
     transform: translate(550px);
@@ -475,13 +412,13 @@ body {
 }
 /* spiral 3 */
 .spiral-section3 {
-    animation: moveCircle 75s infinite linear;
+    animation: moveCircle 95s infinite linear;
     width: 130px;
     height: 130px;
 }
 .rotating-item3 img {
     width: 100px;
-    animation: counterRotate 75s infinite linear;
+    animation: counterRotate 95s infinite linear;
 }
 .logo-img21 {
     transform: translate(700px);

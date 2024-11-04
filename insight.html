@@ -16,7 +16,7 @@
             <div class="nav-menu-content">
                 <ul class="menu-list" id="nav-bar">
                     <li><a href="./index.html" class="nav-item">Home</a></li>
-                    <li><a href="#beginning" class="nav-item highlight">Insight</a></li>
+                    <li><a href="#beginning" class="nav-item highlight">Insights</a></li>
                     <li><a href="./advisory.html" class="nav-item">Advisory</a></li>
                     <li><a href="#" class="nav-item">About</a></li>
                 </ul>
@@ -36,7 +36,7 @@
             <!-- landing section -->
             <div class="landing-section" id="beginning">
                 <h1 class="page-title">OPSFI</h1>
-                <h3 class="page-title-sub">Insight</h2>
+                <h3 class="page-title-sub">Insights</h2>
                 <h3 class="page-tagline">Your accounting & CFO Reporting solution</h2>
             </div>
 
@@ -74,32 +74,60 @@
             </div>
 
 
-            <!-- suit services section -->
+            <!-- Suite Services Section -->
             <div class="suite-services-section">
-                <div class="sss-text-container">
-                    <h2 class="sss-title">The OpsFi Services</h2>
-                    <p class="sss-par">We offer CFO Reporting with cash runway modeling and KPI analysis, Fiat Bookkeeping for reconciliations and cross-border transactions, and Crypto Bookkeeping for DeFi and crypto transactions.</p>
-                </div>
-                <div class="sss-card-container">
-                    <div class="sss-info-card">
-                        <div class="sss-card-title">CFO Reporting</div>
-                        <div class="card-point1"><p class="sss-card-par">Cash runway & scenario modelling</p></div>
-                        <div class="card-point2 middle-point"><p class="sss-card-par">Consolidated management accounts</p></div>
-                        <div class="card-point3"><p class="sss-card-par">Financial & non-financial KPI analysis</p></div>
-                    </div>
-                    <div class="sss-info-card">
-                        <div class="sss-card-title">Fiat Bookkeeping</div>
-                        <div class="card-point1"><p class="sss-card-par">Cross border / inter- company</p></div>
-                        <div class="card-point2 middle-point"><p class="sss-card-par">Loan accounts / consolidations</p></div>
-                        <div class="card-point3"><p class="sss-card-par">Bank, Accounts Receivable, Accounts Payable & Payroll reconciliations</p></div>
-                    </div>
-                    <div class="sss-info-card">
-                        <div class="sss-card-title">Crypto Bookkeeping</div>
-                        <div class="card-point1"><p class="sss-card-par">DeFi protocol interactions</p></div>
-                        <div class="card-point2 middle-point"><p class="sss-card-par">On-chain crypto transactions</p></div>
-                        <div class="card-point3"><p class="sss-card-par">CEX crypto transactions</p></div>
-                    </div>
-                </div>
+                <h2 class="sss-title">The OpsFi Insight</h2>
+                <h3 class="sss-tagline">Suite Services</h3>
+                
+                <ul class="stacking-cards-container">
+                    <!-- Card 1 -->
+                    <li class="stacking-card">
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h2 class="card-title">CFO Reporting</h2>
+                                <p>Cash runway & scenario modelling</p>
+                                <p>Consolidated management accounts</p>
+                                <p>Financial & non-financial KPI analysis</p>
+                                <span class="card-indicator">01 - 03</span>
+                            </div>
+                            <figure>
+                                <img src="./assets/cfo-reporting-img.jpeg" alt="CFO Reporting">
+                            </figure>
+                        </div>
+                    </li>
+
+                    <!-- Card 2 -->
+                    <li class="stacking-card">
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h2 class="card-title">Fiat Bookkeeping</h2>
+                                <p>Cross-border / inter-company transactions</p>
+                                <p>Loan accounts / consolidations</p>
+                                <p>Bank, AR, AP & Payroll reconciliations</p>
+                                <span class="card-indicator">02 - 03</span>
+                            </div>
+                            <figure>
+                                <img src="./assets/fiat-bookkeeping-img.jpeg" alt="Fiat Bookkeeping">
+                            </figure>
+                        </div>
+                    </li>
+
+                    <!-- Card 3 -->
+                    <li class="stacking-card">
+                        <div class="card-content">
+                            <div class="card-text">
+                                <h2 class="card-title">Crypto Bookkeeping</h2>
+                                <p>DeFi protocol interactions</p>
+                                <p>On-chain crypto transactions</p>
+                                <p>CEX crypto transactions</p>
+                                <span class="card-indicator">03 - 03</span>
+                            </div>
+                            <figure>
+                                <img src="./assets/crypto-bookeeping-img.jpeg" alt="Crypto Bookkeeping">
+                            </figure>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
         </div>
@@ -140,7 +168,6 @@
                     resetTextItems(); // Collapse other sections
                     this.classList.toggle("active"); // Expand the clicked section
                     showImage(index); // Show the corresponding image
-                    autoSlide = false; // Stop automatic slideshow when clicked
                 });
             });
 

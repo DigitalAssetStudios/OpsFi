@@ -45,7 +45,7 @@ body {
     font-family: var(--sup-font);
 }
 .nav-logo-content img{
-    max-width: 80px;
+    max-width: 120px;
     padding-left: 50px;
 }
 .menu-list {
@@ -62,9 +62,11 @@ body {
     font-size: 18px;
     color: var(--main-white);
     padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
 .active, .nav-item:hover {
     color: var(--accent-blue);
+    font-size: 23px;
 }
 .nav-contact-container {
     text-align: right;
@@ -242,43 +244,88 @@ body {
     height: 400vh;
     position: relative;
 }
+.sss-title, .sss-tagline {
+    text-align: center;
+    margin: 0;
+}
+.sss-title {
+    font-size: 3vw;
+    position: sticky;
+    top: 7vw;
+    margin-bottom: 5px;
+}
+.sss-tagline {
+    font-size: 2vw;
+    position: sticky;
+    top: 11vw;
+    color: gray;
+    margin-bottom: 30px;
+}
 .sss-card-container {
     position: sticky;
-    top: 0;
+    top: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 400vw;
+    width: 360vw;
     overflow: hidden;
+    gap: 20vw;
 }
 .side-card {
-    flex: 0 0 100vw;
-    height: 100vh;
+    /* flex: 0 0 100vw; */
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90vw;
+    max-width: 1300px;
 }
-.sss-card-title {
-    font-size: 2.5vw;
-    font-family: var(--main-font);
-    margin: 0 0 30px 0;
-    line-height: 1.3;
-}
-.sss-point-title {
-    margin: 0px;
+.sss-card-content {
+    background: var(--dark-blue);
+    color: var(--navy_color);
+    border-radius: 1rem;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden;
 }
 .sss-card-text {
-    width: 40%;
-    height: 441px;
-    background-color: var(--dark-blue);
-    padding: 20px;
-    border-radius: 20px 0px 0px 20px;
+    padding: 2vw;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8vw;
+}
+.sss-card-title {
+    font-size: 2vw;
+    color: var(--accent-blue);
+    margin: 0;
 }
 .sss-point-title {
     font-size: 1.2vw;
+    margin: 0;
+}
+.top-title {
+    margin-top: 30px;
+}
+.sss-card-par {
+    font-size: 0.8vw;
+    margin: 0px 0 35px 20px;
+}
+.card-indicator {
+    font-size: 0.6vw;
+    margin-top: auto;
+    color: gray;
+    font-family: var(--main-font);
+}
+.sss-card-content figure {
+    width: 50%;
+    margin: 0;
+    overflow: hidden;
 }
 .sss-card-img {
-    width: 480px;
-    border-radius: 0px 20px 20px 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }

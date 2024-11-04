@@ -1,11 +1,11 @@
 /* Importans and Variables */
 :root {
     --dark-blue: rgba(4, 14, 37, 1);
-    --trans-dark-blue: rgba(4, 14, 37, 0.25);
+    --trans-dark-blue: #040e2540;
     --main-blue: rgba(14, 44, 115, 1);
     --accent-blue: rgba(1, 92, 255, 1);
     --main-white: rgba(244, 249, 255, 1);
-    --trans-main-white: rgba(244, 249, 255, 0.25);
+    --trans-main-white: rgba(244, 249, 255, 0.251);
     --main-font: "Mokoto", "sans-serif";
     --def-font: "Lato", sans-serif;
     --sup-font: "Share Tech Mono", "monospace";
@@ -43,7 +43,7 @@ body {
     font-family: var(--sup-font);
 }
 .nav-logo-content img{
-    max-width: 80px;
+    max-width: 120px;
     padding-left: 50px;
 }
 .menu-list {
@@ -60,9 +60,11 @@ body {
     font-size: 18px;
     color: var(--main-white);
     padding: 10px;
+    transition: all 0.3s ease-in-out;
 }
 .highlight, .nav-item:hover {
     color: var(--accent-blue);
+    font-size: 23px;
 }
 .nav-contact-container {
     text-align: right;
@@ -140,7 +142,7 @@ body {
     padding: 40px 0;
 }
 .ofs-content-container {
-    width: 90%;
+    width: 100%;
     height: 90vh;
     background: var(--dark-blue);
     border-radius: 12px;
@@ -162,7 +164,7 @@ body {
     line-height: 1.5;
     color: lightgray;
     margin: 0 auto;
-    max-width: 700px;
+    max-width: 1000px;
 }
 .ofs-card-container {
     display: flex;
@@ -222,56 +224,85 @@ body {
 
 
 
-/* suite service style */
+/* Suite Services Style */
 .suite-services-section {
-    height: 100vh;
-    width: 100%;
+    height: 241vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 2vw 0;
 }
-.sss-text-container {
+.sss-title, .sss-tagline {
     text-align: center;
-    width: 80vw;
 }
 .sss-title {
-    font-family: var(--sup-font);
     font-size: 3vw;
-    margin: 0 0 10px 0;
+    position: sticky;
+    top: 7vw;
+    margin: 50px 0 0 0;
 }
-.sss-par {
-    font-size: 1.5vw;
-    margin: 0 0 100px 0;
+.sss-tagline {
+    font-size: 2vw;
+    position: sticky;
+    top: 11vw;
+    color: gray;
+    margin: 5px 0 50px 0;
 }
-.sss-card-container {
+.stacking-cards-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 10vw;
+    width: 100%;
     align-items: center;
+}
+.stacking-card {
+    position: sticky;
+    top: 15vw;
     width: 80vw;
-    gap: 20px;
+    max-width: 1400px; /* Limits card size for viewport compatibility */
 }
-.sss-info-card {
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px 200px;
-    width: 500px;
-    height: 300px;
-    border-left: 1px solid var(--main-white);
-    border-right: 1px solid var(--main-white);
-    text-align: center;
+.card-content {
+    background: var(--dark-blue);
+    color: var(--navy_color);
+    border-radius: 1rem;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+    display: flex;
+    overflow: hidden;
 }
-.sss-card-title {
-    font-family: var(--sup-font);
-    font-size: 3vw;
-    grid-column: span 3;
-    margin: 5px 0;
+.card-text {
+    padding: 2vw;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8vw;
 }
-.sss-card-par {
-    padding: 0 5px;
+.card-title {
+    font-size: 2vw;
+    color: var(--accent-blue);
+    margin: 0;
 }
-.middle-point {
-    border-left: 1px solid var(--main-white);
-    border-right: 1px solid var(--main-white);
+.card-text p {
+    font-size: 1.1vw;
+}
+.card-indicator {
+    font-size: 0.6vw;
+    margin-top: auto;
+    color: gray;
+    font-family: var(--main-font);
+}
+.card-content figure {
+    width: 50%;
+    margin: 0;
+    overflow: hidden;
+}
+.card-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
