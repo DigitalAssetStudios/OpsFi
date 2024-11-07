@@ -384,14 +384,28 @@ body {
 .contact-left button img {
     height: 55px;
 }
-.contact-right img {
-    width: 500px;
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-@media (max-width:800px) {
-    .contact-inputs {
-        width: 80vw;
-    }
-    .contact-right {
-        display: none;
-    }
+.opsfi-logo {
+    width: 500px;
+    margin: 0 0 25px 0;
+}
+.social-link-par {
+    font-size: 2vw;
+    margin: 0 0 25px 0;
+    color: var(--accent-blue);
+}
+/* .social-links-container {
+
+} */
+.social-link-img img {
+    width: 50px;
+    margin: 0 1vw;
+    transition: all 0.5s ease-in-out;
+}
+.social-link-img img:hover {
+    scale: 1.2;
 }
