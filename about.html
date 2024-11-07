@@ -108,7 +108,7 @@
 
 
         <!-- Contact Us Section -->
-        <div class="contact-us-section">
+        <div class="contact-us-section" id="contact-form">
             <div class="cus-form-container">
                 <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
                     <div class="contact-left-title">
@@ -120,7 +120,7 @@
                     <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
                     <input type="text" name="subject" placeholder="Subject" class="contact-inputs">
                     <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-                    <button type="submit">Sumbt <img src="./assets/arrow-right-short.svg" alt=""></button>
+                    <button type="submit">Submit<img src="./assets/arrow-right-short.svg" alt=""></button>
                 </form>
                 <div class="contact-right">
                     <img src="./assets/opsfi_white_logo.png" alt="OPSFI" class="opsfi-logo">
@@ -157,20 +157,20 @@
 
 // Adding a delay to loading pages:
         function delayedNavigation(event, url) {
-                event.preventDefault(); // Prevent immediate navigation
+            event.preventDefault(); // Prevent immediate navigation
 
-                // Add loading class to body
-                document.body.classList.add('loading-cursor');
+            // Add loading class to body
+            document.body.classList.add('loading-cursor');
 
-                setTimeout(function() {
-                    window.location.href = url; // Navigate after delay
-                }, 500); // 500 ms = 0.5 second
-            }
+            setTimeout(function() {
+                window.location.href = url; // Navigate after delay
+            }, 500); // 500 ms = 0.5 second
+        }
 
-            // Optional: Remove loading cursor if the navigation is interrupted (e.g., back navigation)
-            window.addEventListener('popstate', function() {
-                document.body.classList.remove('loading-cursor');
-            });
+        // Optional: Remove loading cursor if the navigation is interrupted (e.g., back navigation)
+        window.addEventListener('popstate', function() {
+            document.body.classList.remove('loading-cursor');
+        });
 
     </script>
 
