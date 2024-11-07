@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet/insight-style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/icon_clear.png">
     <title>OpsFi Insight</title>
 </head>
 <body>
@@ -15,10 +16,10 @@
             </div>
             <div class="nav-menu-content">
                 <ul class="menu-list" id="nav-bar">
-                    <li><a href="./index.html" class="nav-item">Home</a></li>
-                    <li><a href="#beginning" class="nav-item highlight">Insights</a></li>
-                    <li><a href="./advisory.html" class="nav-item">Advisory</a></li>
-                    <li><a href="#" class="nav-item">About</a></li>
+                    <li><a href="./index.html" class="nav-item" onclick="delayedNavigation(event, './index.html')">Home</a></li>
+                    <li><a href="#beginning" class="nav-item highlight" onclick="delayedNavigation(event, '#home')">Insights</a></li>
+                    <li><a href="./advisory.html" class="nav-item" onclick="delayedNavigation(event, './advisory.html')">Advisory</a></li>
+                    <li><a href="./about.html" class="nav-item" onclick="delayedNavigation(event, './about.html')">About</a></li>
                 </ul>
             </div>
             <div class="nav-contact-container">
@@ -185,6 +186,15 @@
 
             carousel(); // Start the carousel
         });
+
+
+    // Adding a delay to loading pages:
+        function delayedNavigation(event, url) {
+            event.preventDefault(); // Prevent immediate navigation
+            setTimeout(function() {
+                window.location.href = url; // Navigate after delay
+            }, 1000); // 1000 ms = 1 seconds
+        }
 
 
         </script>

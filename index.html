@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="./stylesheet/index-style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" type="image/x-icon" href="./assets/icon_clear.png">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
         <title>OpsFi</title>
@@ -20,10 +21,10 @@
             </div>
             <div class="nav-menu-content">
                 <ul class="menu-list" id="nav-bar">
-                    <li><a href="#home" class="nav-item active">Home</a></li>
-                    <li><a href="./insight.html" class="nav-item">Insights</a></li>
-                    <li><a href="./advisory.html" class="nav-item">Advisory</a></li>
-                    <li><a href="#" class="nav-item">About</a></li>
+                    <li><a href="#home" class="nav-item active" onclick="delayedNavigation(event, '#home')">Home</a></li>
+                    <li><a href="./insight.html" class="nav-item" onclick="delayedNavigation(event, './insight.html')">Insights</a></li>
+                    <li><a href="./advisory.html" class="nav-item" onclick="delayedNavigation(event, './advisory.html')">Advisory</a></li>
+                    <li><a href="./about.html" class="nav-item" onclick="delayedNavigation(event, './about.html')">About</a></li>
                 </ul>
             </div>
             <div class="nav-contact-container">
@@ -245,6 +246,15 @@
             particlesJS.load('particles-js', './particlesjs-config.json', function() {
                 console.log('callback - particles-js config loaded');
             });
+
+
+    // Adding a delay to loading pages:
+            function delayedNavigation(event, url) {
+                event.preventDefault(); // Prevent immediate navigation
+                setTimeout(function() {
+                    window.location.href = url; // Navigate after delay
+                }, 1000); // 1000 ms = 1 seconds
+            }
 
         </script>
     </body>
