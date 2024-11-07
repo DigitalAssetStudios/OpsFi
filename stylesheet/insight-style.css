@@ -28,6 +28,9 @@ body {
     font-family: var(--def-font);
     color: var(--main-white);
 }
+.loading-cursor {
+    cursor: wait;
+}
 
 
 

@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./stylesheet/about-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="./assets/icon_clear.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <title>About OpsFi</title>
 </head>
 <body>
@@ -148,11 +152,20 @@
 
 // Adding a delay to loading pages:
         function delayedNavigation(event, url) {
-            event.preventDefault(); // Prevent immediate navigation
-            setTimeout(function() {
-                window.location.href = url; // Navigate after delay
-            }, 1000); // 1000 ms = 1 seconds
-        }
+                event.preventDefault(); // Prevent immediate navigation
+
+                // Add loading class to body
+                document.body.classList.add('loading-cursor');
+
+                setTimeout(function() {
+                    window.location.href = url; // Navigate after delay
+                }, 1000); // 1000 ms = 1 second
+            }
+
+            // Optional: Remove loading cursor if the navigation is interrupted (e.g., back navigation)
+            window.addEventListener('popstate', function() {
+                document.body.classList.remove('loading-cursor');
+            });
 
     </script>
 

@@ -30,6 +30,9 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.loading-cursor {
+    cursor: wait;
+}
 
 
 
