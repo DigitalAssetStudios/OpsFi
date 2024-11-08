@@ -41,7 +41,7 @@
         <!-- landing section -->
         <div class="landing-section" id="beginning">
             <div class="ls-text-container">
-                <h6 class="ls-intro-title">About OpsFi</h6>
+                <!-- <h6 class="ls-intro-title">About OpsFi</h6> -->
                 <h1 class="ls-page-title">The Digital Asset Finance Solutions</h1>
                 <h3 class="ls-page-par">Helping founders & teams build profitably & sustainably in web3</h2>
             </div>
@@ -49,12 +49,18 @@
 
 
         <!-- About us section -->
-        <div class="about-us-section">
+        <!-- <div class="about-us-section">
             <div class="aus-text-container">
                 <h4 class="aus-title">About OpsFi</h4>
-                <p class="aus-par">Operations.Finance was founded in early 2022 as an offshoot of a leading Private Investment & Lending Fund Manager based in the UK and US. Our team is comprised of experts with over 25 years of combined experience, honed at top-tier firms like McKinsey & Company, Deloitte, and KPMG. Our mission centers around the power of Web3 to foster financial inclusion and improve quality of life worldwide. We support visionary founders to build financially sustainable enterprises in this space, working to establish Web3 as an indispensable part of the financial ecosystem. Drawing from our extensive expertise in high-growth SME development, investment fund management, and fintech, we are committed to enabling the growth and viability of Web3.</p>
+                <p class="aus-par">Founded in 2022, Operations.Finance brings 25+ years of expertise from top firms to support Web3’s role in financial inclusion. We empower founders to build sustainable enterprises, establishing Web3 as essential in the financial ecosystem.</p>
             </div>
-        </div>
+        </div> -->
+        <div class="highlight-section">
+            <h4 class="aus-title">About OpsFi</h4>
+            <p class="highlight-paragraph">
+              <span>Founded</span> <span>in</span> <span>2022,</span> <span>Operations.Finance</span> <span>brings</span> <span>25+</span> <span>years</span> <span>of</span> <span>expertise</span> <span>from</span> <span>top</span> <span>firms</span> <span>to</span> <span>support</span> <span>Web3’s</span> <span>role</span> <span>in</span> <span>financial</span> <span>inclusion.</span> <span>We</span> <span>empower</span> <span>founders</span> <span>to</span> <span>build</span> <span>sustainable</span> <span>enterprises,</span> <span>establishing</span> <span>Web3</span> <span>as</span> <span>essential</span> <span>in</span> <span>the</span> <span>financial</span> <span>ecosystem.</span>
+            </p>
+          </div>
 
 
         <!-- CFO reporting section -->
@@ -171,6 +177,25 @@
         window.addEventListener('popstate', function() {
             document.body.classList.remove('loading-cursor');
         });
+
+
+// Scroll text reveal script:
+        document.addEventListener("scroll", () => {
+            const words = document.querySelectorAll(".highlight-paragraph span");
+            const section = document.querySelector(".highlight-section");
+            const sectionTop = section.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            words.forEach((word, index) => {
+                const delay = index * 100; // Add delay based on word index for gradual reveal
+                if (sectionTop < windowHeight) {
+                setTimeout(() => {
+                    word.classList.add("highlighted");
+                }, delay);
+                }
+            });
+        });
+
 
     </script>
 

@@ -253,6 +253,7 @@ body {
 }
 .sss-title {
     font-size: 3vw;
+    font-family: var(--sup-font);
     position: sticky;
     top: 7vw;
     margin-bottom: 5px;
