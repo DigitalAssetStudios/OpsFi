@@ -111,7 +111,7 @@ body {
 
 /* Landing Style */
 .landing-section {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -138,42 +138,29 @@ body {
 
 
 /* About Us Style */
-/* .about-us-section {
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: var(--dark-blue);
-}
-.aus-text-container {
-    text-align: center;
-    padding: 10vh 20vw;
-}
-.aus-title {
-    font-size: 3vw;
-    margin: 0;
-}
-.aus-par {
-    font-size: 1vw;
-    line-height: 1.2em;
-} */
 .highlight-section {
     position: relative;
-    padding: 100px 20px; /* Adjust padding as needed */
-    text-align: center;
-  }
-  
-  .highlight-paragraph span {
-    font-size: 3vw;
-    color: grey; /* Initial greyed-out color */
+    height: 150vh;
+    display: flex;
+    gap: 5vw;
+    padding: 50px;
+}
+.aus-title {
+    font-family: var(--sup-font);
+    margin: 0 0 0 5vw;
+}
+.highlight-paragraph {
+    margin: 0 20vw 0 0;
+}
+.highlight-paragraph span {
+    font-size: 5vw;
+    color: var(--main-blue); /* Initial greyed-out color */
     transition: color 0.3s ease; /* Smooth color transition */
-  }
-  
-  .highlight-paragraph .highlighted {
+    padding: 5px;
+}
+.highlight-paragraph .highlighted {
     color: var(--main-white); /* Final color when highlighted */
-  }
-  
+}
 
 
 
@@ -401,7 +388,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.opsfi-logo {
+.opsf-footer-logo {
     width: 500px;
     margin: 0 0 25px 0;
 }
