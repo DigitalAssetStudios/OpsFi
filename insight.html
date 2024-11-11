@@ -74,22 +74,36 @@
                     </div>
                     <div class="ofs-card-container">
                         <div class="ofs-images-area">
-                            <img src="./assets/financial-empowerment-img.webp" alt="" class="slide-show-img">
-                            <img src="./assets/building-partnership-img.jpeg" alt="" class="slide-show-img">
-                            <img src="./assets/grown-stages-img.jpeg" alt="" class="slide-show-img">
+                            <img src="./assets/financial-empowerment-img.png" alt="" class="slide-show-img">
+                            <img src="./assets/building-partnership-img.png" alt="" class="slide-show-img">
+                            <img src="./assets/tailored-strategies-img.png" alt="" class="slide-show-img">
                         </div>
                         <div class="ofs-text-area">
                             <div class="text-item">
                                 <h3 class="ofs-section-title">Financial & Operational Empowerment</h3>
-                                <div class="ofs-title-underline"></div>
+                                <div class="ofs-loader-container">
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
                                 <p class="ofs-section-par">Empowering web3 teams with in-depth financial and operational visibility, robust KPI analysis and insights to extend cash runway for sustainable growth</p>
                             </div>
                             <div class="text-item">
                                 <h3 class="ofs-section-title">Building a Solid Partnership</h3>
+                                <div class="ofs-loader-container">
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
                                 <p class="ofs-section-par">Offering dynamic control over cash flow, improving investor trust, reducing perceived risk and establishing a highly effective finance function</p>
                             </div>
                             <div class="text-item">
                                 <h3 class="ofs-section-title">Tailored Strategies for Growth Stages</h3>
+                                <div class="ofs-loader-container">
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                </div>
                                 <p class="ofs-section-par">Tailored support for web3 startups at different stages: focus on MVP/Alpha in the startup phase, product development for Pre-seed & Seed, and accelerate market penetration for Series A & B</p>
                             </div>
                         </div>
@@ -188,57 +202,62 @@
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
         <script>
 
-    // particles script:
+// particles script:
             particlesJS.load('particles-js', './particlesjs-config.json', function() {
                 console.log('callback - particles-js config loaded');
             });
 
 
-    // Simple toggle script for clicked and automatic slide for text and images
+// Simple toggle script for clicked and automatic slide for text and images
             document.addEventListener("DOMContentLoaded", function () {
-            // Get all the text-item elements and images
-            const textItems = document.querySelectorAll(".text-item");
-            const images = document.querySelectorAll(".slide-show-img");
-            let myIndex = 0;
-            let autoSlide = true; // This will control the automatic slideshow
+                // Get all the text-item elements, images, and loader containers
+                const textItems = document.querySelectorAll(".text-item");
+                const images = document.querySelectorAll(".slide-show-img");
+                const loaderContainers = document.querySelectorAll(".ofs-loader-container");
+                let myIndex = 0;
+                let autoSlide = true; // Controls the automatic slideshow
 
-            // Function to show image based on index
-            function showImage(index) {
-                images.forEach(img => img.style.display = "none"); // Hide all images
-                images[index].style.display = "block"; // Show the current image
-            }
+                // Function to show image based on index
+                function showImage(index) {
+                    images.forEach(img => img.style.display = "none"); // Hide all images
+                    images[index].style.display = "block"; // Show the current image
+                }
 
-            // Function to reset active text
-            function resetTextItems() {
-                textItems.forEach(item => item.classList.remove("active"));
-            }
+                // Function to reset active text and hide loader containers
+                function resetTextItems() {
+                    textItems.forEach(item => item.classList.remove("active"));
+                    loaderContainers.forEach(loader => loader.style.display = "none"); // Hide all loaders
+                }
 
-            // Add click event listener to each text-item
-            textItems.forEach((item, index) => {
-                item.addEventListener("click", function () {
-                    resetTextItems(); // Collapse other sections
-                    this.classList.toggle("active"); // Expand the clicked section
-                    showImage(index); // Show the corresponding image
+                // Add click event listener to each text-item
+                textItems.forEach((item, index) => {
+                    item.addEventListener("click", function () {
+                        resetTextItems(); // Collapse other sections and hide loaders
+                        this.classList.toggle("active"); // Expand the clicked section
+                        loaderContainers[index].style.display = "block"; // Show the loader for the active text-item
+                        showImage(index); // Show the corresponding image
+                    });
                 });
+
+                // Automatic slideshow function
+                function carousel() {
+                    if (autoSlide) { // Only proceed if autoSlide is true
+                        resetTextItems(); // Collapse other sections and hide loaders
+                        textItems[myIndex].classList.add("active"); // Set active for current text
+                        loaderContainers[myIndex].style.display = "block"; // Show loader for current text-item
+                        showImage(myIndex); // Show corresponding image
+                        myIndex++; // Move to the next image/text
+                        if (myIndex >= images.length) { myIndex = 0; } // Reset index if it exceeds the number of images
+                    }
+                    setTimeout(carousel, 7000); // Change every 7 seconds
+                }
+
+                carousel(); // Start the carousel
             });
 
-            // Automatic slideshow function
-            function carousel() {
-                if (autoSlide) { // Only proceed if autoSlide is true
-                    resetTextItems(); // Remove active class from text items
-                    textItems[myIndex].classList.add("active"); // Set active for current text
-                    showImage(myIndex); // Show corresponding image
-                    myIndex++; // Move to the next image/text
-                    if (myIndex >= images.length) { myIndex = 0; } // Reset index if it exceeds the number of images
-                }
-                setTimeout(carousel, 7000); // Change every 7 seconds
-            }
-
-            carousel(); // Start the carousel
-        });
 
 
-    // Adding a delay to loading pages:
+// Adding a delay to loading pages:
             function delayedNavigation(event, url) {
                 event.preventDefault(); // Prevent immediate navigation
 
@@ -256,7 +275,7 @@
             });
 
 
-    // mobile burger toggle script:
+// mobile burger toggle script:
             function toggleMobileMenu() {
                 const mobileMenu = document.querySelector('.mobile-menu');
                 mobileMenu.classList.toggle('open');

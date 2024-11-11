@@ -5,6 +5,7 @@
     --main-blue: rgba(14, 44, 115, 1);
     --accent-blue: rgba(1, 92, 255, 1);
     --main-white: rgba(244, 249, 255, 1);
+    --card-blue-colour: rgb(170, 206, 216);
     --trans-main-white: rgba(244, 249, 255, 0.25);
     --main-font: "Mokoto", "sans-serif";
     --def-font: "Lato", sans-serif;
@@ -280,77 +281,62 @@ body {
     align-items: center;
     gap: 80px;
 }
-.ofs-card {
-    position: relative;
+.flip-card {
+    background-color: var(--card-blue-colour);
     width: 300px;
     height: 400px;
+    perspective: 1000px;
     overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    transition: scale 1s ease;
-    text-align: center;
+    border-radius: 25px;
 }
-.ofs-card:hover {
-    scale: 1.1;
-}
-.ofs-card:hover .ofs-card-img {
-    transform: translateY(-20px);
-}
-.ofs-card:hover .ofs-card-title {
-    transform: translateY(-50px);
-}
-.ofs-card:hover .ofs-card-content {
-    transform: translateY(0);
-}
-.ofs-card-img {
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+.flip-card-inner {
+    position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.3s ease;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
-.ofs-card-bg1 {
-    background-image: url(../assets/symbol1-img.jpeg);
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
 }
-.ofs-card-bg2 {
-    background-image: url(../assets/symbol2-img.jpeg);
-}
-.ofs-card-bg3 {
-    background-image: url(../assets/symbol3-img.jpeg);
-}
-.ofs-card-title {
+.flip-card-front, .flip-card-back {
     position: absolute;
-    bottom: 45px;
-    color: #fff;
-    background: var(--dark-blue);
-    padding: 5px;
-    font-size: 1.5em;
-    z-index: 1;
-    transition: transform 0.3s ease;
-}
-.ofs-card-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    background: var(--dark-blue);
-    color: #fff;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
-.ofs-card-par {
-    font-size: 1em;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.flip-card-front {
+    background-color: var(--card-blue-colour);
+    color: var(--main-white);
 }
-.ofs-card:hover .ofs-card-par {
-    opacity: 1;
+.flip-card-front img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
 }
-
+.flip-card-title {
+    margin-top: 10px;
+}
+.flip-card-back {
+    background-color: var(--card-blue-colour);
+    color: var(--dark-blue);
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+.flip-card-par {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--dark-blue);
+}
 
 
 /* Suite Service Style */
