@@ -1,256 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheet/advisory-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="./assets/icon_clear.png">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <title>OpsFi Advisory</title>
-</head>
-<body>
-    
-    <!-- Navigation bar -->
-    <nav class="navigation-bar-content">
-        <div class="nav-logo-content">
-            <a href="./index.html"><img src="./assets/opsfi_white_logo.png" alt="OPSFI"></a>
-        </div>
-        <div class="nav-menu-content">
-            <ul class="menu-list" id="nav-bar">
-                <li><a href="./index.html" class="nav-item" onclick="delayedNavigation(event, './index.html')">Home</a></li>
-                <li><a href="./insight.html" class="nav-item" onclick="delayedNavigation(event, './insight.html')">Insights</a></li>
-                <li><a href="#beginning" class="nav-item active" onclick="delayedNavigation(event, '#home')">Advisory</a></li>
-                <li><a href="./about.html" class="nav-item" onclick="delayedNavigation(event, './about.html')">About</a></li>
-            </ul>
-        </div>
-        <div class="nav-contact-container">
-            <a href="mailto:projects@operations.finance" class="nav-contact-bt">Let's Chat</a>
-        </div>
-    </nav>
-
-
-    <!-- main body content -->
-    <div class="main-body-content">
-        <!-- partciles section -->
-        <div id="particles-js"></div>
-
-
-        <!-- landing section -->
-        <div class="landing-section" id="beginning">
-            <h1 class="page-title">OPSFI</h1>
-            <h3 class="page-title-sub">Advisory</h2>
-            <h3 class="page-tagline">Financial, Commercial & Token Advisory</h2>
-        </div>
-
-
-        <!-- Our Focus section -->
-        <div class="our-focus-section">
-            <div class="ofs-text-container">
-                <h2 class="ofs-title">Our Focus</h2>
-                <p class="ofs-par">This approach helps web3 teams build sustainable projects with strong business models, guiding them from concept to Series A/B funding while fostering trust, growth, and partnerships through advisory services.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylesheet/advisory-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" type="image/x-icon" href="./assets/icon_clear.png">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <title>OpsFi Advisory</title>
+    </head>
+    <body>
+        
+        <!-- Navigation bar -->
+        <nav class="navigation-bar-content">
+            <div class="nav-logo-content">
+                <a href="./index.html"><img src="./assets/opsfi_white_logo.png" alt="OPSFI"></a>
             </div>
-            <div class="ofs-card-container">
-                <div class="ofs-card">
-                    <div class="ofs-card-img ofs-card-bg1"></div>
-                    <h3 class="ofs-card-title">Strategic Business Foundations</h3>
-                    <div class="ofs-card-content">
-                        <p class="ofs-card-par">Empowering web3 teams to ensure their projects are both profitable and sustainable, focusing on robust business models for enduring success in the complex web3 ecosystem</p>
-                    </div>
-                </div>
-                <div class="ofs-card">
-                    <div class="ofs-card-img ofs-card-bg2"></div>
-                    <h3 class="ofs-card-title">Development Lifecycle & Fundraising</h3>
-                    <div class="ofs-card-content">
-                        <p class="ofs-card-par">Outlines the progression from concept to Series A & B, emphasising solving problems, product development, and strategic fundraising to scale effectively and demonstrate market fit</p>
-                    </div>
-                </div>
-                <div class="ofs-card">
-                    <div class="ofs-card-img ofs-card-bg3"></div>
-                    <h3 class="ofs-card-title">Building Trust and Sustainable Growth</h3>
-                    <div class="ofs-card-content">
-                        <p class="ofs-card-par">Establishing trust in the community and avoiding unsustainable practices, with web3 advisory services guiding projects towards sustainable growth and strong partnerships</p>
-                    </div>
-                </div>
+            <div class="nav-menu-content">
+                <ul class="menu-list" id="nav-bar">
+                    <li><a href="./index.html" class="nav-item" onclick="delayedNavigation(event, './index.html')">Home</a></li>
+                    <li><a href="./insight.html" class="nav-item" onclick="delayedNavigation(event, './insight.html')">Insights</a></li>
+                    <li><a href="#beginning" class="nav-item active" onclick="delayedNavigation(event, '#home')">Advisory</a></li>
+                    <li><a href="./about.html" class="nav-item" onclick="delayedNavigation(event, './about.html')">About</a></li>
+                </ul>
             </div>
-        </div>
+            <div class="nav-contact-container">
+                <a href="mailto:projects@operations.finance" class="nav-contact-bt">Let's Chat</a>
+            </div>
+        </nav>
+        <!-- mobile navigation bar -->
+        <nav class="navigation-bar-content mobile-nav-bar-content">
+            <div class="mobile-nav-logo">
+                <a href="./index.html"><img src="./assets/opsfi_white_logo.png" alt="OPSFI"></a>
+            </div>
+            <div class="mobile-burger-toggle" onclick="toggleMobileMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="mobile-menu-content mobile-menu" id="mobile-nav-bar">
+                <ul class="menu-list">
+                    <li><a href="./index.html" class="nav-item" onclick="delayedNavigation(event, './index.html')">Home</a></li>
+                    <li><a href="./insight.html" class="nav-item" onclick="delayedNavigation(event, './insight.html')">Insights</a></li>
+                    <li><a href="#beginning" class="nav-item active" onclick="delayedNavigation(event, '#home')">Advisory</a></li>
+                    <li><a href="./about.html" class="nav-item" onclick="delayedNavigation(event, './about.html')">About</a></li>
+                </ul>
+            </div>
+        </nav>
 
 
-        <!-- Suite Services section -->
-        <div class="suite-services-section">
-            <h2 class="sss-title">The OpsFi Advisory</h2>
-            <h3 class="sss-tagline">Suite Services</h3>
+        <!-- main body content -->
+        <div class="main-body-content">
+            <!-- partciles section -->
+            <div id="particles-js"></div>
 
-            <div class="sss-card-container">
-                <!-- Card 1 -->
-                <div class="side-card">
-                    <div class="sss-card-content">
-                        <div class="sss-card-text">
-                            <h2 class="sss-card-title">Business Modelling</h2>
-                            <h4 class="sss-point-title top-title">Monetization Strategies</h4>
-                            <p class="sss-card-par">Pre-revenue organisations survive on funding. Monetising effectively at the right time to ensure self-sustainability, reducing friction and time burn of constant fundraising cycles</p>
-                            <h4 class="sss-point-title">Financial Modelling</h4>
-                            <p class="sss-card-par">Intuitive and logical financial modelling with well constructed assumptions is an extremely underrated advantage for any project or business</p>
-                            <h4 class="sss-point-title">Valuations</h4>
-                            <p class="sss-card-par">Valuations are subjective, especially for early-stage or niche industry segments. We use our experience and knowledge to customize and create reliable valuations</p>
-                            <span class="card-indicator">01 - 04</span>
-                        </div>
-                        <figure>
-                            <img src="./assets/business-model-img.jpeg" alt="" class="sss-card-img">
-                        </figure>
-                    </div>
+
+            <!-- landing section -->
+            <div class="landing-section" id="beginning">
+                <h1 class="page-title">OPSFI</h1>
+                <h3 class="page-title-sub">Advisory</h2>
+                <h3 class="page-tagline">Financial, Commercial & Token Advisory</h2>
+            </div>
+
+
+            <!-- Our Focus section -->
+            <div class="our-focus-section">
+                <div class="ofs-text-container">
+                    <h2 class="ofs-title">Our Focus</h2>
+                    <p class="ofs-par">This approach helps web3 teams build sustainable projects with strong business models, guiding them from concept to Series A/B funding while fostering trust, growth, and partnerships through advisory services.</p>
                 </div>
-                <!-- Card 2 -->
-                <div class="side-card">
-                    <div class="sss-card-content">
-                        <div class="sss-card-text">
-                            <h3 class="sss-card-title">Tokenomics</h3>
-                            <h4 class="sss-point-title">Token Architecture & Design</h4>
-                            <p class="sss-card-par">We design dynamic value accrual token economics that are tightly aligned with the project’s core value propositions. This reduces the unsustainable speculation and “ponzinomics” inherent in many tokens</p>
-                            <h4 class="sss-point-title">Token Readiness & Launches</h4>
-                            <p class="sss-card-par">Launching a project can be daunting, with significant stakes on the line. Our established partnerships and extensive experience transform high-risk into high-impact success</p>
-                            <h4 class="sss-point-title">Tokenomics Modelling & Audits</h4>
-                            <p class="sss-card-par">We conduct a deep dive analysis of your tokenomics structure, providing a clear report with actionable recommendations</p>
-                            <span class="card-indicator">02 - 04</span>
+                <div class="ofs-card-container">
+                    <div class="ofs-card">
+                        <div class="ofs-card-img ofs-card-bg1"></div>
+                        <h3 class="ofs-card-title">Strategic Business Foundations</h3>
+                        <div class="ofs-card-content">
+                            <p class="ofs-card-par">Empowering web3 teams to ensure their projects are both profitable and sustainable, focusing on robust business models for enduring success in the complex web3 ecosystem</p>
                         </div>
-                        <figure>
-                            <img src="./assets/token-img.jpeg" alt="" class="sss-card-img">
-                        </figure>
                     </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="side-card">
-                    <div class="sss-card-content">
-                        <div class="sss-card-text">
-                            <h3 class="sss-card-title">Project Readiness</h3>
-                            <h4 class="sss-point-title">Financial Sustainability Review</h4>
-                            <p class="sss-card-par">We conduct a comprehensive financial health check, ensuring long-term viability and setting up efficient treasury management. This positions you for sustainable success</p>
-                            <h4 class="sss-point-title">Project Material Review</h4>
-                            <p class="sss-card-par">We rigorously assess your project materials, ensuring a polished and compelling presentation to potential investors and partners</p>
-                            <h4 class="sss-point-title">PMF & GTM Strategy</h4>
-                            <p class="sss-card-par">We analyze your product-market fit and craft a winning go-to-market strategy to maximize your impact and user base</p>
-                            <span class="card-indicator">03 - 04</span>
+                    <div class="ofs-card">
+                        <div class="ofs-card-img ofs-card-bg2"></div>
+                        <h3 class="ofs-card-title">Development Lifecycle & Fundraising</h3>
+                        <div class="ofs-card-content">
+                            <p class="ofs-card-par">Outlines the progression from concept to Series A & B, emphasising solving problems, product development, and strategic fundraising to scale effectively and demonstrate market fit</p>
                         </div>
-                        <figure>
-                            <img src="./assets/project-ready-img.jpeg" alt="" class="sss-card-img">
-                        </figure>
                     </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="side-card">
-                    <div class="sss-card-content">
-                        <div class="sss-card-text">
-                            <h3 class="sss-card-title">Specialized Deal Structuring</h3>
-                            <h4 class="sss-point-title">Structured Funding Deals</h4>
-                            <p class="sss-card-par">We design custom structured funding  solutions to meet your unique financing needs, giving you greater flexibility and control </p>
-                            <h4 class="sss-point-title">JV’s & Strategic Partnerships</h4>
-                            <p class="sss-card-par">We help you structure and negotiate successful joint ventures and strategic partnerships, accelerating your growth and market reach</p>
-                            <h4 class="sss-point-title">Mergers & Acquisitions</h4>
-                            <p class="sss-card-par">Our expertise guides you through mergers and acquisitions, maximizing value and achieving your strategic goals</p>
-                            <span class="card-indicator">04 - 04</span>
+                    <div class="ofs-card">
+                        <div class="ofs-card-img ofs-card-bg3"></div>
+                        <h3 class="ofs-card-title">Building Trust and Sustainable Growth</h3>
+                        <div class="ofs-card-content">
+                            <p class="ofs-card-par">Establishing trust in the community and avoiding unsustainable practices, with web3 advisory services guiding projects towards sustainable growth and strong partnerships</p>
                         </div>
-                        <figure>
-                            <img src="./assets/deal-structuring.jpeg" alt="" class="sss-card-img">
-                        </figure>
                     </div>
                 </div>
             </div>
-        </div>
 
 
-        <!-- Contact Us Section -->
-        <div class="contact-us-section" id="contact-form">
-            <div class="cus-form-container">
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-                    <div class="contact-left-title">
-                        <h2>Get In Touch</h2>
-                        <hr>
+            <!-- Suite Services section -->
+            <div class="suite-services-section">
+                <h2 class="sss-title">The OpsFi Advisory</h2>
+                <h3 class="sss-tagline">Suite Services</h3>
+
+                <div class="sss-card-container">
+                    <!-- Card 1 -->
+                    <div class="side-card">
+                        <div class="sss-card-content">
+                            <div class="sss-card-text">
+                                <h2 class="sss-card-title">Business Modelling</h2>
+                                <h4 class="sss-point-title top-title">Monetization Strategies</h4>
+                                <p class="sss-card-par">Pre-revenue organisations survive on funding. Monetising effectively at the right time to ensure self-sustainability, reducing friction and time burn of constant fundraising cycles</p>
+                                <h4 class="sss-point-title">Financial Modelling</h4>
+                                <p class="sss-card-par">Intuitive and logical financial modelling with well constructed assumptions is an extremely underrated advantage for any project or business</p>
+                                <h4 class="sss-point-title">Valuations</h4>
+                                <p class="sss-card-par">Valuations are subjective, especially for early-stage or niche industry segments. We use our experience and knowledge to customize and create reliable valuations</p>
+                                <span class="card-indicator">01 - 04</span>
+                            </div>
+                            <figure>
+                                <img src="./assets/business-model-img.jpeg" alt="" class="sss-card-img">
+                            </figure>
+                        </div>
                     </div>
-                    <input type="hidden" name="access_key" value="4c29b146-a105-42ad-902f-e9647ff358f1">
-                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-                    <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
-                    <input type="text" name="subject" placeholder="Subject" class="contact-inputs">
-                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-                    <button type="submit">Submit<img src="./assets/arrow-right-short.svg" alt=""></button>
-                </form>
-                <div class="contact-right">
-                    <img src="./assets/opsfi_white_logo.png" alt="OPSFI" class="opsfi-logo">
-                    <h6 class="social-link-par">Follow Our Community</h6>
-                    <div class="social-links-container">
-                        <a class="social-link-img" href="https://x.com/opsfiweb3" target="_blank"><img src="./assets/social-Twitter.png" alt="Twitter"></a>
-                        <a class="social-link-img" href="https://www.linkedin.com/company/opsfi/" target="_blank"><img src="./assets/social-LinkedIn.png" alt="LinkedIn"></a>
+                    <!-- Card 2 -->
+                    <div class="side-card">
+                        <div class="sss-card-content">
+                            <div class="sss-card-text">
+                                <h3 class="sss-card-title">Tokenomics</h3>
+                                <h4 class="sss-point-title">Token Architecture & Design</h4>
+                                <p class="sss-card-par">We design dynamic value accrual token economics that are tightly aligned with the project’s core value propositions. This reduces the unsustainable speculation and “ponzinomics” inherent in many tokens</p>
+                                <h4 class="sss-point-title">Token Readiness & Launches</h4>
+                                <p class="sss-card-par">Launching a project can be daunting, with significant stakes on the line. Our established partnerships and extensive experience transform high-risk into high-impact success</p>
+                                <h4 class="sss-point-title">Tokenomics Modelling & Audits</h4>
+                                <p class="sss-card-par">We conduct a deep dive analysis of your tokenomics structure, providing a clear report with actionable recommendations</p>
+                                <span class="card-indicator">02 - 04</span>
+                            </div>
+                            <figure>
+                                <img src="./assets/token-img.jpeg" alt="" class="sss-card-img">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="side-card">
+                        <div class="sss-card-content">
+                            <div class="sss-card-text">
+                                <h3 class="sss-card-title">Project Readiness</h3>
+                                <h4 class="sss-point-title">Financial Sustainability Review</h4>
+                                <p class="sss-card-par">We conduct a comprehensive financial health check, ensuring long-term viability and setting up efficient treasury management. This positions you for sustainable success</p>
+                                <h4 class="sss-point-title">Project Material Review</h4>
+                                <p class="sss-card-par">We rigorously assess your project materials, ensuring a polished and compelling presentation to potential investors and partners</p>
+                                <h4 class="sss-point-title">PMF & GTM Strategy</h4>
+                                <p class="sss-card-par">We analyze your product-market fit and craft a winning go-to-market strategy to maximize your impact and user base</p>
+                                <span class="card-indicator">03 - 04</span>
+                            </div>
+                            <figure>
+                                <img src="./assets/project-ready-img.jpeg" alt="" class="sss-card-img">
+                            </figure>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="side-card">
+                        <div class="sss-card-content">
+                            <div class="sss-card-text">
+                                <h3 class="sss-card-title">Specialized Deal Structuring</h3>
+                                <h4 class="sss-point-title">Structured Funding Deals</h4>
+                                <p class="sss-card-par">We design custom structured funding  solutions to meet your unique financing needs, giving you greater flexibility and control </p>
+                                <h4 class="sss-point-title">JV’s & Strategic Partnerships</h4>
+                                <p class="sss-card-par">We help you structure and negotiate successful joint ventures and strategic partnerships, accelerating your growth and market reach</p>
+                                <h4 class="sss-point-title">Mergers & Acquisitions</h4>
+                                <p class="sss-card-par">Our expertise guides you through mergers and acquisitions, maximizing value and achieving your strategic goals</p>
+                                <span class="card-indicator">04 - 04</span>
+                            </div>
+                            <figure>
+                                <img src="./assets/deal-structuring.jpeg" alt="" class="sss-card-img">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Contact Us Section -->
+            <div class="contact-us-section" id="contact-form">
+                <div class="cus-form-container">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                        <div class="contact-left-title">
+                            <h2>Get In Touch</h2>
+                            <hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="4c29b146-a105-42ad-902f-e9647ff358f1">
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                        <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+                        <input type="text" name="subject" placeholder="Subject" class="contact-inputs">
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit<img src="./assets/arrow-right-short.svg" alt=""></button>
+                    </form>
+                    <div class="contact-right">
+                        <img src="./assets/opsfi_white_logo.png" alt="OPSFI" class="opsfi-logo">
+                        <h6 class="social-link-par">Follow Our Community</h6>
+                        <div class="social-links-container">
+                            <a class="social-link-img" href="https://x.com/opsfiweb3" target="_blank"><img src="./assets/social-Twitter.png" alt="Twitter"></a>
+                            <a class="social-link-img" href="https://www.linkedin.com/company/opsfi/" target="_blank"><img src="./assets/social-LinkedIn.png" alt="LinkedIn"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
-    <!-- Script for interactive background -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
+        <!-- Script for interactive background -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
 
-// particles script:
-        particlesJS.load('particles-js', './particlesjs-config.json', function() {
-            console.log('callback - particles-js config loaded');
-        });
-
-
-
-// Horizontal scroll scritp for suite services:
-        // Select the suite services section and container
-        const suiteServicesSection = document.querySelector('.suite-services-section');
-        const sssCardContainer = document.querySelector('.sss-card-container');
-
-        // Get the section’s start position and height
-        const startScroll = suiteServicesSection.offsetTop;
-        const sectionHeight = suiteServicesSection.offsetHeight;
-
-        // Calculate the maximum horizontal scroll within the container
-        const maxHorizontalScroll = sssCardContainer.scrollWidth - window.innerWidth;
-
-        window.addEventListener('scroll', () => {
-            // Calculate current vertical scroll position
-            const scrollPosition = window.scrollY;
-
-            // Check if the user is within the suite services section
-            if (scrollPosition >= startScroll && scrollPosition <= (startScroll + sectionHeight - window.innerHeight)) {
-                // Calculate horizontal scroll based on vertical scroll within section
-                const horizontalScroll = ((scrollPosition - startScroll) / (sectionHeight - window.innerHeight)) * maxHorizontalScroll;
-
-                // Apply the horizontal scroll effect
-                sssCardContainer.style.transform = `translateX(-${horizontalScroll}px)`;
-            } else if (scrollPosition < startScroll) {
-                // Reset position if above the section
-                sssCardContainer.style.transform = `translateX(0)`;
-            } else if (scrollPosition > startScroll + sectionHeight - window.innerHeight) {
-                // Fix position if scrolled past the section
-                sssCardContainer.style.transform = `translateX(-${maxHorizontalScroll}px)`;
-            }
-        });
-
-
-    // Adding a delay to loading pages:
-            function delayedNavigation(event, url) {
-                event.preventDefault(); // Prevent immediate navigation
-
-                // Add loading class to body
-                document.body.classList.add('loading-cursor');
-
-                setTimeout(function() {
-                    window.location.href = url; // Navigate after delay
-                }, 500); // 500 ms = 0.5 second
-            }
-
-            // Optional: Remove loading cursor if the navigation is interrupted (e.g., back navigation)
-            window.addEventListener('popstate', function() {
-                document.body.classList.remove('loading-cursor');
+    // particles script:
+            particlesJS.load('particles-js', './particlesjs-config.json', function() {
+                console.log('callback - particles-js config loaded');
             });
 
-    </script>
 
-</body>
+
+    // Horizontal scroll scritp for suite services:
+            // Select the suite services section and container
+            const suiteServicesSection = document.querySelector('.suite-services-section');
+            const sssCardContainer = document.querySelector('.sss-card-container');
+
+            // Get the section’s start position and height
+            const startScroll = suiteServicesSection.offsetTop;
+            const sectionHeight = suiteServicesSection.offsetHeight;
+
+            // Calculate the maximum horizontal scroll within the container
+            const maxHorizontalScroll = sssCardContainer.scrollWidth - window.innerWidth;
+
+            window.addEventListener('scroll', () => {
+                // Calculate current vertical scroll position
+                const scrollPosition = window.scrollY;
+
+                // Check if the user is within the suite services section
+                if (scrollPosition >= startScroll && scrollPosition <= (startScroll + sectionHeight - window.innerHeight)) {
+                    // Calculate horizontal scroll based on vertical scroll within section
+                    const horizontalScroll = ((scrollPosition - startScroll) / (sectionHeight - window.innerHeight)) * maxHorizontalScroll;
+
+                    // Apply the horizontal scroll effect
+                    sssCardContainer.style.transform = `translateX(-${horizontalScroll}px)`;
+                } else if (scrollPosition < startScroll) {
+                    // Reset position if above the section
+                    sssCardContainer.style.transform = `translateX(0)`;
+                } else if (scrollPosition > startScroll + sectionHeight - window.innerHeight) {
+                    // Fix position if scrolled past the section
+                    sssCardContainer.style.transform = `translateX(-${maxHorizontalScroll}px)`;
+                }
+            });
+
+
+        // Adding a delay to loading pages:
+                function delayedNavigation(event, url) {
+                    event.preventDefault(); // Prevent immediate navigation
+
+                    // Add loading class to body
+                    document.body.classList.add('loading-cursor');
+
+                    setTimeout(function() {
+                        window.location.href = url; // Navigate after delay
+                    }, 500); // 500 ms = 0.5 second
+                }
+
+                // Optional: Remove loading cursor if the navigation is interrupted (e.g., back navigation)
+                window.addEventListener('popstate', function() {
+                    document.body.classList.remove('loading-cursor');
+                });
+
+
+        // mobile burger toggle script:
+            function toggleMobileMenu() {
+                const mobileMenu = document.querySelector('.mobile-menu');
+                mobileMenu.classList.toggle('open');
+            }
+
+        </script>
+
+    </body>
 </html>

@@ -31,6 +31,25 @@
                 <a href="mailto:projects@operations.finance" class="nav-contact-bt">Let's Chat</a>
             </div>
         </nav>
+        <!-- mobile navigation bar -->
+        <nav class="navigation-bar-content mobile-nav-bar-content">
+            <div class="mobile-nav-logo">
+                <a href="#home"><img src="./assets/opsfi_white_logo.png" alt="OPSFI"></a>
+            </div>
+            <div class="mobile-burger-toggle" onclick="toggleMobileMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="mobile-menu-content mobile-menu" id="mobile-nav-bar">
+                <ul class="menu-list">
+                    <li><a href="#home" class="nav-item active" onclick="delayedNavigation(event, '#home')">Home</a></li>
+                    <li><a href="./insight.html" class="nav-item" onclick="delayedNavigation(event, './insight.html')">Insights</a></li>
+                    <li><a href="./advisory.html" class="nav-item" onclick="delayedNavigation(event, './advisory.html')">Advisory</a></li>
+                    <li><a href="./about.html" class="nav-item" onclick="delayedNavigation(event, './about.html')">About</a></li>
+                </ul>
+            </div>
+        </nav>
 
 
 
@@ -319,6 +338,13 @@
             window.addEventListener('popstate', function() {
                 document.body.classList.remove('loading-cursor');
             });
+
+
+    // mobile burger toggle script:
+            function toggleMobileMenu() {
+                const mobileMenu = document.querySelector('.mobile-menu');
+                mobileMenu.classList.toggle('open');
+            }
 
         </script>
     </body>

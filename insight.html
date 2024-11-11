@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheet/insight-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="./assets/icon_clear.png">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <title>OpsFi Insight</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylesheet/insight-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" type="image/x-icon" href="./assets/icon_clear.png">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <title>OpsFi Insight</title>
+    </head>
+    <body>
 
         <!-- Navigation bar -->
         <nav class="navigation-bar-content">
@@ -28,6 +28,25 @@
             </div>
             <div class="nav-contact-container">
                 <a href="mailto:projects@operations.finance" class="nav-contact-bt">Let's Chat</a>
+            </div>
+        </nav>
+        <!-- mobile navigation bar -->
+        <nav class="navigation-bar-content mobile-nav-bar-content">
+            <div class="mobile-nav-logo">
+                <a href="./index.html"><img src="./assets/opsfi_white_logo.png" alt="OPSFI"></a>
+            </div>
+            <div class="mobile-burger-toggle" onclick="toggleMobileMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="mobile-menu-content mobile-menu" id="mobile-nav-bar">
+                <ul class="menu-list">
+                    <li><a href="./index.html" class="nav-item" onclick="delayedNavigation(event, './index.html')">Home</a></li>
+                    <li><a href="#beginning" class="nav-item highlight" onclick="delayedNavigation(event, '#home')">Insights</a></li>
+                    <li><a href="./advisory.html" class="nav-item" onclick="delayedNavigation(event, './advisory.html')">Advisory</a></li>
+                    <li><a href="./about.html" class="nav-item" onclick="delayedNavigation(event, './about.html')">About</a></li>
+                </ul>
             </div>
         </nav>
 
@@ -237,6 +256,13 @@
             });
 
 
+    // mobile burger toggle script:
+            function toggleMobileMenu() {
+                const mobileMenu = document.querySelector('.mobile-menu');
+                mobileMenu.classList.toggle('open');
+            }
+
+
         </script>
-</body>
+    </body>
 </html>

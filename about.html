@@ -1,214 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesheet/about-style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/x-icon" href="./assets/icon_clear.png">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <title>About OpsFi</title>
-</head>
-<body>
-    
-    <!-- Navigation bar -->
-    <nav class="navigation-bar-content">
-        <div class="nav-logo-content">
-            <a href="./index.html"><img src="./assets/opsfi_white_logo.png" alt="OPSFI"></a>
-        </div>
-        <div class="nav-menu-content">
-            <ul class="menu-list" id="nav-bar">
-                <li><a href="./index.html" class="nav-item" onclick="delayedNavigation(event, './index.html')">Home</a></li>
-                <li><a href="./insight.html" class="nav-item" onclick="delayedNavigation(event, './insight.html')">Insights</a></li>
-                <li><a href="./advisory.html" class="nav-item" onclick="delayedNavigation(event, './advisory.html')">Advisory</a></li>
-                <li><a href="#beginning" class="nav-item active" onclick="delayedNavigation(event, '#home')">About</a></li>
-            </ul>
-        </div>
-        <div class="nav-contact-container">
-            <a href="mailto:projects@operations.finance" class="nav-contact-bt">Let's Chat</a>
-        </div>
-    </nav>
-
-
-    <!-- main body content -->
-    <div class="main-body-content">
-        <!-- partciles section -->
-        <div id="particles-js"></div>
-
-
-        <!-- landing section -->
-        <div class="landing-section" id="beginning">
-            <div class="ls-text-container">
-                <!-- <h6 class="ls-intro-title">About OpsFi</h6> -->
-                <h1 class="ls-page-title">The Digital Asset Finance Solutions</h1>
-                <h3 class="ls-page-par">Helping founders & teams build profitably & sustainably in web3</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./stylesheet/about-style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" type="image/x-icon" href="./assets/icon_clear.png">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <title>About OpsFi</title>
+    </head>
+    <body>
+        
+        <!-- Navigation bar -->
+        <nav class="navigation-bar-content">
+            <div class="nav-logo-content">
+                <a href="./index.html"><img src="./assets/opsfi_white_logo.png" alt="OPSFI"></a>
             </div>
-        </div>
+            <div class="nav-menu-content">
+                <ul class="menu-list" id="nav-bar">
+                    <li><a href="./index.html" class="nav-item" onclick="delayedNavigation(event, './index.html')">Home</a></li>
+                    <li><a href="./insight.html" class="nav-item" onclick="delayedNavigation(event, './insight.html')">Insights</a></li>
+                    <li><a href="./advisory.html" class="nav-item" onclick="delayedNavigation(event, './advisory.html')">Advisory</a></li>
+                    <li><a href="#beginning" class="nav-item active" onclick="delayedNavigation(event, '#home')">About</a></li>
+                </ul>
+            </div>
+            <div class="nav-contact-container">
+                <a href="mailto:projects@operations.finance" class="nav-contact-bt">Let's Chat</a>
+            </div>
+        </nav>
+        <!-- mobile navigation bar -->
+        <nav class="navigation-bar-content mobile-nav-bar-content">
+            <div class="mobile-nav-logo">
+                <a href="./index.html"><img src="./assets/opsfi_white_logo.png" alt="OPSFI"></a>
+            </div>
+            <div class="mobile-burger-toggle" onclick="toggleMobileMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <div class="mobile-menu-content mobile-menu" id="mobile-nav-bar">
+                <ul class="menu-list">
+                    <li><a href="./index.html" class="nav-item" onclick="delayedNavigation(event, './index.html')">Home</a></li>
+                    <li><a href="./insight.html" class="nav-item" onclick="delayedNavigation(event, './insight.html')">Insights</a></li>
+                    <li><a href="./advisory.html" class="nav-item" onclick="delayedNavigation(event, './advisory.html')">Advisory</a></li>
+                    <li><a href="#beginning" class="nav-item active" onclick="delayedNavigation(event, '#home')">About</a></li>
+                </ul>
+            </div>
+        </nav>
 
 
-        <!-- About us section -->
-        <!-- <div class="about-us-section">
-            <div class="aus-text-container">
+        <!-- main body content -->
+        <div class="main-body-content">
+            <!-- partciles section -->
+            <div id="particles-js"></div>
+
+
+            <!-- landing section -->
+            <div class="landing-section" id="beginning">
+                <div class="ls-text-container">
+                    <!-- <h6 class="ls-intro-title">About OpsFi</h6> -->
+                    <h1 class="ls-page-title">The Digital Asset Finance Solutions</h1>
+                    <h3 class="ls-page-par">Helping founders & teams build profitably & sustainably in web3</h2>
+                </div>
+            </div>
+
+
+            <!-- About us section -->
+            <!-- <div class="about-us-section">
+                <div class="aus-text-container">
+                    <h4 class="aus-title">About OpsFi</h4>
+                    <p class="aus-par">Founded in 2022, Operations.Finance brings 25+ years of expertise from top firms to support Web3’s role in financial inclusion. We empower founders to build sustainable enterprises, establishing Web3 as essential in the financial ecosystem.</p>
+                </div>
+            </div> -->
+            <div class="highlight-section">
                 <h4 class="aus-title">About OpsFi</h4>
-                <p class="aus-par">Founded in 2022, Operations.Finance brings 25+ years of expertise from top firms to support Web3’s role in financial inclusion. We empower founders to build sustainable enterprises, establishing Web3 as essential in the financial ecosystem.</p>
+                <p class="highlight-paragraph">
+                    <span>Founded</span> <span>in</span> <span>2022,</span> <span>Operations.Finance</span> <span>brings</span> <span>25+</span> <span>years</span> <span>of</span> <span>expertise</span> <span>from</span> <span>top</span> <span>firms</span> <span>to</span> <span>support</span> <span>Web3’s</span> <span>role</span> <span>in</span> <span>financial</span> <span>inclusion.</span> <span>We</span> <span>empower</span> <span>founders</span> <span>to</span> <span>build</span> <span>sustainable</span> <span>enterprises,</span> <span>establishing</span> <span>Web3</span> <span>as</span> <span>essential</span> <span>in</span> <span>the</span> <span>financial</span> <span>ecosystem.</span>
+                </p>
             </div>
-        </div> -->
-        <div class="highlight-section">
-            <h4 class="aus-title">About OpsFi</h4>
-            <p class="highlight-paragraph">
-                <span>Founded</span> <span>in</span> <span>2022,</span> <span>Operations.Finance</span> <span>brings</span> <span>25+</span> <span>years</span> <span>of</span> <span>expertise</span> <span>from</span> <span>top</span> <span>firms</span> <span>to</span> <span>support</span> <span>Web3’s</span> <span>role</span> <span>in</span> <span>financial</span> <span>inclusion.</span> <span>We</span> <span>empower</span> <span>founders</span> <span>to</span> <span>build</span> <span>sustainable</span> <span>enterprises,</span> <span>establishing</span> <span>Web3</span> <span>as</span> <span>essential</span> <span>in</span> <span>the</span> <span>financial</span> <span>ecosystem.</span>
-            </p>
-        </div>
 
 
-        <!-- CFO reporting section -->
-        <div class="cfo-reporting-section">
-            <div class="crs-img-container">
-                <img src="./assets/cfo-reporting-placeholder.jpg" alt="cfo-icons">
+            <!-- CFO reporting section -->
+            <div class="cfo-reporting-section">
+                <div class="crs-img-container">
+                    <img src="./assets/cfo-reporting-placeholder.jpg" alt="cfo-icons">
+                </div>
+                <div class="crs-text-container">
+                    <h4 class="crs-title">Empowering Financial Clarity:<br>Why We Do CFO Reporting</h4>
+                    <p class="crs-par">We understand that effective financial and strategic operations are essential for the sustainability and expansion of any enterprise. However, these functions can be costly, time-consuming, stressful, and prone to errors. Our CFO Reporting services seek to change this narrative by providing streamlined, premium solutions that deliver exceptional value for money. By leveraging our expertise, advanced technology infrastructure, and access to world-class talent, we are redefining CFO services for the Web3 era. Our comprehensive CFO Reporting solutions are designed to meet the unique needs of each client, ensuring accurate and actionable insights that empower decision-making and foster business growth. We’re here to simplify complex financial processes so founders can focus on their core mission.</p>
+                </div>
             </div>
-            <div class="crs-text-container">
-                <h4 class="crs-title">Empowering Financial Clarity:<br>Why We Do CFO Reporting</h4>
-                <p class="crs-par">We understand that effective financial and strategic operations are essential for the sustainability and expansion of any enterprise. However, these functions can be costly, time-consuming, stressful, and prone to errors. Our CFO Reporting services seek to change this narrative by providing streamlined, premium solutions that deliver exceptional value for money. By leveraging our expertise, advanced technology infrastructure, and access to world-class talent, we are redefining CFO services for the Web3 era. Our comprehensive CFO Reporting solutions are designed to meet the unique needs of each client, ensuring accurate and actionable insights that empower decision-making and foster business growth. We’re here to simplify complex financial processes so founders can focus on their core mission.</p>
+
+
+            <!-- Advisory sectiong -->
+            <div class="advisory-about-section">
+                <div class="aas-text-container">
+                    <h4 class="aas-title">Guiding Growth:<br>The Value of Our Advisory Services</h4>
+                    <p class="aas-par">At Operations.Finance, we take pride in collaborating with a diverse team of professionals across the USA, UK, and South Africa. Our Advisory services offer dynamic financial, operational, and strategic solutions tailored to support our clients’ growth and success. We serve a global client base across 14 countries and various sectors, including AI, Virtual Reality, DeFi, Web3 gaming, DAOs, Insurtech, and Carbon Credits. Our Advisory team provides guidance and support in navigating complex challenges, from scaling operations to achieving financial sustainability. Together with our clients, we work toward a shared vision of shaping a future where Operations.Finance’s impact is recognized worldwide.</p>
+                </div>
             </div>
-        </div>
 
 
-        <!-- Advisory sectiong -->
-        <div class="advisory-about-section">
-            <div class="aas-text-container">
-                <h4 class="aas-title">Guiding Growth:<br>The Value of Our Advisory Services</h4>
-                <p class="aas-par">At Operations.Finance, we take pride in collaborating with a diverse team of professionals across the USA, UK, and South Africa. Our Advisory services offer dynamic financial, operational, and strategic solutions tailored to support our clients’ growth and success. We serve a global client base across 14 countries and various sectors, including AI, Virtual Reality, DeFi, Web3 gaming, DAOs, Insurtech, and Carbon Credits. Our Advisory team provides guidance and support in navigating complex challenges, from scaling operations to achieving financial sustainability. Together with our clients, we work toward a shared vision of shaping a future where Operations.Finance’s impact is recognized worldwide.</p>
+            <!-- Meet the Team section -->
+            <div class="lead-team-section">
+                <div class="lts-text-container">
+                    <h2 class="lts-title">Get to know our lead team</h2>
+                    <p class="lts-par">The lead team at Operations.Finance brings 25+ years of experience from top firms like McKinsey, Deloitte, and KPMG. United by a vision to drive financial inclusion through Web3, they blend strategic expertise and innovative solutions to empower founders for sustainable growth globally.</p>
+                </div>
+                <div class="lts-img-container">
+                    <a class="lts-member-card" href="https://www.linkedin.com/in/frankyhlin/" target="_blank">
+                        <img class="profile-img" src="./assets/team-img/frank_border.png" alt="profile img">
+                        <h4 class="lts-img-title">Frank Lin CFA, CA(SA), CPA</h4>
+                        <h5 class="lts-img-par">Head of Advisory</h5>
+                        <p class="lts-img-bio">Chartered Financial Analyst and Big 4 Chartered Accountant with a computer science background 9+ years of experience in software development and financial services that encompasses audit, asset management, data analytics, tokenomics and digital forensics</p>
+                    </a>
+                    <a class="lts-member-card" href="https://www.linkedin.com/in/gregtomaselli/" target="_blank">
+                        <img class="profile-img" src="./assets/team-img/greg_border.png" alt="profile img">
+                        <h4 class="lts-img-title">Greg Tomaselli CA(SA)</h4>
+                        <h5 class="lts-img-par">Co - Founder & CEO</h5>
+                        <p class="lts-img-bio">Big 4 Chartered Accountant with 10+ years of experience, incl. M&A, Corporate Finance, restructuring / turnarounds & Venture Funding Tailoring solutions for Web3 startups, incl. sustainable economics, tokenomics, funding, deal structure and M&A</p>
+                    </a>
+                    <a class="lts-member-card" href="https://www.linkedin.com/in/sol-ferreira/" target="_blank">
+                        <img class="profile-img" src="./assets/team-img/sol_border.png" alt="profile img">
+                        <h4 class="lts-img-title">Sol Ferreira</h4>
+                        <h5 class="lts-img-par">Head of Insights</h5>
+                        <p class="lts-img-bio">Big 4 Chartered Accountant with 6+ years of experience, incl. technology, telecom and e-commerce sectors with a background in auditing and accounting Providing Web3 organisations with financial clarity through expert accounting and CFO reporting</p>
+                    </a>
+                </div>
             </div>
-        </div>
 
 
-        <!-- Meet the Team section -->
-        <div class="lead-team-section">
-            <div class="lts-text-container">
-                <h2 class="lts-title">Get to know our lead team</h2>
-                <p class="lts-par">The lead team at Operations.Finance brings 25+ years of experience from top firms like McKinsey, Deloitte, and KPMG. United by a vision to drive financial inclusion through Web3, they blend strategic expertise and innovative solutions to empower founders for sustainable growth globally.</p>
-            </div>
-            <div class="lts-img-container">
-                <a class="lts-member-card" href="https://www.linkedin.com/in/frankyhlin/" target="_blank">
-                    <img class="profile-img" src="./assets/team-img/frank_border.png" alt="profile img">
-                    <h4 class="lts-img-title">Frank Lin CFA, CA(SA), CPA</h4>
-                    <h5 class="lts-img-par">Head of Advisory</h5>
-                    <p class="lts-img-bio">Chartered Financial Analyst and Big 4 Chartered Accountant with a computer science background 9+ years of experience in software development and financial services that encompasses audit, asset management, data analytics, tokenomics and digital forensics</p>
-                </a>
-                <a class="lts-member-card" href="https://www.linkedin.com/in/gregtomaselli/" target="_blank">
-                    <img class="profile-img" src="./assets/team-img/greg_border.png" alt="profile img">
-                    <h4 class="lts-img-title">Greg Tomaselli CA(SA)</h4>
-                    <h5 class="lts-img-par">Co - Founder & CEO</h5>
-                    <p class="lts-img-bio">Big 4 Chartered Accountant with 10+ years of experience, incl. M&A, Corporate Finance, restructuring / turnarounds & Venture Funding Tailoring solutions for Web3 startups, incl. sustainable economics, tokenomics, funding, deal structure and M&A</p>
-                </a>
-                <a class="lts-member-card" href="https://www.linkedin.com/in/sol-ferreira/" target="_blank">
-                    <img class="profile-img" src="./assets/team-img/sol_border.png" alt="profile img">
-                    <h4 class="lts-img-title">Sol Ferreira</h4>
-                    <h5 class="lts-img-par">Head of Insights</h5>
-                    <p class="lts-img-bio">Big 4 Chartered Accountant with 6+ years of experience, incl. technology, telecom and e-commerce sectors with a background in auditing and accounting Providing Web3 organisations with financial clarity through expert accounting and CFO reporting</p>
-                </a>
-            </div>
-        </div>
-
-
-        <!-- Contact Us Section -->
-        <div class="contact-us-section" id="contact-form">
-            <div class="cus-form-container">
-                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-                    <div class="contact-left-title">
-                        <h2>Get In Touch</h2>
-                        <hr>
-                    </div>
-                    <input type="hidden" name="access_key" value="4c29b146-a105-42ad-902f-e9647ff358f1">
-                    <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-                    <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
-                    <input type="text" name="subject" placeholder="Subject" class="contact-inputs">
-                    <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-                    <button type="submit">Submit<img src="./assets/arrow-right-short.svg" alt=""></button>
-                </form>
-                <div class="contact-right">
-                    <img src="./assets/opsfi_white_logo.png" alt="OPSFI" class="opsf-footer-logo">
-                    <h6 class="social-link-par">Follow Our Community</h6>
-                    <div class="social-links-container">
-                        <a class="social-link-img" href="https://x.com/opsfiweb3" target="_blank"><img src="./assets/social-Twitter.png" alt="Twitter"></a>
-                        <a class="social-link-img" href="https://www.linkedin.com/company/opsfi/" target="_blank"><img src="./assets/social-LinkedIn.png" alt="LinkedIn"></a>
+            <!-- Contact Us Section -->
+            <div class="contact-us-section" id="contact-form">
+                <div class="cus-form-container">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                        <div class="contact-left-title">
+                            <h2>Get In Touch</h2>
+                            <hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="4c29b146-a105-42ad-902f-e9647ff358f1">
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                        <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+                        <input type="text" name="subject" placeholder="Subject" class="contact-inputs">
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit<img src="./assets/arrow-right-short.svg" alt=""></button>
+                    </form>
+                    <div class="contact-right">
+                        <img src="./assets/opsfi_white_logo.png" alt="OPSFI" class="opsf-footer-logo">
+                        <h6 class="social-link-par">Follow Our Community</h6>
+                        <div class="social-links-container">
+                            <a class="social-link-img" href="https://x.com/opsfiweb3" target="_blank"><img src="./assets/social-Twitter.png" alt="Twitter"></a>
+                            <a class="social-link-img" href="https://www.linkedin.com/company/opsfi/" target="_blank"><img src="./assets/social-LinkedIn.png" alt="LinkedIn"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
-    <!-- Script for interactive background -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script>
+        <!-- Script for interactive background -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
 
-// particles script:
-        particlesJS.load('particles-js', './particlesjs-config.json', function() {
-            console.log('callback - particles-js config loaded');
-        });
-
-
-// JavaScript for image scrolling parallax effect
-        document.addEventListener('scroll', function() {
-            const scrollPosition = window.scrollY;
-            const imgContainer = document.querySelector('.crs-img-container img');
-
-            // Adjust the vertical position of the image based on scroll
-            imgContainer.style.transform = `translateY(${scrollPosition * -0.05}px)`;
-        });
+    // particles script:
+            particlesJS.load('particles-js', './particlesjs-config.json', function() {
+                console.log('callback - particles-js config loaded');
+            });
 
 
-// Adding a delay to loading pages:
-        function delayedNavigation(event, url) {
-            event.preventDefault(); // Prevent immediate navigation
+    // JavaScript for image scrolling parallax effect
+            document.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                const imgContainer = document.querySelector('.crs-img-container img');
 
-            // Add loading class to body
-            document.body.classList.add('loading-cursor');
-
-            setTimeout(function() {
-                window.location.href = url; // Navigate after delay
-            }, 500); // 500 ms = 0.5 second
-        }
-
-        // Optional: Remove loading cursor if the navigation is interrupted (e.g., back navigation)
-        window.addEventListener('popstate', function() {
-            document.body.classList.remove('loading-cursor');
-        });
+                // Adjust the vertical position of the image based on scroll
+                imgContainer.style.transform = `translateY(${scrollPosition * -0.05}px)`;
+            });
 
 
-// Scroll text reveal script:
-        document.addEventListener("scroll", () => {
-            const words = document.querySelectorAll(".highlight-paragraph span");
-            const section = document.querySelector(".highlight-section");
-            const sectionTop = section.getBoundingClientRect().top;
-            const sectionHeight = section.offsetHeight;
-            const windowHeight = window.innerHeight;
+    // Adding a delay to loading pages:
+            function delayedNavigation(event, url) {
+                event.preventDefault(); // Prevent immediate navigation
 
-            // Check if the section is in the viewport
-            if (sectionTop < windowHeight && sectionTop > -sectionHeight) {
-                // Adjust scrollProgress so the highlighting finishes early (e.g., at 80% of section)
-                const adjustedScrollProgress = (windowHeight - sectionTop) / (sectionHeight * 0.7 + windowHeight);
-                const wordIndex = Math.floor(adjustedScrollProgress * words.length);
+                // Add loading class to body
+                document.body.classList.add('loading-cursor');
 
-                // Highlight up to the current word index
-                words.forEach((word, index) => {
-                    if (index <= wordIndex) {
-                        word.classList.add("highlighted");
-                    } else {
-                        word.classList.remove("highlighted");
-                    }
-                });
+                setTimeout(function() {
+                    window.location.href = url; // Navigate after delay
+                }, 500); // 500 ms = 0.5 second
             }
-        });
+
+            // Optional: Remove loading cursor if the navigation is interrupted (e.g., back navigation)
+            window.addEventListener('popstate', function() {
+                document.body.classList.remove('loading-cursor');
+            });
 
 
+    // Scroll text reveal script:
+            document.addEventListener("scroll", () => {
+                const words = document.querySelectorAll(".highlight-paragraph span");
+                const section = document.querySelector(".highlight-section");
+                const sectionTop = section.getBoundingClientRect().top;
+                const sectionHeight = section.offsetHeight;
+                const windowHeight = window.innerHeight;
+
+                // Check if the section is in the viewport
+                if (sectionTop < windowHeight && sectionTop > -sectionHeight) {
+                    // Adjust scrollProgress so the highlighting finishes early (e.g., at 80% of section)
+                    const adjustedScrollProgress = (windowHeight - sectionTop) / (sectionHeight * 0.7 + windowHeight);
+                    const wordIndex = Math.floor(adjustedScrollProgress * words.length);
+
+                    // Highlight up to the current word index
+                    words.forEach((word, index) => {
+                        if (index <= wordIndex) {
+                            word.classList.add("highlighted");
+                        } else {
+                            word.classList.remove("highlighted");
+                        }
+                    });
+                }
+            });
 
 
+        // mobile burger toggle script:
+            function toggleMobileMenu() {
+                const mobileMenu = document.querySelector('.mobile-menu');
+                mobileMenu.classList.toggle('open');
+            }
 
-    </script>
 
-</body>
+        </script>
+
+    </body>
 </html>

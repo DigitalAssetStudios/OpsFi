@@ -39,7 +39,7 @@ body {
     position: fixed;
     width: 100vw;
     height: 80px;
-    z-index: 5;
+    z-index: 10;
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 2fr 1fr;
@@ -88,7 +88,88 @@ body {
 .nav-contact-bt:hover {
     background: radial-gradient(rgba(1, 92, 255, 0.18), rgba(1, 92, 255, 0.55));
 }
-
+/* mobile navigation style */
+.mobile-nav-bar-content {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--trans-dark-blue);
+    backdrop-filter: blur(0px);
+}
+.mobile-nav-logo {
+    display: none;
+}
+.mobile-nav-logo img {
+    max-width: 120px;
+    padding-left: 20px;
+}
+.mobile-burger-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.mobile-burger-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--main-white);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-blue);
+    backdrop-filter: blur(8px);
+    padding: 20px;
+}
+.mobile-menu.open {
+    display: flex;
+}
+.mobile-menu .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: var(--dark-blue); */
+    list-style: none;
+    padding: 0;
+}
+.mobile-menu .nav-item {
+    color: var(--main-white);
+    font-size: 20px;
+    padding: 10px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.mobile-menu .nav-item:hover {
+    color: var(--accent-blue);
+}
+/* Media Query for Mobile */
+@media (max-width: 480px) {
+    .navigation-bar-content {
+        display: none;
+    }
+    .mobile-nav-bar-content {
+        display: flex;
+        backdrop-filter: blur(8px);
+        z-index: 10;
+    }
+    .mobile-burger-toggle {
+        display: flex;
+    }
+    .mobile-nav-logo {
+        display: block;
+    }
+}
 
 
 
@@ -97,7 +178,7 @@ body {
     height: 100vh;
     width: 100vw;
     padding: 0;
-    background-color: var(--dark-blue);
+    /* background-color: var(--dark-blue); */
 }
 
 
@@ -111,7 +192,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    z-index: 0;
+    z-index: -1;
 }
 
 
@@ -135,6 +216,27 @@ body {
     font-size: 3vw;
     font-family: var(--sup-font);
     margin: -5vw 0 5vw 0;
+}
+/* landing media changes */
+@media screen and (max-width: 1024px) {
+    .company-title {
+        font-size: 17vw;
+        margin: -1vw 0 0 0;
+    }
+    .company-tagline {
+        font-size: 6vw;
+        margin: -8vw 0 5vw 0;
+    }
+}
+@media screen and (max-width: 480px) {
+    .company-title {
+        font-size: 20vw;
+        margin: -1vw 0 0 0;
+    }
+    .company-tagline {
+        font-size: 6vw;
+        margin: -8vw 0 5vw 0;
+    }
 }
 
 
@@ -168,7 +270,7 @@ body {
 }
 .oss-card-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(7, 1fr);
     gap: 50px;
     margin: 0 20vw;
@@ -179,6 +281,7 @@ body {
     flex-direction: column;
     justify-content: center;
     grid-row: span 3;
+    grid-column: span 2;
     height: 200px;
     background-image: linear-gradient(to top, var(--trans-main-white), var(--trans-dark-blue)), linear-gradient(180deg, rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
     box-shadow: 0px -10px 20px rgba(244, 249, 255, 0) inset;
@@ -198,11 +301,14 @@ body {
     font-size: 1.2rem;
 }
 .sc1 {
-    grid-column-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .sc3 {
     background-image: linear-gradient(to top, rgba(1, 195, 141, 0.8), rgba(1, 195, 141, 0));
     border: 1px solid rgba(1, 195, 141, 1);
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 .sc1:hover, .sc2:hover {
     background-image: linear-gradient(to top, var(--trans-main-white), var(--trans-dark-blue)), linear-gradient(180deg, rgba(1, 92, 255, 0.15), rgba(1, 92, 255, 0.5));
