@@ -414,7 +414,7 @@ body {
 }
 .vert-carousel-card {
     height: 100px;
-    width: 300px;
+    width: 250px;
     display: flex;
     align-items: center;
     font-size: 1.2em;
@@ -425,10 +425,10 @@ body {
     margin-bottom: 50px;
 }
 .vert-carousel-card h6 {
-    font-size: 17px;
+    font-size: 13px;
 }
 .vert-card-img {
-    width: 50px;
+    width: 40px;
     margin: 0 15px 0 35px;
 }
 @keyframes bot-to-top {
@@ -468,6 +468,77 @@ body {
         transform: translateY(0)
     }
 }
+/* Our Mission media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .our-mission-section {
+        height: 200vh;
+    }
+    .oms-content-container {
+        flex-direction: column;
+    }
+    .oms-text-container {
+        margin: 0 0 5vw 5vw;
+    }
+    .oms-title {
+        font-size: 10vw;
+        margin: 0;
+        line-height: 40px;
+    }
+    .oms-tagline {
+        font-size: 4vw;
+        padding: 15px 0;
+        width: 80%;
+    }
+    .vert-carousel-card {
+        height: 50px;
+        width: 150px;
+        display: inline-block;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .vert-carousel-card h6 {
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    .vert-card-img {
+        display: none;
+    }
+    .left-vert-carousel-container {
+        height: auto;
+        width: 100vw;
+        white-space: nowrap;
+    }
+    .left-carousel {
+        animation: right-to-left 15s infinite linear;
+    }
+    /* New horizontal animation for mobile */
+    @keyframes right-to-left {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+    .right-vert-carousel-container {
+        height: auto;
+        width: 100vw;
+        white-space: nowrap;
+    }
+    .right-carousel {
+        animation: left-to-right 15s infinite linear;
+    }
+    /* New horizontal animation for mobile */
+    @keyframes left-to-right {
+        from {
+            transform: translateX(-50%);
+        }
+        to {
+            transform: translateX(0%);
+        }
+    }
+}
 
 
 
@@ -481,6 +552,7 @@ body {
     align-items: center;
     gap: 50px;
     overflow: hidden;
+    position: relative;
 }
 .oes-text-container {
     text-align: center;
@@ -682,6 +754,152 @@ body {
 .logo-img37 {
     transform: rotate(336deg) translate(700px) rotate(-336deg);
 }
+/* OpsFi Ecosystem media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .oes-title {
+        font-size: 10vw;
+    }
+    .oes-tagline {
+        font-size: 5vw;
+        margin: 0 0 50px 0;
+    }
+    .spiral-container {
+        top: 48%;
+        left: 56%;
+    }
+    .spiral-section1, .spiral-section2, .spiral-section3 {
+        width: 5px;
+        height: 5px;
+        left: -20px;
+    }
+    .spiral-section1 img, .spiral-section2 img, .spiral-section3 img {
+        width: 50px;
+    }
+    .rotating-item1, .rotating-item2, .rotating-item3 {
+        position: absolute;
+        background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.5));
+        backdrop-filter: blur(8px);
+        border: 4px solid var(--main-blue);
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-img1 {
+        transform: translate(200px);
+    }
+    .logo-img2 {
+        transform: rotate(40deg) translate(200px) rotate(-40deg);
+    }
+    .logo-img3 {
+        transform: rotate(80deg) translate(200px) rotate(-80deg);
+    }
+    .logo-img4 {
+        transform: rotate(120deg) translate(200px) rotate(-120deg);
+    }
+    .logo-img5 {
+        transform: rotate(160deg) translate(200px) rotate(-160deg);
+    }
+    .logo-img6 {
+        transform: rotate(200deg) translate(200px) rotate(-200deg);
+    }
+    .logo-img7 {
+        transform: rotate(240deg) translate(200px) rotate(-240deg);
+    }
+    .logo-img8 {
+        transform: rotate(280deg) translate(200px) rotate(-280deg);
+    }
+    .logo-img9 {
+        transform: rotate(320deg) translate(200px) rotate(-320deg);
+    }
+    .logo-img10 {
+        transform: translate(290px);
+    }
+    .logo-img11 {
+        transform: rotate(32deg) translate(290px) rotate(-32deg);
+    }
+    .logo-img12 {
+        transform: rotate(64deg) translate(290px) rotate(-64deg);
+    }
+    .logo-img13 {
+        transform: rotate(96deg) translate(290px) rotate(-96deg);
+    }
+    .logo-img14 {
+        transform: rotate(128deg) translate(290px) rotate(-128deg);
+    }
+    .logo-img15 {
+        transform: rotate(160deg) translate(290px) rotate(-160deg);
+    }
+    .logo-img16 {
+        transform: rotate(192deg) translate(290px) rotate(-192deg);
+    }
+    .logo-img17 {
+        transform: rotate(224deg) translate(290px) rotate(-224deg);
+    }
+    .logo-img18 {
+        transform: rotate(256deg) translate(290px) rotate(-256deg);
+    }
+    .logo-img19 {
+        transform: rotate(288deg) translate(290px) rotate(-288deg);
+    }
+    .logo-img20 {
+        transform: rotate(320deg) translate(290px) rotate(-320deg);
+    }
+    .logo-img21 {
+        transform: translate(390px);
+    }
+    .logo-img22 {
+        transform: rotate(21deg) translate(390px) rotate(-21deg);
+    }
+    .logo-img23 {
+        transform: rotate(42deg) translate(390px) rotate(-42deg);
+    }
+    .logo-img24 {
+        transform: rotate(63deg) translate(390px) rotate(-63deg);
+    }
+    .logo-img25 {
+        transform: rotate(84deg) translate(390px) rotate(-84deg);
+    }
+    .logo-img26 {
+        transform: rotate(105deg) translate(390px) rotate(-105deg);
+    }
+    .logo-img27 {
+        transform: rotate(126deg) translate(390px) rotate(-126deg);
+    }
+    .logo-img28 {
+        transform: rotate(147deg) translate(390px) rotate(-147deg);
+    }
+    .logo-img29 {
+        transform: rotate(168deg) translate(390px) rotate(-168deg);
+    }
+    .logo-img30 {
+        transform: rotate(189deg) translate(390px) rotate(-189deg);
+    }
+    .logo-img31 {
+        transform: rotate(210deg) translate(390px) rotate(-210deg);
+    }
+    .logo-img32 {
+        transform: rotate(231deg) translate(390px) rotate(-231deg);
+    }
+    .logo-img33 {
+        transform: rotate(252deg) translate(390px) rotate(-252deg);
+    }
+    .logo-img34 {
+        transform: rotate(273deg) translate(390px) rotate(-273deg);
+    }
+    .logo-img35 {
+        transform: rotate(294deg) translate(390px) rotate(-294deg);
+    }
+    .logo-img36 {
+        transform: rotate(315deg) translate(390px) rotate(-315deg);
+    }
+    .logo-img37 {
+        transform: rotate(336deg) translate(390px) rotate(-336deg);
+    }
+}
 
 
 
@@ -791,4 +1009,29 @@ body {
 }
 .social-link-img img:hover {
     scale: 1.2;
+}
+/* Contact Form media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .contact-us-section {
+        height: 150vh;
+    }
+    .cus-form-container {
+        flex-direction: column;
+    }
+    .contact-left {
+        align-items: center;
+    }
+    .contact-left-title h2 {
+        font-size: 40px;
+    }
+    .contact-inputs {
+        width: 300px;
+    }
+    .opsfi-logo {
+        width: 200px;
+    }
+    .social-link-par {
+        font-size: 4vw;
+    }
 }

@@ -514,6 +514,57 @@ body {
     object-fit: cover;
     display: block;
 }
+/* Suite Services media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .suite-services-section {
+        height: 300vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 2vw 0;
+    }
+    .sss-title {
+        font-size: 10vw;
+        top: 30vw;
+    }
+    .sss-tagline {
+        font-size: 6vw;
+        top: 44vw;
+        margin: 5px 0 50px 0;
+    }
+    .stacking-card {
+        top: 55vw;
+        width: 80vw;
+        max-width: 1400px;
+    }
+    .card-content {
+        flex-direction: column;
+    }
+    .card-text {
+        padding: 2vw;
+        width: 100%;
+        gap: 0.8vw;
+    }
+    .card-title {
+        font-size: 6vw;
+    }
+    .card-text p {
+        font-size: 4vw;
+    }
+    .card-indicator {
+        font-size: 2vw;
+    }
+    .card-content figure {
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    .card-content img {
+        width: 100%;
+    }
+}
 
 
 
@@ -623,4 +674,29 @@ body {
 }
 .social-link-img img:hover {
     scale: 1.2;
+}
+/* Contact Form media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .contact-us-section {
+        height: 150vh;
+    }
+    .cus-form-container {
+        flex-direction: column;
+    }
+    .contact-left {
+        align-items: center;
+    }
+    .contact-left-title h2 {
+        font-size: 40px;
+    }
+    .contact-inputs {
+        width: 300px;
+    }
+    .opsf-footer-logo {
+        width: 200px;
+    }
+    .social-link-par {
+        font-size: 4vw;
+    }
 }

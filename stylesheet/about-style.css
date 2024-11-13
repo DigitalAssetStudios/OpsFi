@@ -317,6 +317,27 @@ body {
     font-size: 1vw;
     line-height: 1.3em;
 }
+/* CFO Reporting media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .cfo-reporting-section {
+        height: 120vh;
+        flex-direction: column;
+    }
+    .crs-img-container img {
+        height: 200px;
+        width: 500px;
+        margin: 0;
+    }
+    .crs-title {
+        font-size: 7vw;
+        line-height: 30px;
+    }
+    .crs-par {
+        font-size: 4vw;
+        line-height: 1.3em;
+    }
+}
 
 
 
@@ -343,6 +364,25 @@ body {
 .aas-par {
     font-size: 1vw;
     line-height: 1.2em;
+}
+/* Advisory media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .advisory-about-section {
+        height: 120vh;
+    }
+    .aas-text-container {
+        text-align: center;
+        margin: 0 5vw;
+    }
+    .aas-title {
+        line-height: 30px;
+        font-size: 7vw;
+    }
+    .aas-par {
+        font-size: 4vw;
+        line-height: 1.3em;
+    }
 }
 
 
@@ -419,6 +459,47 @@ body {
         box-shadow: 0px 5px 30px var(--accent-blue), 0px 5px 30px var(--accent-blue)
     }
 } */
+/* Lead Team media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .lead-team-section {
+        height: 300vh;
+    }
+    .lts-text-container {
+        margin: 0 5vw;
+    }
+    .lts-title {
+        line-height: 30px;
+        font-size: 7vw;
+    }
+    .lts-par {
+        font-size: 4vw;
+        line-height: 1.3em;
+    }
+    .lts-img-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 7vw;
+        margin: 0;
+    }
+    .greg-card {
+        grid-row: 1;
+    }
+    .frank-card {
+        grid-row: 2;
+    }
+    .sol-card {
+        grid-row: 3;
+    }
+    .lts-img-title {
+        font-size: 7vw;
+        margin: 0;
+    }
+    .lts-img-par {
+        font-size: 4vw;
+    }
+}
 
 
 
@@ -528,4 +609,29 @@ body {
 }
 .social-link-img img:hover {
     scale: 1.2;
+}
+/* Contact Form media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .contact-us-section {
+        height: 150vh;
+    }
+    .cus-form-container {
+        flex-direction: column;
+    }
+    .contact-left {
+        align-items: center;
+    }
+    .contact-left-title h2 {
+        font-size: 40px;
+    }
+    .contact-inputs {
+        width: 300px;
+    }
+    .opsf-footer-logo {
+        width: 200px;
+    }
+    .social-link-par {
+        font-size: 4vw;
+    }
 }

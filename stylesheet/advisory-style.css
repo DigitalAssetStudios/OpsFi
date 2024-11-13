@@ -482,6 +482,52 @@ body {
     object-fit: cover;
     display: block;
 }
+/* Suite service media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .suite-services-section {
+        height: 400vh;
+    }
+    .sss-title {
+        font-size: 10vw;
+        top: 30vw;
+    }
+    .sss-tagline {
+        font-size: 6vw;
+        top: 44vw;
+    }
+    .sss-card-container {
+        top: 55vw;
+        flex-direction: column;
+        width: 100%;
+        gap: 20vw;
+    }
+    .sss-card-content {
+        flex-direction: column;
+    }
+    .sss-card-text {
+        padding: 2vw;
+        width: 80%;
+    }
+    .sss-card-title {
+        font-size: 6vw;
+        margin: 0;
+    }
+    .sss-point-title {
+        font-size: 4vw;
+        margin: 0;
+    }
+    .sss-card-par {
+        font-size: 3vw;
+        line-height: 20px;
+    }
+    .sss-card-content figure {
+        display: none;
+    }
+    .card-indicator {
+        font-size: 2vw;
+    }
+}
 
 
 
@@ -591,4 +637,29 @@ body {
 }
 .social-link-img img:hover {
     scale: 1.2;
+}
+/* Contact Form media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .contact-us-section {
+        height: 150vh;
+    }
+    .cus-form-container {
+        flex-direction: column;
+    }
+    .contact-left {
+        align-items: center;
+    }
+    .contact-left-title h2 {
+        font-size: 40px;
+    }
+    .contact-inputs {
+        width: 300px;
+    }
+    .opsfi-logo {
+        width: 200px;
+    }
+    .social-link-par {
+        font-size: 4vw;
+    }
 }
