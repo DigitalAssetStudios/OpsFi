@@ -272,6 +272,16 @@ body {
 .highlight-paragraph .highlighted {
     color: var(--main-white); /* Final color when highlighted */
 }
+/* About Us media changes */
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 480px) {
+    .aus-title {
+        margin: 0 0 0 -1vw;
+    }
+    .highlight-paragraph span {
+        font-size: 7vw;
+    }
+}
 
 
 
