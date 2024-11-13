@@ -20,6 +20,9 @@
 
 
 /* Main Body Styling */
+* {
+    box-sizing: border-box;
+}
 body {
     width: 100vw;
     margin: 0;
@@ -518,7 +521,7 @@ body {
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 480px) {
     .suite-services-section {
-        height: 300vh;
+        height: 280vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -527,15 +530,15 @@ body {
     }
     .sss-title {
         font-size: 10vw;
-        top: 30vw;
+        top: 23vw;
     }
     .sss-tagline {
         font-size: 6vw;
-        top: 44vw;
+        top: 36vw;
         margin: 5px 0 50px 0;
     }
     .stacking-card {
-        top: 55vw;
+        top: 44vw;
         width: 80vw;
         max-width: 1400px;
     }
@@ -570,7 +573,7 @@ body {
 
 /* Contact Us Style */
 .contact-us-section {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     background: linear-gradient(var(--dark-blue), var(--main-blue));
 }

@@ -3,7 +3,7 @@
     --dark-blue: rgba(4, 14, 37, 1);
     --trans-dark-blue: rgba(4, 14, 37, 0.25);
     --main-blue: rgba(14, 44, 115, 1);
-    --accent-blue: rgba(1, 92, 255, 1);
+    --accent-blue: rgb(1, 92, 255);
     --main-white: rgba(244, 249, 255, 1);
     --card-blue-colour: rgb(170, 206, 216);
     --trans-main-white: rgba(244, 249, 255, 0.25);
@@ -21,6 +21,9 @@
 
 
 /* Main Body Styling */
+* {
+    box-sizing: border-box;
+}
 body {
     width: 100vw;
     margin: 0;
@@ -306,7 +309,7 @@ body {
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     /* padding: 20px; */
     box-sizing: border-box;
@@ -319,17 +322,17 @@ body {
     border-radius: 25px;
 }
 .cover-icon-1 {
-    background-image: url(../assets/symbol1-img.jpeg);
+    background-image: url(../assets/strategic-img.png);
 }
 .cover-icon-2 {
-    background-image: url(../assets/symbol2-img.jpeg);
+    background-image: url(../assets/lifecycle-img.png);
 }
 .cover-icon-3 {
-    background-image: url(../assets/symbol3-img.jpeg);
+    background-image: url(../assets/sustainable-img.png);
 }
 .flip-card-title {
     height: 120px;
-    margin-top: 10px;
+    margin-top: 220px;
     background-color: var(--dark-blue);
     padding: 10px;
     font-size: 2rem;
