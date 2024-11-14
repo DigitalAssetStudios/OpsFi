@@ -258,10 +258,10 @@ body {
 }
 .aus-title {
     font-family: var(--sup-font);
-    margin: 0 0 0 5vw;
+    margin: 5px 0 0 5vw;
 }
 .highlight-paragraph {
-    margin: 0 20vw 0 0;
+    margin: -10px 20vw 0 0;
 }
 .highlight-paragraph span {
     font-size: 5vw;
@@ -275,8 +275,14 @@ body {
 /* About Us media changes */
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 480px) {
+    .highlight-section {
+        height: 100vh;
+    }
     .aus-title {
-        margin: 0 0 0 -1vw;
+        margin: 0 0 0 -3vw;
+    }
+    .highlight-paragraph {
+        margin: -5px 0 0 0;
     }
     .highlight-paragraph span {
         font-size: 7vw;
@@ -287,7 +293,7 @@ body {
 
 /* CFO Reporting Style */
 .cfo-reporting-section {
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -309,9 +315,10 @@ body {
     margin: 0 5vw;
 }
 .crs-title {
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: var(--main-font);
     line-height: 60px;
+    margin: 0 0 0 0;
 }
 .crs-par {
     font-size: 1vw;
@@ -343,7 +350,7 @@ body {
 
 /* Advisory About Style */
 .advisory-about-section {
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -353,17 +360,18 @@ body {
 }
 .aas-text-container {
     text-align: center;
-    margin: 0 20vw;
+    margin: 0 10vw;
 }
 .aas-title {
     font-family: var(--main-font);
     line-height: 60px;
-    font-size: 2vw;
+    font-size: 3vw;
     margin: 0;
 }
 .aas-par {
     font-size: 1vw;
     line-height: 1.2em;
+    margin: 0 10vw;
 }
 /* Advisory media changes */
 @media screen and (max-width: 1024px) {}
@@ -399,17 +407,18 @@ body {
 }
 .lts-text-container {
     text-align: center;
-    margin: 0 20vw;
+    margin: 0 5vw;
 }
 .lts-title {
     font-family: var(--main-font);
     line-height: 60px;
-    font-size: 2vw;
+    font-size: 3vw;
     margin: 0;
 }
 .lts-par {
     font-size: 1vw;
     line-height: 1.2em;
+    margin: 10px 15vw 0 15vw;
 }
 .lts-img-container {
     display: flex;
@@ -518,12 +527,13 @@ body {
 .contact-left {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     gap: 20px;
 }
 .contact-left-title h2 {
-    font-size: 40px;
-    color: var(--accent-blue);
+    font-size: 3vw;
+    font-family: var(--sup-font);
+    /* color: var(--accent-blue); */
     margin-bottom: 5px;
 }
 .contact-left-title hr {
@@ -541,7 +551,7 @@ body {
     outline: none;
     padding-left: 25px;
     font-weight: 500;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 .contact-left textarea {
     height: 140px;
