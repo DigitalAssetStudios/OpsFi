@@ -260,7 +260,7 @@ body {
 }
 .ofs-content-container {
     width: 100%;
-    height: 90vh;
+    height: 120vh;
     background: var(--dark-blue);
     border-radius: 12px;
     padding: 60px 40px;
@@ -274,10 +274,10 @@ body {
 .ofs-title {
     font-size: 3vw;
     font-family: var(--sup-font);
-    color: var(--main-white);
+    margin: 0;
 }
 .ofs-par {
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     line-height: 1.5;
     color: lightgray;
     margin: 0 auto;
@@ -293,18 +293,10 @@ body {
 }
 .slide-show-img {
     width: auto;
-    height: 420px;
+    height: 450px;
     display: none;
     margin: 0 0 50px 15vw;
     border-radius: 25px;
-}
-.ofs-text-container {
-    text-align: center;
-}
-.ofs-title {
-    font-size: 3vw;
-    font-family: var(--sup-font);
-    margin: 0;
 }
 .ofs-text-area {
     margin: 0 auto;
@@ -319,7 +311,7 @@ body {
     color: var(--main-white);
 }
 .ofs-section-title {
-    font-size: 1.9rem;
+    font-size: 2vw;
     padding: 0 0 20px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     width: 80%;
@@ -355,7 +347,7 @@ body {
 }
 .ofs-section-par {
     max-height: 0;
-    width: 50%;
+    width: 70%;
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease;
     opacity: 0;
@@ -436,7 +428,7 @@ body {
 
 /* Suite Services Style */
 .suite-services-section {
-    height: 241vh;
+    height: 260vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -457,7 +449,7 @@ body {
     font-size: 2vw;
     position: sticky;
     top: 11vw;
-    color: gray;
+    color: var(--accent-blue);
     margin: 5px 0 50px 0;
 }
 .stacking-cards-container {
@@ -590,8 +582,9 @@ body {
     gap: 20px;
 }
 .contact-left-title h2 {
-    font-size: 40px;
-    color: var(--accent-blue);
+    font-size: 3vw;
+    font-family: var(--sup-font);
+    /* color: var(--accent-blue); */
     margin-bottom: 5px;
 }
 .contact-left-title hr {
