@@ -265,7 +265,7 @@ body {
 .oss-title {
     font-family: var(--sup-font);
     font-size: 3vw;
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
 }
 /* .oss-tagline {
     font-size: 1.5vw;
@@ -368,12 +368,12 @@ body {
     align-items: center;
 }
 .oms-text-container {
-    margin: 0 0 0 10vw;
+    margin: 0 0 0 5vw;
 }
 .oms-title {
     font-size: 3vw;
     font-family: var(--sup-font);
-    margin: 0 5vw 0 0;
+    /* margin: 0 5vw 0 0; */
     line-height: 60px;
 }
 .oms-tagline {
@@ -399,13 +399,14 @@ body {
     position: relative;
     white-space: nowrap;
     height: 100vh;
+    width: 300px;
     margin: 0 1vw;
 }
 .left-vert-carousel-container::before,
 .left-vert-carousel-container::after {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 300px;
     height: 100%;
     content: "";
     z-index: 2;
@@ -416,8 +417,8 @@ body {
     animation: bot-to-top 15s infinite linear;
 }
 .vert-carousel-card {
-    height: 100px;
-    width: 250px;
+    height: 50px;
+    width: 230px;
     display: flex;
     align-items: center;
     font-size: 1.2em;
@@ -428,11 +429,12 @@ body {
     margin-bottom: 50px;
 }
 .vert-carousel-card h6 {
-    font-size: 13px;
+    font-size: 15px;
+    margin: 0;
 }
 .vert-card-img {
     width: 40px;
-    margin: 0 15px 0 35px;
+    margin: 0 5px 0 10px;
 }
 @keyframes bot-to-top {
     from {
@@ -447,13 +449,14 @@ body {
     position: relative;
     white-space: nowrap;
     height: 100vh;
-    margin: 0 1vw;
+    width: 300px;
+    margin: 0 5vw 0 0;
 }
 .right-vert-carousel-container::before,
 .right-vert-carousel-container::after {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 300px;
     height: 100%;
     content: "";
     z-index: 2;
@@ -547,7 +550,7 @@ body {
 
 /* Opsfi Ecosystem style */
 .opsfi-ecosystem-section {
-    height: 150vh;
+    height: 250vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -925,8 +928,9 @@ body {
     gap: 20px;
 }
 .contact-left-title h2 {
-    font-size: 40px;
-    color: var(--accent-blue);
+    font-size: 3vw;
+    font-family: var(--sup-font);
+    /* color: var(--accent-blue); */
     margin-bottom: 5px;
 }
 .contact-left-title hr {
