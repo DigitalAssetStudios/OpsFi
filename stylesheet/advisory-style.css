@@ -272,9 +272,9 @@ body {
     margin: 0;
 }
 .ofs-par {
-    font-size: 1.2rem;
+    font-size: 1.5vw;
     line-height: 1.5;
-    color: lightgray;
+    color: var(--main-white);
     margin: 0 0 50px 0;
     max-width: 900px;
 }
@@ -331,11 +331,11 @@ body {
     background-image: url(../assets/sustainable-img.png);
 }
 .flip-card-title {
-    height: 120px;
+    height: 80px;
     margin-top: 220px;
     background-color: var(--dark-blue);
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1.5vw;
 }
 .flip-card-back {
     background-color: var(--card-blue-colour);
@@ -348,6 +348,7 @@ body {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--dark-blue);
+    margin-top: 100px;
 }
 /* Our Focus media changes */
 @media screen and (max-width: 1024px) {
@@ -414,7 +415,7 @@ body {
     font-size: 2vw;
     position: sticky;
     top: 11vw;
-    color: gray;
+    color: var(--accent-blue);
     margin-bottom: 30px;
 }
 .sss-card-container {
@@ -435,6 +436,9 @@ body {
     align-items: center;
     width: 90vw;
     max-width: 1300px;
+}
+.first-card {
+    margin-left: 15vw;
 }
 .sss-card-content {
     background: var(--dark-blue);
@@ -458,14 +462,14 @@ body {
     margin: 0;
 }
 .sss-point-title {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     margin: 0;
 }
 .top-title {
     margin-top: 30px;
 }
 .sss-card-par {
-    font-size: 0.8vw;
+    font-size: 1vw;
     margin: 0px 0 35px 20px;
 }
 .card-indicator {
@@ -553,8 +557,9 @@ body {
     gap: 20px;
 }
 .contact-left-title h2 {
-    font-size: 40px;
-    color: var(--accent-blue);
+    font-size: 3vw;
+    font-family: var(--sup-font);
+    /* color: var(--accent-blue); */
     margin-bottom: 5px;
 }
 .contact-left-title hr {
