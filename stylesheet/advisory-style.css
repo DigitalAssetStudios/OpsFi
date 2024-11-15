@@ -332,14 +332,19 @@ body {
 }
 .flip-card-title {
     height: 80px;
-    margin-top: 220px;
+    margin-top: 300px;
     background-color: var(--dark-blue);
     padding: 10px;
     font-size: 1.2vw;
 }
 .flip-card-back {
-    background-color: var(--card-blue-colour);
-    color: var(--dark-blue);
+    /* background-color: var(--card-blue-colour); */
+    background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.3));
+    box-shadow: 0px -5px 20px var(--trans-main-white) inset;
+    border: 1px solid rgba(1, 92, 255, 1);
+    box-shadow: 0px 5px 30px var(--accent-blue), 0px 5px 30px var(--accent-blue);
+    backdrop-filter: blur(8px);
+    /* color: var(--main-white); */
     transform: rotateY(180deg);
     padding: 25px;
     border-radius: 25px;
@@ -347,7 +352,7 @@ body {
 .flip-card-par {
     font-size: 1rem;
     line-height: 1.5;
-    color: var(--dark-blue);
+    color: var(--main-white);
     margin-top: 100px;
 }
 /* Our Focus media changes */
@@ -392,23 +397,23 @@ body {
     font-size: 3vw;
     font-family: var(--sup-font);
     position: sticky;
-    top: 7vw;
+    top: 6vw;
     margin-bottom: 5px;
 }
 .sss-tagline {
     font-size: 2vw;
     position: sticky;
-    top: 11vw;
+    top: 9vw;
     color: var(--accent-blue);
     margin-bottom: 30px;
 }
 .sss-card-container {
     position: sticky;
-    top: 15vw;
+    top: 13vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 360vw;
+    width: 370vw;
     overflow: hidden;
     gap: 20vw;
 }
@@ -422,7 +427,7 @@ body {
     max-width: 1300px;
 }
 .first-card {
-    margin-left: 5vw;
+    margin-left: 0vw;
 }
 .sss-card-content {
     background: var(--dark-blue);
@@ -475,9 +480,15 @@ body {
 }
 /* Suite service media changes */
 @media screen and (max-width: 1440px) {
-    .first-card {
-        margin-left: 15vw;
+    .sss-card-container {
+        width: 430vw;
     }
+    .sss-card-container {
+        top: 12vw;
+    }
+    /* .first-card {
+        margin-left: 0vw;
+    } */
 }
 @media screen and (max-width: 480px) {
     .suite-services-section {
