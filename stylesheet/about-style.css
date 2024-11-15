@@ -251,17 +251,17 @@ body {
 /* About Us Style */
 .highlight-section {
     position: relative;
-    height: 150vh;
+    height: 120vh;
     display: flex;
     gap: 5vw;
     padding: 50px;
 }
-.aus-title {
+/* .aus-title {
     font-family: var(--sup-font);
-    margin: 5px 0 0 5vw;
-}
+    margin: 5px 0 0 1vw;
+} */
 .highlight-paragraph {
-    margin: -10px 20vw 0 0;
+    margin: -10px 20vw 0 5vw;
 }
 .highlight-paragraph span {
     font-size: 5vw;
@@ -350,7 +350,7 @@ body {
 
 /* Advisory About Style */
 .advisory-about-section {
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -365,11 +365,11 @@ body {
 .aas-title {
     font-family: var(--main-font);
     line-height: 60px;
-    font-size: 3vw;
+    font-size: 2vw;
     margin: 0;
 }
 .aas-par {
-    font-size: 1vw;
+    font-size: 1.2vw;
     line-height: 1.2em;
     margin: 0 10vw;
 }
@@ -412,11 +412,11 @@ body {
 .lts-title {
     font-family: var(--main-font);
     line-height: 60px;
-    font-size: 3vw;
+    font-size: 2vw;
     margin: 0;
 }
 .lts-par {
-    font-size: 1vw;
+    font-size: 1.2vw;
     line-height: 1.2em;
     margin: 10px 15vw 0 15vw;
 }
@@ -531,10 +531,11 @@ body {
     gap: 20px;
 }
 .contact-left-title h2 {
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: var(--sup-font);
     /* color: var(--accent-blue); */
     margin-bottom: 5px;
+    text-align: center;
 }
 .contact-left-title hr {
     border: none;

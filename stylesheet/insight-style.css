@@ -268,9 +268,9 @@ body {
     margin: 0;
 }
 .ofs-par {
-    font-size: 1.5vw;
+    font-size: 1.8vw;
     line-height: 1.5;
-    color: lightgray;
+    color: var(--main-white);
     margin: 0 auto;
     max-width: 1000px;
 }
@@ -295,7 +295,7 @@ body {
 .text-item {
     margin-bottom: 20px;
     cursor: pointer;
-    color: rgb(183, 183, 183);
+    color: var(--main-white);
     transition: opacity 0.3s ease, color 0.3s ease;
 }
 .text-item.active {
@@ -416,13 +416,6 @@ body {
     top: 7vw;
     margin: 50px 0 0 0;
     font-family: var(--sup-font);
-}
-.sss-tagline {
-    font-size: 2vw;
-    position: sticky;
-    top: 11vw;
-    color: var(--accent-blue);
-    margin: 5px 0 50px 0;
 }
 .stacking-cards-container {
     list-style: none;
@@ -561,10 +554,11 @@ body {
     gap: 20px;
 }
 .contact-left-title h2 {
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: var(--sup-font);
     /* color: var(--accent-blue); */
     margin-bottom: 5px;
+    text-align: center;
 }
 .contact-left-title hr {
     border: none;
@@ -581,7 +575,8 @@ body {
     outline: none;
     padding-left: 25px;
     font-weight: 500;
-    border-radius: 25px;
+    border-radius: 10px;
+    font-family: var(--def-font);
 }
 .contact-left textarea {
     height: 140px;

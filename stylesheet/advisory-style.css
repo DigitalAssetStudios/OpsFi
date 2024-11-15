@@ -263,11 +263,11 @@ body {
     margin: 0;
 }
 .ofs-par {
-    font-size: 1.5vw;
+    font-size: 2vw;
     line-height: 1.5;
     color: var(--main-white);
     margin: 0 0 50px 0;
-    max-width: 900px;
+    max-width: 1000px;
 }
 .ofs-card-container {
     display: flex;
@@ -344,7 +344,6 @@ body {
     font-size: 1.2vw;
     line-height: 1.5;
     color: var(--main-white);
-    margin-top: 100px;
 }
 /* Our Focus media changes */
 @media screen and (max-width: 1440px) {
@@ -409,16 +408,16 @@ body {
     gap: 20vw;
 }
 .side-card {
-    /* flex: 0 0 100vw; */
-    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90vw;
-    max-width: 1300px;
 }
 .first-card {
-    margin-left: 0vw;
+    margin-left: 12vw;
+}
+.last-card {
+    margin-right: 16vw;
 }
 .sss-card-content {
     background: var(--dark-blue);
@@ -547,10 +546,10 @@ body {
     gap: 20px;
 }
 .contact-left-title h2 {
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: var(--sup-font);
-    /* color: var(--accent-blue); */
     margin-bottom: 5px;
+    text-align: center;
 }
 .contact-left-title hr {
     border: none;
@@ -567,7 +566,8 @@ body {
     outline: none;
     padding-left: 25px;
     font-weight: 500;
-    border-radius: 25px;
+    border-radius: 10px;
+    font-family: var(--def-font);
 }
 .contact-left textarea {
     height: 140px;
