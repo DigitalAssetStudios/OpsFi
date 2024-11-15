@@ -3,7 +3,7 @@
     --dark-blue: rgb(4, 14, 37);
     --trans-dark-blue: rgba(4, 14, 37, 0.25);
     --main-blue: rgba(14, 44, 115, 1);
-    --accent-blue: rgba(1, 92, 255);
+    --accent-blue: rgb(1, 92, 255);
     --main-white: rgb(244, 249, 255);
     --trans-main-white: rgba(244, 249, 255, 0.25);
     --main-font: "Mokoto", "sans-serif";
@@ -294,10 +294,8 @@ body {
     overflow: hidden;
     position: relative;
     white-space: nowrap;
-    /* height: 100vh;
-    width: 300px;
-    margin: 0 1vw; */
-    /* padding: 10px; */
+    height: 100vh;
+    margin: 0 1vw;
 }
 .left-vert-carousel-container::before,
 .left-vert-carousel-container::after {
@@ -346,8 +344,6 @@ body {
     position: relative;
     white-space: nowrap;
     height: 100vh;
-    /* width: 300px; */
-    /* margin: 0 5vw 0 0; */
     padding: 0 0 0 100px;
 }
 .right-vert-carousel-container::before,
