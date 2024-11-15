@@ -4,7 +4,7 @@
     --trans-dark-blue: rgba(4, 14, 37, 0.25);
     --main-blue: rgba(14, 44, 115, 1);
     --accent-blue: rgb(1, 92, 255);
-    --main-white: rgba(244, 249, 255, 1);
+    --main-white: rgb(244, 249, 255);
     --card-blue-colour: rgb(170, 206, 216);
     --trans-main-white: rgba(244, 249, 255, 0.25);
     --main-font: "Mokoto", "sans-serif";
@@ -335,7 +335,7 @@ body {
     margin-top: 220px;
     background-color: var(--dark-blue);
     padding: 10px;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 .flip-card-back {
     background-color: var(--card-blue-colour);
@@ -351,25 +351,9 @@ body {
     margin-top: 100px;
 }
 /* Our Focus media changes */
-@media screen and (max-width: 1024px) {
-    .ofs-title {
-        font-size: 6vw;
-        margin: 0;
-    }
-    .ofs-par {
-        font-size: 1.2rem;
-        line-height: 1.4;
-    }
-    .ofs-card-container {
-        gap: 40px;
-    }
-    .flip-card {
-        width: 250px;
-        height: 350px;
-    }
+@media screen and (max-width: 1440px) {
     .flip-card-title {
-        height: 60px;
-        font-size: 1.3rem;
+        font-size: 1.5vw;
     }
 }
 @media screen and (max-width: 480px) {
@@ -438,7 +422,7 @@ body {
     max-width: 1300px;
 }
 .first-card {
-    margin-left: 15vw;
+    margin-left: 5vw;
 }
 .sss-card-content {
     background: var(--dark-blue);
@@ -490,7 +474,11 @@ body {
     display: block;
 }
 /* Suite service media changes */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1440px) {
+    .first-card {
+        margin-left: 15vw;
+    }
+}
 @media screen and (max-width: 480px) {
     .suite-services-section {
         height: 400vh;
