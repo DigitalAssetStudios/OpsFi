@@ -341,7 +341,7 @@ body {
     border-radius: 25px;
 }
 .flip-card-par {
-    font-size: 1rem;
+    font-size: 1.2vw;
     line-height: 1.5;
     color: var(--main-white);
     margin-top: 100px;
@@ -400,7 +400,7 @@ body {
 }
 .sss-card-container {
     position: sticky;
-    top: 13vw;
+    top: 11vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -449,7 +449,7 @@ body {
     margin-top: 30px;
 }
 .sss-card-par {
-    font-size: 1vw;
+    font-size: 1.2vw;
     margin: 0px 0 35px 20px;
 }
 .card-indicator {

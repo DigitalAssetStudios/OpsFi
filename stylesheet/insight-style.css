@@ -345,7 +345,7 @@ body {
     padding: 0;
     margin: 0 0 80px 0;
     color: var(--main-white);
-    font-size: 1.2rem;
+    font-size: 1.2vw;
 }
 .text-item.active .ofs-section-par {
     max-height: 100px;
@@ -454,7 +454,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 0.8vw;
+    /* gap: 0.8vw; */
 }
 .card-title {
     font-size: 2vw;
@@ -462,7 +462,14 @@ body {
     margin: 0;
 }
 .card-text p {
-    font-size: 1.1vw;
+    font-size: 1.2vw;
+    margin: 18px 0 0 0;
+}
+.card-text ul {
+    margin: 10px;
+}
+.card-text ul li {
+    padding: 5px;
 }
 .card-indicator {
     font-size: 0.6vw;

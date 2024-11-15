@@ -315,13 +315,13 @@ body {
     margin: 0 5vw;
 }
 .crs-title {
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: var(--main-font);
     line-height: 60px;
     margin: 0 0 0 0;
 }
 .crs-par {
-    font-size: 1vw;
+    font-size: 1.2vw;
     line-height: 1.3em;
 }
 /* CFO Reporting media changes */
