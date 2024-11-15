@@ -217,18 +217,9 @@ body {
     margin: 0;
 }
 /* landing media changes */
-@media screen and (max-width: 1024px) {
-    .page-title {
-        font-size: 15vw;
-        margin: 0;
-    }
+@media screen and (max-width: 1440px) {
     .page-title-sub {
-        font-size: 9.3vw;
-        margin: -140px 0 0 0;
-    }
-    .page-tagline {
-        font-size: 6vw;
-        margin: 0;
+        margin: -130px 0 0 0;
     }
 }
 @media screen and (max-width: 480px) {
