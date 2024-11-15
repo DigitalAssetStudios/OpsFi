@@ -203,7 +203,7 @@
                 // Check if the section is in the viewport
                 if (sectionTop < windowHeight && sectionTop > -sectionHeight) {
                     // Adjust scrollProgress so the highlighting finishes early (e.g., at 80% of section)
-                    const adjustedScrollProgress = (windowHeight - sectionTop) / (sectionHeight * 0.7 + windowHeight);
+                    const adjustedScrollProgress = (windowHeight - sectionTop) / (sectionHeight * 0.6 + windowHeight);
                     const wordIndex = Math.floor(adjustedScrollProgress * words.length);
 
                     // Highlight up to the current word index
