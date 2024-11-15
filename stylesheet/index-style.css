@@ -277,16 +277,17 @@ body {
     width: 60%;
 }
 .mission-text {
-    width: 80%;
-    padding: 0 0 5px 20px;
+    width: 50%;
+    padding: 0 0 5px 0;
 }
 .mission-title {
     font-weight: 500;
-    padding: 5px 0 0 0;
+    padding: 0px 0 0 0;
+    width: 80%;
 }
 .mission-par {
     padding: 0 0 0 10px;
-    width: 60%;
+    width: 55%;
 }
 .left-vert-carousel-container {
     overflow: hidden;
@@ -465,12 +466,12 @@ body {
 .oss-title {
     font-family: var(--sup-font);
     font-size: 3vw;
-    margin: 0 0 30px 0;
+    margin: 0 0 0px 0;
 }
-/* .oss-tagline {
+.oss-tagline {
     font-size: 1.5vw;
-    margin: 0 0 30px 0;
-} */
+    /* margin: 100px 0; */
+}
 .oss-card-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -574,7 +575,7 @@ body {
 }
 .oes-tagline {
     font-size: 1.5vw;
-    margin: 5px 0 25px 0;
+    margin: 10px 0 40px 0;
 }
 .oes-bt-about {
     background: radial-gradient(rgba(1, 92, 255, 0.7), rgba(1, 92, 255, 0.9));
@@ -937,10 +938,11 @@ body {
     gap: 20px;
 }
 .contact-left-title h2 {
-    font-size: 3vw;
+    font-size: 2vw;
     font-family: var(--sup-font);
     /* color: var(--accent-blue); */
     margin-bottom: 5px;
+    text-align: center;
 }
 .contact-left-title hr {
     border: none;
