@@ -3,7 +3,7 @@
     --dark-blue: rgba(4, 14, 37, 1);
     --trans-dark-blue: #040e2540;
     --main-blue: rgba(14, 44, 115, 1);
-    --accent-blue: rgba(1, 92, 255, 1);
+    --accent-blue: rgb(1, 92, 255);
     --main-white: rgba(244, 249, 255, 1);
     --trans-main-white: rgba(244, 249, 255, 0.251);
     --main-font: "Mokoto", "sans-serif";
@@ -147,6 +147,12 @@ body {
     list-style: none;
     padding: 0;
 }
+.menu-list li {
+    margin: 20px;
+}
+.menu-list li .nav-contact-bt {
+    margin-left: 50px;
+}
 .mobile-menu .nav-item {
     color: var(--main-white);
     font-size: 20px;
@@ -211,30 +217,6 @@ body {
     font-family: var(--sup-font);
     margin: -5vw 0 5vw 0;
 }
-/* .landing-section {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-} */
-/* .ls-text-container {
-    margin: 7vh 20vw 0 20vw;
-} */
-/* .ls-intro-title {
-    font-size: 1vw;
-    margin: 20px 0 20px 0;
-} */
-/* .ls-page-title {
-    font-size: 5vw;
-    font-family: var(--main-font);
-    margin: 0;
-    line-height: 100px;
-} */
-/* .ls-page-par {
-    font-size: 1.4vw;
-    margin: 20px 0 0 0;
-} */
 /* landing media changes */
 @media screen and (max-width: 1024px) {
     .ls-text-container {
@@ -316,48 +298,49 @@ body {
     width: 100%;
     background-color: var(--dark-blue);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 50px;
 }
 .cfo-reporting-part, .advisory-about-part {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 20vw;
     gap: 50px;
+}
+.cfo-reporting-part {
+    margin: 0 0 0 15vw;
+}
+.advisory-about-part {
+    margin: 0 15vw 0 0;
 }
 .crs-par {
     width: 100%;
     font-size: 1vw;
     line-height: 30px;
 }
-.bot-img {
-    margin-right: 50px;
+.crs-img-container img {
+    width: 700px;
 }
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 480px) {
     .combined-about-section {
-        height: 280vh;
-        text-align: center;
-        gap: 100px;
+        height: 230vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cfo-reporting-part {
+        margin: 0 5vw;
+    }
+    .advisory-about-part {
+        margin: 0 5vw;
     }
     .crs-img-container img {
-        width: 100vw;
-    }
-    .cfo-reporting-part, .advisory-about-part {
-        flex-direction: column;
+        width: 300px;
     }
     .crs-text-container {
-        padding: 0 20px;
+        padding: 0;
     }
     .crs-par {
         font-size: 4vw;
         line-height: 30px;
-    }
-    .bot-img {
-        margin-right: 0px;
     }
 }
 

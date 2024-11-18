@@ -146,6 +146,12 @@ body {
     list-style: none;
     padding: 0;
 }
+.menu-list li {
+    margin: 20px;
+}
+.menu-list li .nav-contact-bt {
+    margin-left: 50px;
+}
 .mobile-menu .nav-item {
     color: var(--main-white);
     font-size: 20px;
@@ -272,10 +278,10 @@ body {
 .oms-tagline {
     font-size: 1.5vw;
     margin: 0;
-    padding: 15px 0;
+    padding: 30px 0 15px 0;
 }
 .mission-text {
-    width: 70%;
+    width: 80%;
     padding: 0 0 5px 0;
 }
 .mission-title {
@@ -335,13 +341,18 @@ body {
 @media screen and (max-width: 480px) {
     .our-mission-section {
         height: 130vh;
+        flex-direction: column;
     }
     .oms-content-container {
-        flex-direction: column;
+        width: 100%;
+        margin: 0 0 0 10px;
+    }
+    .mission-text {
+        width: 90%;
     }
     .oms-text-container {
         margin: 0 0 5vw 0;
-        width: 80%;
+        width: 100%;
     }
     .oms-title {
         font-size: 10vw;
@@ -350,57 +361,47 @@ body {
     }
     .oms-tagline {
         font-size: 4vw;
-        padding: 15px 0;
-        width: 80%;
+        padding: 30px 0 15px 0;
+        width: 90%;
     }
-    .vert-carousel-card {
-        height: 50px;
-        width: 150px;
-        display: inline-block;
-        justify-content: center;
-        margin-bottom: 10px;
-    }
-    .vert-carousel-card h6 {
-        font-size: 10px;
-        margin-left: 20px;
-    }
-    .vert-card-img {
-        display: none;
-    }
-    .left-vert-carousel-container {
-        height: auto;
+    .oms-left-carousel-container,
+    .oms-right-carousel-container {
+        height: 100px;
         width: 100vw;
-        white-space: nowrap;
     }
     .left-carousel {
-        animation: right-to-left 15s infinite linear;
-    }
-    /* New horizontal animation for mobile */
-    @keyframes right-to-left {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(-50%);
-        }
-    }
-    .right-vert-carousel-container {
-        height: auto;
-        width: 100vw;
-        white-space: nowrap;
+        flex-direction: row;
+        animation: scroll-horizontal-left 10s linear infinite;
     }
     .right-carousel {
-        animation: left-to-right 15s infinite linear;
+        flex-direction: row;
+        animation: scroll-horizontal-right 10s linear infinite;
     }
-    /* New horizontal animation for mobile */
-    @keyframes left-to-right {
-        from {
-            transform: translateX(-50%);
-        }
-        to {
-            transform: translateX(0%);
-        }
+    .vert-carousel-item {
+        margin: 0 20px;
     }
+    .vert-carousel-item img {
+        display: none;
+    }
+    .vert-carousel-item h6 {
+        font-size: 3vw;
+    }
+    @keyframes scroll-horizontal-left {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%); /* Moves by half the total content size */
+        }
+      }
+      @keyframes scroll-horizontal-right {
+        0% {
+          transform: translateX(-50%);
+        }
+        100% {
+          transform: translateX(0%); /* Moves by half the total content size */
+        }
+      }
 }
 
 

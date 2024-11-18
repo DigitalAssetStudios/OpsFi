@@ -150,6 +150,12 @@ body {
     list-style: none;
     padding: 0;
 }
+.menu-list li {
+    margin: 20px;
+}
+.menu-list li .nav-contact-bt {
+    margin-left: 50px;
+}
 .mobile-menu .nav-item {
     color: var(--main-white);
     font-size: 20px;
@@ -352,7 +358,7 @@ body {
 }
 @media screen and (max-width: 480px) {
     .our-focus-section {
-        height: 230vh;
+        height: 270vh;
     }
     .ofs-title {
         font-size: 9vw;
@@ -368,6 +374,13 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .flip-card-title {
+        font-size: 6vw;
+    }
+    .flip-card-par {
+        font-size: 6vw;
+        line-height: 1.3;
     }
 }
 

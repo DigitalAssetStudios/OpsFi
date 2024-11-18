@@ -147,6 +147,12 @@ body {
     list-style: none;
     padding: 0;
 }
+.menu-list li {
+    margin: 20px;
+}
+.menu-list li .nav-contact-bt {
+    margin-left: 50px;
+}
 .mobile-menu .nav-item {
     color: var(--main-white);
     font-size: 20px;
