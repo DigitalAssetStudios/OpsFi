@@ -250,7 +250,6 @@ body {
     width: 100%;
     z-index: 1;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     position: relative;
     background-color: var(--dark-blue);
@@ -259,10 +258,10 @@ body {
 .oms-content-container {
     display: flex;
     align-items: center;
+    width: 50%;
 }
 .oms-text-container {
     margin: 0 0 0 10vw;
-    width: 45%;
 }
 .oms-title {
     font-size: 3vw;
@@ -283,80 +282,52 @@ body {
     font-weight: 500;
     padding: 0;
 }
-.left-vert-carousel-container {
+.oms-left-carousel-container,
+.oms-right-carousel-container {
     overflow: hidden;
+    height: 100vh; /* Set the visible height */
     position: relative;
-    white-space: nowrap;
-    height: 100vh;
-    margin: 0 1vw;
-}
-.left-vert-carousel-container::before,
-.left-vert-carousel-container::after {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 50vh;
-    content: "";
-    z-index: 2;
-    pointer-events: none;
+    width: 200px; /* Adjust as needed for card width */
+    margin-right: 100px;
 }
 .left-carousel {
-    display: inline-block;
-    animation: bot-to-top 15s infinite linear;
-}
-.vert-carousel-card {
-    height: 50px;
-    width: 230px;
     display: flex;
-    align-items: center;
-    font-size: 1.2em;
-    border-radius: 20px;
-    color: var(--main-white);
-    margin-bottom: 50px;
-}
-.vert-carousel-card h6 {
-    font-size: 15px;
-    margin: 0;
-}
-.vert-card-img {
-    width: 35px;
-    margin: 0 10px 0 10px;
-}
-@keyframes bot-to-top {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-50%);
-    }
-}
-.right-vert-carousel-container {
-    overflow: hidden;
-    position: relative;
-    white-space: nowrap;
-    height: 100vh;
-    padding: 0 0 0 100px;
-}
-.right-vert-carousel-container::before,
-.right-vert-carousel-container::after {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    content: "";
-    z-index: 2;
-    pointer-events: none;
+    flex-direction: column;
+    animation: scroll 20s linear infinite;
 }
 .right-carousel {
-    display: inline-block;
-    animation: top-to-bot 15s infinite linear;
+    display: flex;
+    flex-direction: column;
+    animation: scrollDown 20s linear infinite;
 }
-@keyframes top-to-bot {
-    from {
-        transform:  translateY(0%);
+.vert-carousel-item {
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    margin: 20px 0;
+}
+.vert-card-img {
+    height: 40px;
+    margin: 0 15px 0 0;
+}
+.vert-carousel-item h6 {
+    font-size: 1vw;
+    color: var(--main-white);
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
     }
-    to {
-        transform: translateY(50%)
+    100% {
+        transform: translateY(-50%); /* Moves by half the total content size */
+    }
+}
+@keyframes scrollDown {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 /* Our Mission media changes */

@@ -1,50 +1,78 @@
-/* Set up the carousel section */
-.carousel-section {
-    height: 100vh;
+/* Importans and Variables */
+:root {
+    --dark-blue: rgb(4, 14, 37);
+    --trans-dark-blue: rgba(4, 14, 37, 0.25);
+    --main-blue: rgba(14, 44, 115, 1);
+    --accent-blue: rgb(1, 92, 255);
+    --main-white: rgb(244, 249, 255);
+    --trans-main-white: rgba(244, 249, 255, 0.25);
+    --main-font: "Mokoto", "sans-serif";
+    --def-font: "Lato", sans-serif;
+    --sup-font: "Share Tech Mono", "monospace";
+}
+
+@font-face {
+    font-family: "Mokoto";
+    src: url("../assets/mokoto.regular.ttf") format("truetype");
+    src: url("../assets/mokoto-regular.otf") format("opentype");
+}
+
+
+
+/* Main Body Styling */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-blue);
+    font-family: var(--def-font);
+    color: var(--main-white);
+    overflow-x: hidden;
+}
+
+/* General styling */
+.section-div {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Ensures no items stick out */
-    background-color: #f0f0f0; /* Optional background */
+    height: 100vh;
+  }
+  .carousel-container-div {
+    overflow: hidden;
+    height: 100vh; /* Set the visible height */
+    position: relative;
+    width: 200px; /* Adjust as needed for card width */
   }
   
-  /* Carousel container */
-  .vertical-carousel {
+  .main-row-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    position: relative;
-    overflow: hidden;
+    animation: scroll 20s linear infinite;
   }
   
-  /* Carousel items */
-  .carousel-item {
-    width: 250px;
-    height: 20%; /* Dynamically adjusts based on number of cards */
-    min-height: 100px; /* Ensures a minimum size */
-    background-color: #007bff;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    margin: 10px auto; /* Center and space items */
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  .item {
+    text-align: center;
+    margin: 20px 0;
   }
   
-  /* Smooth scrolling effect */
-  .vertical-carousel.scrolling {
-    animation: vertical-scroll 10s linear infinite;
+  .vert-card-img {
+    max-width: 100px;
+    margin-bottom: 10px;
   }
   
-  /* Keyframes for infinite scroll */
-  @keyframes vertical-scroll {
+  h6 {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  /* Infinite Scroll Animation */
+  @keyframes scroll {
     0% {
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-100%);
+      transform: translateY(-50%); /* Moves by half the total content size */
     }
   }
-  

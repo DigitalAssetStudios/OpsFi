@@ -210,9 +210,9 @@ body {
     margin: 0;
 }
 .page-title-sub {
-    font-size: 5vw;
-    font-family: var(--main-font);
-    margin: -150px 0 0 0;
+    font-size: 3vw;
+    font-family: var(--sup-font);
+    margin: -5vw 0 5vw 0;
 }
 .page-tagline {
     font-size: 3vw;
