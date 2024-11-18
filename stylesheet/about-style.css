@@ -309,11 +309,20 @@ body {
     margin: 0 10vw;
     gap: 50px;
 }
+.first-block {
+    margin-left: 200px;
+}
+.second-block {
+    margin-right: 200px;
+}
 .crs-title {
     font-size: 2vw;
     font-family: var(--main-font);
     line-height: 60px;
     margin: 0 0 0 0;
+}
+.crs-par {
+    width: 100%;
 }
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 480px) {
@@ -602,6 +611,7 @@ body {
     padding-left: 25px;
     font-weight: 500;
     border-radius: 10px;
+    font-family: var(--def-font);
 }
 .contact-left textarea {
     height: 140px;
