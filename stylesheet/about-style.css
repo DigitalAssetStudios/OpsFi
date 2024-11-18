@@ -318,7 +318,7 @@ body {
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 480px) {
     .combined-about-section {
-        height: 200vh;
+        height: 220vh;
         text-align: center;
         gap: 100px;
     }
