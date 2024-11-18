@@ -81,29 +81,29 @@
                         <div class="ofs-text-area">
                             <div class="text-item">
                                 <h3 class="ofs-section-title">Financial & Operational Empowerment</h3>
-                                <div class="ofs-loader-container">
+                                <!-- <div class="ofs-loader-container">
                                     <div class="progress-bar">
                                         <div class="progress"></div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <p class="ofs-section-par">Unlock in-depth financial and operational visibility, with robust KPI analysis, providing unmatched insight for sustainable growth.</p>
                             </div>
                             <div class="text-item">
                                 <h3 class="ofs-section-title">Building a Solid Partnership</h3>
-                                <div class="ofs-loader-container">
+                                <!-- <div class="ofs-loader-container">
                                     <div class="progress-bar">
                                         <div class="progress"></div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <p class="ofs-section-par">Establish a highly effective finance function, offering improved investor trust, cash flow control and reducing perceived risk.</p>
                             </div>
                             <div class="text-item">
                                 <h3 class="ofs-section-title">Tailored Strategies for Growth Stages</h3>
-                                <div class="ofs-loader-container">
+                                <!-- <div class="ofs-loader-container">
                                     <div class="progress-bar">
                                         <div class="progress"></div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <p class="ofs-section-par">Tailored support for your startup at every stage, from MVP to product development and ultimately market penetration at Series A stage.</p>
                             </div>
                         </div>
@@ -218,11 +218,54 @@
 
 
 // Simple toggle script for clicked and automatic slide for text and images
+            // document.addEventListener("DOMContentLoaded", function () {
+            //     // Get all the text-item elements, images, and loader containers
+            //     const textItems = document.querySelectorAll(".text-item");
+            //     const images = document.querySelectorAll(".slide-show-img");
+            //     const loaderContainers = document.querySelectorAll(".ofs-loader-container");
+            //     let myIndex = 0;
+            //     let autoSlide = true; // Controls the automatic slideshow
+
+            //     // Function to show image based on index
+            //     function showImage(index) {
+            //         images.forEach(img => img.style.display = "none"); // Hide all images
+            //         images[index].style.display = "block"; // Show the current image
+            //     }
+
+            //     // Function to reset active text and hide loader containers
+            //     function resetTextItems() {
+            //         textItems.forEach(item => item.classList.remove("active"));
+            //         loaderContainers.forEach(loader => loader.style.display = "none"); // Hide all loaders
+            //     }
+
+            //     // Add click event listener to each text-item
+            //     textItems.forEach((item, index) => {
+            //         item.addEventListener("click", function () {
+            //             resetTextItems(); // Collapse other sections and hide loaders
+            //             this.classList.toggle("active"); // Expand the clicked section
+            //             loaderContainers[index].style.display = "block"; // Show the loader for the active text-item
+            //             showImage(index); // Show the corresponding image
+            //         });
+            //     });
+
+            //     // Automatic slideshow function
+            //     function carousel() {
+            //         if (autoSlide) { // Only proceed if autoSlide is true
+            //             resetTextItems(); // Collapse other sections and hide loaders
+            //             textItems[myIndex].classList.add("active"); // Set active for current text
+            //             loaderContainers[myIndex].style.display = "block"; // Show loader for current text-item
+            //             showImage(myIndex); // Show corresponding image
+            //             myIndex++; // Move to the next image/text
+            //             if (myIndex >= images.length) { myIndex = 0; } // Reset index if it exceeds the number of images
+            //         }
+            //         setTimeout(carousel, 7000); // Change every 7 seconds
+            //     }
+
+            //     carousel(); // Start the carousel
+            // });
             document.addEventListener("DOMContentLoaded", function () {
-                // Get all the text-item elements, images, and loader containers
-                const textItems = document.querySelectorAll(".text-item");
+                // Get all the slide-show images
                 const images = document.querySelectorAll(".slide-show-img");
-                const loaderContainers = document.querySelectorAll(".ofs-loader-container");
                 let myIndex = 0;
                 let autoSlide = true; // Controls the automatic slideshow
 
@@ -232,37 +275,20 @@
                     images[index].style.display = "block"; // Show the current image
                 }
 
-                // Function to reset active text and hide loader containers
-                function resetTextItems() {
-                    textItems.forEach(item => item.classList.remove("active"));
-                    loaderContainers.forEach(loader => loader.style.display = "none"); // Hide all loaders
-                }
-
-                // Add click event listener to each text-item
-                textItems.forEach((item, index) => {
-                    item.addEventListener("click", function () {
-                        resetTextItems(); // Collapse other sections and hide loaders
-                        this.classList.toggle("active"); // Expand the clicked section
-                        loaderContainers[index].style.display = "block"; // Show the loader for the active text-item
-                        showImage(index); // Show the corresponding image
-                    });
-                });
-
                 // Automatic slideshow function
                 function carousel() {
                     if (autoSlide) { // Only proceed if autoSlide is true
-                        resetTextItems(); // Collapse other sections and hide loaders
-                        textItems[myIndex].classList.add("active"); // Set active for current text
-                        loaderContainers[myIndex].style.display = "block"; // Show loader for current text-item
                         showImage(myIndex); // Show corresponding image
-                        myIndex++; // Move to the next image/text
+                        myIndex++; // Move to the next image
                         if (myIndex >= images.length) { myIndex = 0; } // Reset index if it exceeds the number of images
                     }
-                    setTimeout(carousel, 7000); // Change every 7 seconds
+                    setTimeout(carousel, 5000); // Change every 5 seconds
                 }
 
                 carousel(); // Start the carousel
             });
+
+
 
 
 

@@ -1,0 +1,50 @@
+/* Set up the carousel section */
+.carousel-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures no items stick out */
+    background-color: #f0f0f0; /* Optional background */
+  }
+  
+  /* Carousel container */
+  .vertical-carousel {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Carousel items */
+  .carousel-item {
+    width: 250px;
+    height: 20%; /* Dynamically adjusts based on number of cards */
+    min-height: 100px; /* Ensures a minimum size */
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 10px auto; /* Center and space items */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Smooth scrolling effect */
+  .vertical-carousel.scrolling {
+    animation: vertical-scroll 10s linear infinite;
+  }
+  
+  /* Keyframes for infinite scroll */
+  @keyframes vertical-scroll {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  

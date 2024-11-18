@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/test-style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="carousel-section">
+        <div class="vertical-carousel">
+            <div class="carousel-item">Card 1</div>
+            <div class="carousel-item">Card 2</div>
+            <div class="carousel-item">Card 3</div>
+            <div class="carousel-item">Card 4</div>
+            <div class="carousel-item">Card 5</div>
+        </div>
+    </section>      
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+        const carousel = document.querySelector(".vertical-carousel");
+        const items = Array.from(carousel.children);
+
+        // Clone items to create infinite scroll illusion
+        items.forEach((item) => {
+            const clone = item.cloneNode(true);
+            carousel.appendChild(clone);
+        });
+
+        // Start the animation after items are cloned
+        setTimeout(() => {
+            carousel.classList.add("scrolling");
+        }, 100);
+        });
+
+    </script>
+</body>
+</html>
