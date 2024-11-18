@@ -291,8 +291,40 @@ body {
 
 
 
+/* combined-about style */
+.combined-about-section {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.cfo-reporting-part, .advisory-about-part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vw;
+    gap: 50px;
+}
+.crs-title {
+    font-size: 2vw;
+    font-family: var(--main-font);
+    line-height: 60px;
+    margin: 0 0 0 0;
+}
+/* .crs-img-container {
+    margin: 100px 0 0 0;
+    transition: transform 0.1s ease-in-out;
+} */
+
+
+
+
 /* CFO Reporting Style */
-.cfo-reporting-section {
+/* .cfo-reporting-section {
     height: 85vh;
     width: 100%;
     display: flex;
@@ -323,7 +355,7 @@ body {
 .crs-par {
     font-size: 1.2vw;
     line-height: 1.3em;
-}
+} */
 /* CFO Reporting media changes */
 @media screen and (max-width: 1024px) {}
 @media screen and (max-width: 480px) {
