@@ -319,7 +319,11 @@ body {
 .crs-img-container img {
     width: 700px;
 }
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1440px) {
+    .crs-img-container img {
+        width: 400px;
+    }
+}
 @media screen and (max-width: 480px) {
     .combined-about-section {
         height: 230vh;
