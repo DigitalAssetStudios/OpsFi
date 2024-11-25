@@ -228,7 +228,7 @@ body {
 /* landing media changes */
 @media screen and (max-width: 1440px) {
     .page-title-sub {
-        margin: -130px 0 0 0;
+        margin: -90px 0 0 0;
     }
 }
 @media screen and (max-width: 480px) {

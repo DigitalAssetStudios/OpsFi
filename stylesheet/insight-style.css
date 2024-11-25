@@ -1,7 +1,7 @@
 /* Importans and Variables */
 :root {
-    --dark-blue: rgba(4, 14, 37, 1);
-    --trans-dark-blue: #040e2540;
+    --dark-blue: rgb(4, 14, 37);
+    --trans-dark-blue: rgba(4, 14, 37, 0.251);
     --main-blue: rgba(14, 44, 115, 1);
     --accent-blue: rgba(1, 92, 255, 1);
     --main-white: rgba(244, 249, 255, 1);
@@ -225,7 +225,7 @@ body {
 /* landing media changes */
 @media screen and (max-width: 1440px) {
     .page-title-sub {
-        margin: -130px 0 0 0;
+        margin: -90px 0 0 0;
     }
 }
 @media screen and (max-width: 480px) {
