@@ -416,7 +416,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
+    margin: 0 0 10vh 0;
     padding: 2vw 0;
 }
 .sss-title, .sss-tagline {
@@ -428,7 +428,7 @@ body {
     top: 7vw;
     margin: 50px 0 0 0;
     font-family: var(--sup-font);
-    margin-bottom: 9%;
+    margin-bottom: 15%;
 }
 .stacking-cards-container {
     list-style: none;
