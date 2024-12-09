@@ -265,7 +265,7 @@
             });
 
 
-        // Adding a delay to loading pages:
+    // Adding a delay to loading pages:
                 function delayedNavigation(event, url) {
                     event.preventDefault(); // Prevent immediate navigation
 
@@ -283,11 +283,48 @@
                 });
 
 
-        // mobile burger toggle script:
+    // mobile burger toggle script:
             function toggleMobileMenu() {
                 const mobileMenu = document.querySelector('.mobile-menu');
                 mobileMenu.classList.toggle('open');
             }
+
+
+    // Event listener for mobile view on flipping cards:
+            document.addEventListener("DOMContentLoaded", () => {
+                const cards = document.querySelectorAll(".flip-card");
+
+                if (window.innerWidth <= 480) {
+                    // Toggle card on click
+                    cards.forEach(card => {
+                        card.addEventListener("click", event => {
+                            event.stopPropagation(); // Prevent triggering the document click listener
+                            const cardInner = card.querySelector(".flip-card-inner");
+
+                            // Close any other open cards
+                            cards.forEach(c => {
+                                if (c !== card) {
+                                    c.querySelector(".flip-card-inner").style.transform = "none";
+                                }
+                            });
+
+                            // Toggle flip for the clicked card
+                            if (cardInner.style.transform === "rotateY(180deg)") {
+                                cardInner.style.transform = "none";
+                            } else {
+                                cardInner.style.transform = "rotateY(180deg)";
+                            }
+                        });
+                    });
+
+                    // Flip all cards back to the front on document click
+                    document.addEventListener("click", () => {
+                        cards.forEach(card => {
+                            card.querySelector(".flip-card-inner").style.transform = "none";
+                        });
+                    });
+                }
+            });
 
         </script>
 

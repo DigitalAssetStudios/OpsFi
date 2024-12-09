@@ -61,7 +61,7 @@ body {
     list-style: none;
     background-color: var(--trans-dark-blue);
     backdrop-filter: blur(8px);
-    padding: 20px;
+    padding: 0px;
     border-radius: 25px;
 }
 .nav-item {
@@ -282,8 +282,8 @@ body {
     gap: 80px;
 }
 .flip-card {
-    width: 300px;
-    height: 400px;
+    width: 15.625vw;
+    height: 20.833vw;
     perspective: 1000px;
     border-radius: 25px;
 }
@@ -311,20 +311,20 @@ body {
     box-sizing: border-box;
 }
 .flip-card-front {
-    /* background-color: var(--card-blue-colour); */
     background-size: cover;
     background-position: center;
     color: var(--main-white);
     border-radius: 25px;
+    border: 1px solid var(--main-blue);
 }
 .cover-icon-1 {
-    background-image: url(../assets/strategic-img2.png);
+    background-image: url(../assets/strategic-img.png);
 }
 .cover-icon-2 {
-    background-image: url(../assets/lifecycle-img2.png);
+    background-image: url(../assets/lifecycle-img.png);
 }
 .cover-icon-3 {
-    background-image: url(../assets/sustainable-img2.png);
+    background-image: url(../assets/sustainable-img.png);
 }
 .flip-card-title {
     height: 80px;
@@ -352,6 +352,10 @@ body {
 }
 /* Our Focus media changes */
 @media screen and (max-width: 1440px) {
+    .flip-card {
+        width: 300px;
+        height: 400px;
+    }
     .flip-card-title {
         font-size: 1.5vw;
     }
@@ -359,6 +363,10 @@ body {
 @media screen and (max-width: 480px) {
     .our-focus-section {
         height: 270vh;
+    }
+    .flip-card {
+        width: 300px;
+        height: 400px;
     }
     .ofs-title {
         font-size: 9vw;
@@ -368,6 +376,9 @@ body {
         font-size: 1rem;
         line-height: 1.4;
         max-width: 350px;
+    }
+    .flip-card:hover .flip-card-inner {
+        transform: none; /* Prevent flipping on hover */
     }
     .ofs-card-container {
         display: flex;
@@ -488,27 +499,29 @@ body {
     .sss-card-container {
         top: 12vw;
     }
-    /* .first-card {
-        margin-left: 0vw;
-    } */
 }
 @media screen and (max-width: 480px) {
     .suite-services-section {
-        height: 400vh;
+        height: 355vh;
     }
     .sss-title {
         font-size: 10vw;
         top: 30vw;
+        position: relative;
     }
     .sss-tagline {
         font-size: 6vw;
         top: 44vw;
     }
     .sss-card-container {
+        position: relative;
         top: 55vw;
         flex-direction: column;
         width: 100%;
         gap: 20vw;
+    }
+    .side-card {
+        width: 90vw;
     }
     .sss-card-content {
         flex-direction: column;
@@ -534,6 +547,12 @@ body {
     }
     .card-indicator {
         font-size: 2vw;
+    }
+    .first-card {
+        margin-left: 0vw;
+    }
+    .last-card {
+        margin-right: 0vw;
     }
 }
 

@@ -58,7 +58,7 @@ body {
     list-style: none;
     background-color: var(--trans-dark-blue);
     backdrop-filter: blur(8px);
-    padding: 20px;
+    padding: 0px;
     border-radius: 25px;
 }
 .nav-item {
@@ -425,7 +425,7 @@ body {
 .sss-title {
     font-size: 3vw;
     position: sticky;
-    top: 7vw;
+    top: 4vw;
     margin: 50px 0 0 0;
     font-family: var(--sup-font);
 }
@@ -493,7 +493,15 @@ body {
     display: block;
 }
 /* Suite Services media changes */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1440px) {
+    .sss-title {
+        font-size: 3vw;
+        position: sticky;
+        top: 10vw;
+        margin: 50px 0 0 0;
+        font-family: var(--sup-font);
+    }
+}
 @media screen and (max-width: 480px) {
     .suite-services-section {
         height: 350vh;
@@ -505,7 +513,7 @@ body {
     }
     .sss-title {
         font-size: 10vw;
-        top: 23vw;
+        top: 10vw;
     }
     .sss-tagline {
         font-size: 6vw;
@@ -513,7 +521,7 @@ body {
         margin: 5px 0 50px 0;
     }
     .stacking-card {
-        top: 44vw;
+        top: 48vw;
         width: 80vw;
         max-width: 1400px;
     }

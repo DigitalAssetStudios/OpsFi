@@ -58,7 +58,7 @@ body {
     list-style: none;
     background-color: var(--trans-dark-blue);
     backdrop-filter: blur(8px);
-    padding: 20px;
+    padding: 0px;
     border-radius: 25px;
 }
 .nav-item {
@@ -517,14 +517,14 @@ body {
 
 /* Opsfi Ecosystem style */
 .opsfi-ecosystem-section {
-    height: 170vh;
+    height: 160vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* gap: 50px; */
-    overflow: hidden;
+    /* overflow-x: hidden; */
     position: relative;
 }
 .oes-text-container {
@@ -557,6 +557,9 @@ body {
 .spiral-container {
     position: absolute;
     z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 .spiral-section1, .spiral-section2, .spiral-section3 {
     position: absolute;
@@ -738,6 +741,7 @@ body {
 @media screen and (max-width: 480px) {
     .opsfi-ecosystem-section {
         height: 150vh;
+        overflow: hidden;
     }
     .oes-title {
         font-size: 10vw;
@@ -747,28 +751,21 @@ body {
         margin: 0 0 30px 0;
     }
     .spiral-container {
-        top: 48%;
-        left: 56%;
+        top: 51%;
+        left: 57%;
     }
     .spiral-section1, .spiral-section2, .spiral-section3 {
-        width: 5px;
-        height: 5px;
-        left: -20px;
-    }
-    .spiral-section1 img, .spiral-section2 img, .spiral-section3 img {
-        width: 50px;
+        width: 80px; /* Reduce size */
+        height: 80px;
     }
     .rotating-item1, .rotating-item2, .rotating-item3 {
-        position: absolute;
-        background: radial-gradient(rgba(1, 92, 255, 0.05), rgba(1, 92, 255, 0.5));
-        backdrop-filter: blur(8px);
-        border: 4px solid var(--main-blue);
-        height: 70px;
-        width: 70px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 80px; /* Match smaller size */
+        width: 80px;
+    }
+    .rotating-item1 img, 
+    .rotating-item2 img, 
+    .rotating-item3 img {
+        width: 60px; /* Scale images proportionally */
     }
     .logo-img1 {
         transform: translate(200px);
@@ -831,55 +828,55 @@ body {
         transform: rotate(320deg) translate(290px) rotate(-320deg);
     }
     .logo-img21 {
-        transform: translate(390px);
+        transform: translate(380px);
     }
     .logo-img22 {
-        transform: rotate(21deg) translate(390px) rotate(-21deg);
+        transform: rotate(21deg) translate(380px) rotate(-21deg);
     }
     .logo-img23 {
-        transform: rotate(42deg) translate(390px) rotate(-42deg);
+        transform: rotate(42deg) translate(380px) rotate(-42deg);
     }
     .logo-img24 {
-        transform: rotate(63deg) translate(390px) rotate(-63deg);
+        transform: rotate(63deg) translate(380px) rotate(-63deg);
     }
     .logo-img25 {
-        transform: rotate(84deg) translate(390px) rotate(-84deg);
+        transform: rotate(84deg) translate(380px) rotate(-84deg);
     }
     .logo-img26 {
-        transform: rotate(105deg) translate(390px) rotate(-105deg);
+        transform: rotate(105deg) translate(380px) rotate(-105deg);
     }
     .logo-img27 {
-        transform: rotate(126deg) translate(390px) rotate(-126deg);
+        transform: rotate(126deg) translate(380px) rotate(-126deg);
     }
     .logo-img28 {
-        transform: rotate(147deg) translate(390px) rotate(-147deg);
+        transform: rotate(147deg) translate(380px) rotate(-147deg);
     }
     .logo-img29 {
-        transform: rotate(168deg) translate(390px) rotate(-168deg);
+        transform: rotate(168deg) translate(380px) rotate(-168deg);
     }
     .logo-img30 {
-        transform: rotate(189deg) translate(390px) rotate(-189deg);
+        transform: rotate(189deg) translate(380px) rotate(-189deg);
     }
     .logo-img31 {
-        transform: rotate(210deg) translate(390px) rotate(-210deg);
+        transform: rotate(210deg) translate(380px) rotate(-210deg);
     }
     .logo-img32 {
-        transform: rotate(231deg) translate(390px) rotate(-231deg);
+        transform: rotate(231deg) translate(380px) rotate(-231deg);
     }
     .logo-img33 {
-        transform: rotate(252deg) translate(390px) rotate(-252deg);
+        transform: rotate(252deg) translate(380px) rotate(-252deg);
     }
     .logo-img34 {
-        transform: rotate(273deg) translate(390px) rotate(-273deg);
+        transform: rotate(273deg) translate(380px) rotate(-273deg);
     }
     .logo-img35 {
-        transform: rotate(294deg) translate(390px) rotate(-294deg);
+        transform: rotate(294deg) translate(380px) rotate(-294deg);
     }
     .logo-img36 {
-        transform: rotate(315deg) translate(390px) rotate(-315deg);
+        transform: rotate(315deg) translate(380px) rotate(-315deg);
     }
     .logo-img37 {
-        transform: rotate(336deg) translate(390px) rotate(-336deg);
+        transform: rotate(336deg) translate(380px) rotate(-336deg);
     }
 }
 

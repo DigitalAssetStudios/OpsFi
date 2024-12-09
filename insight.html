@@ -71,11 +71,11 @@
                 <div class="ofs-content-container">
                     <div class="ofs-text-container">
                         <h2 class="ofs-title">Our Focus</h2>
-                        <p class="ofs-par">Unlock financial clarity and drive sustainable growth with our tailored support</p>
+                        <!-- <p class="ofs-par">Unlock financial clarity and drive sustainable growth with our tailored support</p> -->
                     </div>
                     <div class="ofs-card-container">
                         <div class="ofs-images-area">
-                            <img src="./assets/financial-empowerment-img2.png" alt="" class="slide-show-img">
+                            <img src="./assets/financial-empowerment-img.png" alt="" class="slide-show-img">
                             <img src="./assets/building-partnership-img2.png" alt="" class="slide-show-img">
                             <img src="./assets/tailored-strategies-img2.png" alt="" class="slide-show-img">
                         </div>
@@ -133,7 +133,7 @@
                                 <span class="card-indicator">01 - 03</span>
                             </div>
                             <figure>
-                                <img src="./assets/cfo-reporting-img2.png" alt="CFO Reporting">
+                                <img src="./assets/cfo-reporting-img.png" alt="CFO Reporting">
                             </figure>
                         </div>
                     </li>
@@ -152,7 +152,7 @@
                                 <span class="card-indicator">02 - 03</span>
                             </div>
                             <figure>
-                                <img src="./assets/fiat-bookkeeping-img2.png" alt="Fiat Bookkeeping">
+                                <img src="./assets/fiat-bookkeeping-img.png" alt="Fiat Bookkeeping">
                             </figure>
                         </div>
                     </li>
@@ -171,7 +171,7 @@
                                 <span class="card-indicator">03 - 03</span>
                             </div>
                             <figure>
-                                <img src="./assets/crypto-bookkeeping-img2.png" alt="Crypto Bookkeeping">
+                                <img src="./assets/crypto-bookkeeping-img.png" alt="Crypto Bookkeeping">
                             </figure>
                         </div>
                     </li>
@@ -210,6 +210,8 @@
 
         <!-- Script for interactive background -->
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
         <script>
 
 // particles script:
@@ -291,8 +293,6 @@
 
 
 
-
-
 // Adding a delay to loading pages:
             function delayedNavigation(event, url) {
                 event.preventDefault(); // Prevent immediate navigation
@@ -316,6 +316,36 @@
                 const mobileMenu = document.querySelector('.mobile-menu');
                 mobileMenu.classList.toggle('open');
             }
+
+
+// Script to handle title text on suit section:
+            gsap.registerPlugin(ScrollTrigger);
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const title = document.querySelector(".sss-title");
+                const lastCard = document.querySelector(".stacking-cards-container .stacking-card:last-child");
+
+                // Pin the title during the scroll
+                ScrollTrigger.create({
+                    trigger: ".suite-services-section",
+                    start: "top top",
+                    endTrigger: lastCard, // Track the last card
+                    end: "bottom bottom",
+                    pin: title,
+                    pinSpacing: false, // Prevent extra spacing issues
+                });
+
+                // Move the title up when the last card starts scrolling
+                gsap.to(title, {
+                    scrollTrigger: {
+                        trigger: lastCard,
+                        start: "top", // Adjust when the last card starts moving
+                        end: "bottom bottom", // Title scrolls until the section ends
+                        scrub: true,
+                    },
+                    y: -100, // Adjust to move up; tweak as needed
+                });
+            });
 
 
         </script>
