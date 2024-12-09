@@ -425,9 +425,10 @@ body {
 .sss-title {
     font-size: 3vw;
     position: sticky;
-    top: 4vw;
+    top: 7vw;
     margin: 50px 0 0 0;
     font-family: var(--sup-font);
+    margin-bottom: 9%;
 }
 .stacking-cards-container {
     list-style: none;
@@ -500,6 +501,7 @@ body {
         top: 10vw;
         margin: 50px 0 0 0;
         font-family: var(--sup-font);
+        margin-bottom: 2%;
     }
 }
 @media screen and (max-width: 480px) {

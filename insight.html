@@ -319,33 +319,33 @@
 
 
 // Script to handle title text on suit section:
-            gsap.registerPlugin(ScrollTrigger);
+            // gsap.registerPlugin(ScrollTrigger);
 
-            document.addEventListener("DOMContentLoaded", () => {
-                const title = document.querySelector(".sss-title");
-                const lastCard = document.querySelector(".stacking-cards-container .stacking-card:last-child");
+            // document.addEventListener("DOMContentLoaded", () => {
+            //     const title = document.querySelector(".sss-title");
+            //     const lastCard = document.querySelector(".stacking-cards-container .stacking-card:last-child");
 
-                // Pin the title during the scroll
-                ScrollTrigger.create({
-                    trigger: ".suite-services-section",
-                    start: "top top",
-                    endTrigger: lastCard, // Track the last card
-                    end: "bottom bottom",
-                    pin: title,
-                    pinSpacing: false, // Prevent extra spacing issues
-                });
+            //     // Pin the title during the scroll
+            //     ScrollTrigger.create({
+            //         trigger: ".suite-services-section",
+            //         start: "top top",
+            //         endTrigger: lastCard, // Track the last card
+            //         end: "bottom bottom",
+            //         pin: title,
+            //         pinSpacing: false, // Prevent extra spacing issues
+            //     });
 
-                // Move the title up when the last card starts scrolling
-                gsap.to(title, {
-                    scrollTrigger: {
-                        trigger: lastCard,
-                        start: "top", // Adjust when the last card starts moving
-                        end: "bottom bottom", // Title scrolls until the section ends
-                        scrub: true,
-                    },
-                    y: -100, // Adjust to move up; tweak as needed
-                });
-            });
+            //     // Move the title up when the last card starts scrolling
+            //     gsap.to(title, {
+            //         scrollTrigger: {
+            //             trigger: lastCard,
+            //             start: "top top", // Adjust when the last card starts moving
+            //             end: "bottom bottom", // Title scrolls until the section ends
+            //             scrub: true,
+            //         },
+            //         y: -100, // Adjust to move up; tweak as needed
+            //     });
+            // });
 
 
         </script>
