@@ -411,7 +411,7 @@ body {
     font-family: var(--sup-font);
     position: sticky;
     top: 6vw;
-    margin-bottom: 5px;
+    margin-bottom: 9%;
 }
 .sss-tagline {
     font-size: 2vw;
@@ -493,6 +493,9 @@ body {
 }
 /* Suite service media changes */
 @media screen and (max-width: 1440px) {
+    .sss-title {
+        margin-bottom: 2%;
+    }
     .sss-card-container {
         width: 430vw;
     }
