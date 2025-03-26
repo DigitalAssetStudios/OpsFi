@@ -539,6 +539,11 @@ body {
         padding: 50px 0 40px 0;
     }
 }
+@media (max-width: 420px) {
+    .our-focus-section {
+        height: 360vh;
+    }
+}
 
 
 
@@ -711,6 +716,14 @@ body {
         padding: 50px 5vw 50px 5vw;
         font-size: 6vw;
     } */
+}
+@media (max-width: 400px) {
+    .our-focus-section {
+        height: 700vw;
+    }
+    .suite-services-section {
+        height: 450vw;
+    }
 }
 
 
