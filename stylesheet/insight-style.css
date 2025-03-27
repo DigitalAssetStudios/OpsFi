@@ -718,6 +718,9 @@ body {
     } */
 }
 @media (max-width: 400px) {
+    .landing-section {
+        height: 180vw;
+    }
     .our-focus-section {
         height: 700vw;
     }
