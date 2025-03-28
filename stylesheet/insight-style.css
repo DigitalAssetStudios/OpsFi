@@ -513,7 +513,7 @@ body {
 } */
 @media (max-width: 640px) {
     .our-focus-section {
-        height: 300vh;
+        height: 200vh;
     }
     .of-title-container h2 {
         font-size: 10vw;
@@ -536,7 +536,7 @@ body {
     }
     /* How We Do it */
     .how-section {
-        height: 470vh;
+        height: 100vh;
         padding: 10px;
     }
     .row-content-container {
@@ -551,13 +551,26 @@ body {
     .h-titles-container h2 {
         font-size: 10vw;
     }
+    .h-titles-container h3 {
+        font-size: 6vw;
+    }
+    .row-title {
+        font-size: 6vw;
+    }
+    .row-par {
+        font-size: 4vw;
+    }
     .end-title-container {
         padding: 50px 0 40px 0;
+        font-size: 4vw;
     }
 }
 @media (max-width: 420px) {
     .our-focus-section {
-        height: 360vh;
+        height: 150vh;
+    }
+    .how-section {
+        height: 150vh;
     }
 }
 
