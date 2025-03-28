@@ -250,7 +250,7 @@ body {
 
 /* our focus style */
 .our-focus-section {
-    height: 150vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -289,12 +289,13 @@ body {
 .how-section {
     background-color: var(--dark-blue);
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .row-content-container {
     display: flex;
@@ -307,10 +308,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 70%;
 }
 .h-titles-container h2 {
     font-size: 3vw;
+    font-family: var(--sup-font);
+}
+.h-titles-container h3 {
+    font-size: 1.8vw;
+    font-weight: 400;
+    margin: 0;
+}
+.row-title {
+    font-size: 1.8vw;
+    font-weight: 400;
+    color: var(--accent-blue);
+}
+.row-par {
+    font-size: 1.2vw;
 }
 .devider-row {
     border: 1px solid var(--accent-blue);
@@ -335,6 +350,7 @@ body {
 }
 .end-title-container {
     padding: 20px 0 20px 0;
+    font-size: 1.2vw;
 }
 
 /* .our-focus-section {
@@ -572,6 +588,7 @@ body {
 }
 .sss-title {
     font-size: 3vw;
+    font-family: var(--sup-font);
     padding: 0;
     margin: 0;
 }
